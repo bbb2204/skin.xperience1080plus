@@ -487,7 +487,7 @@
                                     <font>Font-Condensed-S36</font>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <scroll>true</scroll>
+                                    <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                     <visible>IsEmpty(VideoPlayer.Plot)</visible>
                                 </control>
                                 <control type="textbox">
