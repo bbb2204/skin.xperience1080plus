@@ -641,7 +641,6 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(OSDDefaultSubtitleButton.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(OSDDefaultSubtitleButton.Enabled)</onclick>
-                        <enable>!IsEmpty(Skin.String(SubtitleScript_Path))</enable>
                         <label>$LOCALIZE[41242]</label>
                         <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(8007)">Conditional</animation>
                     </control>
