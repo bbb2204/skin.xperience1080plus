@@ -5104,6 +5104,7 @@
 					<onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HomeMovies)">225</onleft>
 					<onleft condition="Skin.HasSetting(HomeWeather) + Skin.HasSetting(HomePrograms) + Skin.HasSetting(HomeMusic) + Skin.HasSetting(HomeTVShows) + Skin.HasSetting(HomeMovies)">525</onleft>
 					<onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
+					<onclick>ActivateWindow(4)</onclick>
 					<onup condition="!System.HasAddon(service.openelec.settings)">80</onup>
 					<onup condition="System.HasAddon(service.openelec.settings)">RunAddon(service.openelec.settings)</onup>
                     <ondown>801</ondown>
@@ -5142,7 +5143,7 @@
                     <control type="panel" id="801">
                         <posx>-24</posx>
                         <posy>-24</posy>
-                        <width>1602</width>
+                        <width>1302</width>
                         <height>620</height>
                         <onleft>Control.Move(20,-1)</onleft>
                         <onleft condition="!Skin.HasSetting(HomeWeather)">701</onleft>
@@ -5269,69 +5270,57 @@
                                 <property name="pos">top</property>
                             </item>
                             <item id="2">
-								<label>$LOCALIZE[166] $LOCALIZE[33063]</label>
-								<icon>windows/home/icons/skin.png</icon>
-								<onclick>ActivateWindow(skinsettings)</onclick>
-                                <property name="pos">top</property>
-                            </item>							
-                            <item id="3">
                                 <label>$LOCALIZE[157]</label>
                                 <icon>windows/home/icons/video.png</icon>
                                 <onclick>ActivateWindow(videossettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="4">
+                            <item id="3">
                                 <label>$LOCALIZE[2]</label>
                                 <icon>windows/home/icons/music.png</icon>
                                 <onclick>ActivateWindow(musicsettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="5">
+                            <item id="4">
                                 <label>$LOCALIZE[1]</label>
                                 <icon>windows/home/icons/pictures.png</icon>
                                 <onclick>ActivateWindow(picturessettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="6">
+                            <item id="5">
                                 <label>$LOCALIZE[41220]</label>
                                 <icon>windows/home/icons/tvshows.png</icon>
                                 <onclick>ActivateWindow(pvrsettings)</onclick>
                                 <property name="pos">top</property>
                             </item>
-                            <item id="7">
-                                <label>$LOCALIZE[8]</label>
-                                <icon>windows/home/icons/weather.png</icon>
-                                <onclick>ActivateWindow(weathersettings)</onclick>
-                                <property name="pos">bottom</property>
-                            </item>							
-                            <item id="8">
+                            <item id="6">
                                 <label>$LOCALIZE[14036]</label>
                                 <icon>windows/home/icons/network.png</icon>
                                 <onclick>ActivateWindow(servicesettings)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
-                            <item id="9">
+                            <item id="7">
                                 <label>$LOCALIZE[13200]</label>
                                 <icon>windows/home/icons/profiles.png</icon>
                                 <onclick>ActivateWindow(profiles)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
-                            <item id="10">
+                            <item id="8">
                                 <label>$LOCALIZE[24001]</label>
                                 <icon>windows/home/icons/addons.png</icon>
                                 <onclick>ActivateWindow(addonbrowser)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
-                            <item id="11">
+                            <item id="9">
+								<label>$LOCALIZE[166] $LOCALIZE[33063]</label>
+								<icon>windows/home/icons/skin.png</icon>
+								<onclick>ActivateWindow(skinsettings)</onclick>
+                                <property name="pos">top</property>
+                            </item>
+                            <item id="10">
                                 <label>$LOCALIZE[13000]</label>
                                 <icon>windows/home/icons/system.png</icon>
                                 <onclick>ActivateWindow(systemsettings)</onclick>
-                                <property name="pos">bottom</property>
-                            </item>
-                            <item id="12">
-                                <label>$LOCALIZE[130]</label>
-                                <icon>windows/home/icons/sysinfo.png</icon>
-                                <onclick>ActivateWindow(systeminfo)</onclick>
                                 <property name="pos">bottom</property>
                             </item>
                         </content>
