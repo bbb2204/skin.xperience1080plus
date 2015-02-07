@@ -1159,10 +1159,10 @@
                      	<control type="button">
                             <description>Title label</description>
                             <posx>20</posx>
-                            <posy>509</posy>
-                            <width>534</width>
+                            <posy>508</posy>
+                            <width>532</width>
                             <height>64</height>
-                            <label>$LOCALIZE[106] [B]$LOCALIZE[3][/B] $LOCALIZE[1405] $LOCALIZE[14022]</label>
+                            <label>$LOCALIZE[106] $LOCALIZE[3] $LOCALIZE[1405] $LOCALIZE[14022]</label>
                             <font>Font-Condensed-S29</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -1370,10 +1370,10 @@
                      	<control type="button">
                             <description>Title label</description>
                             <posx>20</posx>
-                            <posy>509</posy>
-                            <width>534</width>
+                            <posy>508</posy>
+                            <width>342</width>
                             <height>64</height>
-                            <label>$LOCALIZE[106] [B]$LOCALIZE[20360][/B] $LOCALIZE[1405] $LOCALIZE[14022]</label>
+                            <label>$LOCALIZE[106] $LOCALIZE[20360] $LOCALIZE[1405] $LOCALIZE[14022]</label>
                             <font>Font-Condensed-S29</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -1874,10 +1874,10 @@
                      	<control type="button">
                             <description>Title label</description>
                             <posx>20</posx>
-                            <posy>509</posy>
-                            <width>534</width>
+                            <posy>508</posy>
+                            <width>342</width>
                             <height>64</height>
-                            <label>$LOCALIZE[106] [B]$LOCALIZE[20342][/B] $LOCALIZE[1405] $LOCALIZE[14022]</label>
+                            <label>$LOCALIZE[106] $LOCALIZE[20342] $LOCALIZE[1405] $LOCALIZE[14022]</label>
                             <font>Font-Condensed-S29</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -2627,10 +2627,10 @@
                      	<control type="button">
                             <description>Title label</description>
                             <posx>20</posx>
-                            <posy>509</posy>
-                            <width>534</width>
+                            <posy>508</posy>
+                            <width>631</width>
                             <height>64</height>
-                            <label>$LOCALIZE[106] [B]$LOCALIZE[20360][/B] $LOCALIZE[1405] $LOCALIZE[14022]</label>
+                            <label>$LOCALIZE[106] $LOCALIZE[20360] $LOCALIZE[1405] $LOCALIZE[14022]</label>
                             <font>Font-Condensed-S29</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -3219,7 +3219,7 @@
                         <control type="image">
                             <posx>-5</posx>
                             <posy>-5</posy>
-                            <width>583</width>
+                            <width>582</width>
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
@@ -3235,8 +3235,8 @@
                         <control type="wraplist" id="4022">
                             <posx>0</posx>
                             <posy>0</posy>
-                            <width>573</width>
-                            <height>573</height>
+                            <width>572</width>
+                            <height>572</height>
                             <onup>425</onup>
 							<ondown condition="!Skin.HasSetting(KioskMode)">80</ondown>
 							<ondown condition="Skin.HasSetting(KioskMode)">21</ondown>                            
@@ -3247,21 +3247,21 @@
                             <pagecontrol>4024</pagecontrol>
                             <visible allowhiddenfocus="true">IntegerGreaterThan(Container(4022).NumItems,0)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                            <itemlayout width="573" height="572">
+                            <itemlayout width="572" height="572">
                                 <control type="image">
                                     <posx>0</posx>
                                     <posy>0</posy>
-                                    <width>573</width>
+                                    <width>572</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
                                     <texture background="true" fallback="views/fallbacks/DefaultAlbumCover.png/square-large.png">$INFO[ListItem.Icon]</texture>
                                 </control>
                             </itemlayout>
-                            <focusedlayout width="573" height="572">
+                            <focusedlayout width="572" height="572">
                                 <control type="image">
                                     <posx>0</posx>
                                     <posy>0</posy>
-                                    <width>573</width>
+                                    <width>572</width>
                                     <height>572</height>
                                     <aspectratio>scale</aspectratio>
                                     <texture background="true" fallback="views/fallbacks/DefaultAlbumCover.png/square-large.png">$INFO[ListItem.Icon]</texture>
@@ -3275,7 +3275,7 @@
                             <description>Title overlay</description>
                             <posx>0</posx>
                             <posy>508</posy>
-                            <width>573</width>
+                            <width>572</width>
                             <height>64</height>
                             <colordiffuse>99000000</colordiffuse>
                             <texture border="1">windows/common/black.png</texture>
@@ -3285,7 +3285,7 @@
                             <include>visiblehidefadeinfo</include>
                             <control type="image">
                                 <description>Loading Back</description>
-                                <posx>213</posx>
+                                <posx>212</posx>
                                 <posy>212</posy>
                                 <width>148</width>
                                 <height>148</height>
@@ -3293,7 +3293,7 @@
                             </control>
                             <control type="image">
                                 <description>Loading</description>
-                                <posx>213</posx>
+                                <posx>212</posx>
                                 <posy>212</posy>
                                 <width>148</width>
                                 <height>148</height>
@@ -3333,10 +3333,10 @@
                         <control type="button">
                             <description>Title label</description>
                             <posx>20</posx>
-                            <posy>509</posy>
-                            <width>534</width>
+                            <posy>508</posy>
+                            <width>532</width>
                             <height>64</height>
-                            <label>$LOCALIZE[106] [B]$LOCALIZE[2][/B] $LOCALIZE[1405] $LOCALIZE[14022]</label>
+                            <label>$LOCALIZE[106] $LOCALIZE[2] $LOCALIZE[1405] $LOCALIZE[14022]</label>
                             <font>Font-Condensed-S29</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>left</align>
@@ -3344,7 +3344,7 @@
                             <enable>false</enable>
                             <visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>						
+                        </control>
                         <control type="label">
                             <posx>0</posx>
                             <posy>576</posy>
@@ -3602,7 +3602,7 @@
                         </content>
                     </control>
                     <control type="panel" id="403">
-                        <posx>894</posx>
+                        <posx>893</posx>
                         <posy>-24</posy>
                         <width>331</width>
                         <height>620</height>
