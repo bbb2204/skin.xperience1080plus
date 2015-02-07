@@ -11,7 +11,7 @@
         <control type="button" id="10">
             <onfocus condition="!Skin.HasSetting(Skin.Initialization)">Skin.SetBool(Skin.Initialization)</onfocus>
             <onfocus condition="IsEmpty(Skin.String(GlobalBackdropSingle))">Skin.SetString(GlobalBackdropSingle,special://skin/extras/backgrounds/01.jpg)</onfocus>
-            <onfocus condition="IsEmpty(Skin.String(GlobalOverlay))">Skin.SetString(GlobalOverlay,special://skin/extras/fade/overlay.png)</onfocus>
+            <onfocus condition="IsEmpty(Skin.String(GlobalOverlay))">Skin.SetString(GlobalOverlay,media/fade/overlay.png)</onfocus>
             <onfocus condition="IsEmpty(Window(startup).Property(Started)) + Skin.HasSetting(NextAired.Update) + Library.HasContent(tvshows)">RunScript(script.tv.show.next.aired,silent=True)</onfocus>
             <onfocus condition="IsEmpty(Window(startup).Property(Started)) + Skin.HasSetting(StartupPlaylist)">PlayMedia($ESCINFO[Skin.String(StartupPlaylist.Path)])</onfocus>
             <onfocus condition="stringcompare(Skin.String(HomeWidget.1.Type),script.randomandlastitems) + !IsEmpty(Skin.String(HomeWidget.1.Playlist))">RunScript(script.randomandlastitems,limit=10,method=$INFO[Skin.String(HomeWidget.1.Method)],unwatched=$INFO[Skin.String(HomeWidget.1.UnWatched)],resume=$INFO[Skin.String(HomeWidget.1.Resume)],playlist=$INFO[Skin.String(HomeWidget.1.Playlist)],property=HomeWidget1)</onfocus>

@@ -362,7 +362,7 @@
 			<control type="radiobutton" id="2102">
 				<include>SettingsBackgroundDialogRadioButtonVars</include>
 				<selected>!IsEmpty(Skin.String(GlobalOverlay))</selected>
-				<onclick>Skin.SetString(GlobalOverlay,special://skin/extras/fade/overlay.png)</onclick>
+				<onclick>Skin.SetString(GlobalOverlay,media/fade/overlay.png)</onclick>
 				<label>$LOCALIZE[41252]</label>
 			</control>
 		</control>
