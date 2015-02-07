@@ -110,7 +110,7 @@
                     <label>trakt.tv options</label>
                     <onclick>RunScript(script.trakt,action=contextmenu)</onclick>
                     <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
-					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + System.HasAddon(script.trakt) + Control.IsVisible(1006)</visible>
+					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + System.HasAddon(script.trakt) + Control.IsVisible(1006) + !substring(ListItem.Path,plugin.video.youtube)</visible>
                 </control>
             </control>
             <control type="group">
