@@ -1050,7 +1050,7 @@
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
 						<control type="image">
-							<posx>287</posx>
+							<posx>163</posx>
 							<posy>100</posy>
 							<width>256</width>
 							<height>256</height>
@@ -1062,7 +1062,7 @@
                             <description>Title label</description>
                             <posx>0</posx>
                             <posy>360</posy>
-                            <width>829</width>
+                            <width>582</width>
                             <height>64</height>
                             <label>$LOCALIZE[106] [B]$LOCALIZE[41162] $LOCALIZE[21870][/B] $LOCALIZE[42235]</label>
                             <font>Font-Condensed-S34</font>
@@ -1764,11 +1764,11 @@
                             <height>582</height>
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
-						<control type="image">
-							<posx>336</posx>
-							<posy>100</posy>
-							<width>256</width>
-							<height>256</height>
+                        <control type="image">
+							<posx>126</posx>
+							<posy>164</posy>
+							<width>128</width>
+							<height>128</height>
 							<aspectratio>scale</aspectratio>
 							<texture>windows/home/nocontent/nocontent.png</texture>
 							<visible>!Library.HasContent(Movies) + !Control.IsVisible(2023)</visible>
@@ -1776,18 +1776,18 @@
 						<control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
-                            <posy>360</posy>
-                            <width>928</width>
+                            <posy>300</posy>
+                            <width>382</width>
                             <height>64</height>
                             <label>$LOCALIZE[106] [B]$LOCALIZE[41162] $LOCALIZE[21870][/B] $LOCALIZE[42235]</label>
-                            <font>Font-Condensed-S34</font>
+                            <font>Font-Condensed-S28</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <enable>false</enable>
                             <visible>!Library.HasContent(Movies) + !Control.IsVisible(2023)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>					
+                        </control>						
                         <control type="wraplist" id="2022">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -2518,7 +2518,7 @@
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
 						<control type="image">
-							<posx>336</posx>
+							<posx>212</posx>
 							<posy>100</posy>
 							<width>256</width>
 							<height>256</height>
@@ -2530,7 +2530,7 @@
                             <description>Title label</description>
                             <posx>0</posx>
                             <posy>360</posy>
-                            <width>928</width>
+                            <width>681</width>
                             <height>64</height>
                             <label>$LOCALIZE[106] [B]$LOCALIZE[41162] $LOCALIZE[21870][/B] $LOCALIZE[42235]</label>
                             <font>Font-Condensed-S34</font>
