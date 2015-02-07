@@ -751,7 +751,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
-                        <label>$LOCALIZE[131] $LOCALIZE[552] & $LOCALIZE[555]</label>
+                        <label>$LOCALIZE[131] $LOCALIZE[552] &amp; $LOCALIZE[555]</label>
                     </control>										
 					<control type="radiobutton" id="60012">
 						<width>1210</width>
