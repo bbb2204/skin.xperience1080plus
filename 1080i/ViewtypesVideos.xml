@@ -4884,9 +4884,10 @@
             </control>
         </control>
     </include>
-	<!-- =============== -->
-	<!-- FanartSlide (502) -->
-	<!-- =============== -->
+
+<!-- ================= -->
+<!-- Fanart (502) -->
+<!-- ================= -->
 	<include name="Viewtype-FanartSlide-Content">
 		<control type="group">
 			<posx>5</posx>
@@ -4898,28 +4899,28 @@
 				<height>734</height>
 				<texture>views/fanart/back-tile.png</texture>
 			</control>
-			<control type="image">
+	<!--	<control type="image">
 				<posx>664</posx>
 				<posy>0</posy>
 				<width>1151</width>
 				<height>734</height>
 				<texture border="7">windows/common/darkgrey.png</texture>
-			</control>		
+			</control> -->		
 			<control type="image">
 				<description>Landscape</description>
 				<posx>664</posx>
 				<posy>-44</posy>
 				<width>1151</width>
-				<height>734</height>
+				<height>778</height>
 				<texture background="true">$VAR[FanArtLandscape]</texture>
-				<aspectratio>keep</aspectratio>
+				<aspectratio>scale</aspectratio>
 			</control>
 			<control type="image">
 				<posx>664</posx>
 				<posy>647</posy>
 				<width>1151</width>
 				<height>87</height>
-				<texture border="7">windows/common/darkgrey.png</texture>		 
+				<texture border="7">views/fanart/slide-overlay.png</texture>		 
 			</control>			
 			<control type="label">
 				<posx>690</posx>
@@ -5030,7 +5031,7 @@
 			<include>BannerListAnimations</include>
 			<include>OptionsShutdownAnimation</include>
 			<control type="group">
-				<posy>535</posy>
+				<posy>507</posy>
 				<animation effect="fade" start="0" end="100" delay="415" time="300" reversible="false" condition="![Container(502).OnNext | Container(502).OnPrevious]">Conditional</animation>
 				<control type="image">
 					<description>Left arrow</description>
@@ -5053,16 +5054,17 @@
 			</control>
 			<control type="wraplist" id="502">
 				<posx>0</posx>
-				<posy>220</posy>
+				<posy>190</posy>
 				<width>1920</width>
 				<height>800</height>
 				<scrolltime tween="cubic" easing="out">500</scrolltime>
 				<orientation>horizontal</orientation>
 				<viewtype label="20445">fanart</viewtype>
-				<ondown>100</ondown>
 				<pagecontrol>706</pagecontrol>
 				<onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
 				<onup condition="Skin.HasSetting(KioskMode)">502</onup>
+				<ondown condition="!Skin.HasSetting(KioskMode)">9010</ondown>
+				<ondown condition="Skin.HasSetting(KioskMode)">502</ondown>				
 				<onleft>502</onleft>
 				<onright>502</onright>
 				<preloaditems>0</preloaditems>
@@ -5395,7 +5397,7 @@
                                 <posx>0</posx>
                                 <posy>59</posy>
                                 <width>100</width>
-                                <label>$INFO[ListItem.Year]</label>
+                                <label>$VAR[VideoMovieBannerYear]</label>
                                 <font>Font-Condensed-S36</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>
@@ -5405,7 +5407,7 @@
                                 <posx>85</posx>
                                 <posy>60</posy>
                                 <width>710</width>
-                                <label>$INFO[ListItem.Label]</label>
+                                <label>$VAR[VideoMovieBannerTitle]</label>
                                 <font>Font-Condensed-S34-B</font>
                                 <textcolor>FF333333</textcolor>
                                 <scroll>false</scroll>
@@ -5417,7 +5419,7 @@
                                 <posy>103</posy>
                                 <width>815</width>
                                 <font>Font-Condensed-S28</font>
-                                <label>$INFO[ListItem.Rating,★ ,]$INFO[ListItem.Duration, [COLOR=77484848]/[/COLOR] , $LOCALIZE[12391]]</label>
+                                <label>$VAR[VideoMovieBannerRatingDuration]</label>
                                 <textcolor>FF484848</textcolor>
                                 <align>left</align>
                                 <scroll>false</scroll>
@@ -5426,7 +5428,7 @@
                                 <posx>85</posx>
                                 <posy>140</posy>
                                 <width>815</width>
-                                <label>$INFO[ListItem.Genre]</label>
+                                <label>$VAR[VideoMovieBannerGenre]</label>
                                 <font>Font-Condensed-S28</font>
                                 <textcolor>FF484848</textcolor>
                                 <scroll>false</scroll>

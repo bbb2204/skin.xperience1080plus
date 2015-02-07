@@ -395,6 +395,22 @@
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[41140]</label>
                     </control>
+					<control type="button" id="20021">
+						<width>1210</width>
+						<texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
+						<texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
+						<include>SettingsCategoryDefaultButtonVars</include>
+						<onclick>SetProperty(Dialog,$LOCALIZE[42256])</onclick>
+						<onclick>ActivateWindow(3001)</onclick>
+						<label>$LOCALIZE[41144]</label>
+					</control>
+					<control type="radiobutton" id="20022">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(HomeArrows)</selected>
+                        <onclick>Skin.ToggleSetting(HomeArrows)</onclick>
+                        <label>$LOCALIZE[42261]</label>
+                    </control>					
                     <control type="radiobutton" id="2003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -408,7 +424,7 @@
                         <selected>!Skin.HasSetting(HideHomeSubmenuArrow)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeSubmenuArrow)</onclick>
                         <label>$LOCALIZE[41135]</label>
-                    </control>
+                    </control>								
                     <control type="group" id="2007">
                         <description>Fake spin control</description>
                         <width>1210</width>
@@ -740,10 +756,17 @@
                     <control type="radiobutton" id="6001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>!Skin.HasSetting(Guide.HideClock)</selected>
+                        <selected>Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
-                        <label>$LOCALIZE[41270]</label>
-                    </control>
+                        <label>$LOCALIZE[131] $LOCALIZE[552] & $LOCALIZE[555]</label>
+                    </control>										
+					<control type="radiobutton" id="60012">
+						<width>1210</width>
+						<include>SettingsCategoryRadioButtonVars</include>
+						<selected>Skin.HasSetting(Guide.HideWeather)</selected>
+						<onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
+						<label>$LOCALIZE[131] $LOCALIZE[400]</label>
+					</control>	
                     <control type="radiobutton" id="6002">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -845,7 +868,7 @@
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(EPGGenreColors.Enabled)</onclick>
-                        <label>$LOCALIZE[515] $LOCALIZE[14078] $LOCALIZE[1405] $LOCALIZE[19069]</label>
+                        <label>$LOCALIZE[41221]</label>
                     </control>
                 </control>
                 

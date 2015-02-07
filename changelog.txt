@@ -1,4 +1,124 @@
-﻿[B]3.44.42[/B]
+﻿[B]3.45.16-alpha6[/B]
+• Adds default icons and warning text for first time users when no content is scanned to library.
+• Four additional textures added (two for each theme).
+
+[B]3.45.16-alpha4[/B]
+• Removes date from Avatar text
+
+[B]3.45.16-alpha3[/B]
+• Added date before time in Guide (frame)
+• Added Skin Option to disable both Date/Time and Weather display in Guide (frame)
+
+[B]3.45.16-alpha2[/B]
+• Smaller and more integrated Pause Icons (on screen) as requested.
+
+[B]3.45.16-alpha[/B]
+• Adds optional (Skin Options) Home Navigation Arrows
+• New Skin Option
+• New Language String
+
+[B]3.45.15-beta8[/B]
+• Fixes Favourites (Home) being selectable when Kiosk Mode is enabled.
+
+[B]3.45.15-beta7[/B]
+• Fixes Fanart Viewtype allowing full menu ondown when Kiosk mode enabled.
+
+[B]3.45.15-beta6[/B]
+• Adds Date as item next to Profile/Avatar icon on Home.
+• Automatically disabled stats for Movies, TV Shows and Music on above option if disabled in Skin Options.
+
+[B]3.45.15-beta5[/B]
+• Adds missing autoscroll setting to Plot if disabled in Skin Options
+
+[B]3.45.15-beta4[/B]
+• Tidy of codec display information
+
+[B]3.45.15-beta3[/B]
+• Fixed Library Scanning control not updating
+• Removal of additional Artwork-Downloader options (Manual and Automatic) due to issues.
+
+[B]3.45.15-beta2[/B]
+• Portuguese flag changed to Brazil (requested)
+• Fixes bug on Info closing when activated from Player Menu
+(Pressing button once opens, pressing Enter/OK closes, Pressing Enter/OK again closes Player Menu)
+
+[B]3.45.15-beta[/B]
+• Alignment adjustments to Fanart Viewtype
+• New overlay for title
+• Overlay texture corrected
+• Corrects AlbumInfo rating sizing (default)
+• Corrects Custom Tile Colours issue with selecting in Skin Settings
+• Corrects EPG colour issue on one genre
+
+[B]3.45.14-alpha[/B]
+• Corrected missing ClearArt option in Get Artwork
+• Reduced Home, Movies, TV Shows, Weather Home Section size by 66 pixels to match Settings
+• Corrected 1px offset on Spotlight label, 2px on Weather Provider label and 3px on overlays.
+• Corrected 1px offset on Music Background.
+• Corrected shadow offsets for xperience1080 theme
+
+[B]3.45.10-alpha[/B]
+• Completely new Lyrics displays and controls panel
+• 36 new textures for each theme
+
+[B]3.45.06alpha[/B]
+• Reverted 3.44.99b
+• New VARS to handle Music Now Playing Banner Viewtype
+• New VARS to handle Movie Now Playing Banner Viewtype
+• New VARS to handle TV Show Now Playing Banner Viewtype
+
+[B]3.44.99beta[/B]
+• Fixed Now Playing Music banner not displaying correctly
+
+[B]3.44.98beta[/B]
+• Added two additional options to Get Artwork option. No items will be set but they will be downloaded to the directory (depending on your settings).
+• Manual Mode = Select each item | Background Mode = Grab all items based on criteria set in the add-on options.
+
+[B]3.44.96[/B]
+• Added extra Aspect Ratio flags (default)
+• No xperience1080 texture .psd so unable to make above, uses default
+
+[B]3.44.94[/B]
+• New Skin Settings Option
+• Additional Red tile added for home
+• User-selectable Tile Colours (Home, Movies, TV, Music)
+• Small fixes
+
+[B]3.44.65[/B]
+• Changes to multiple files to resolve some tenses being used in languages
+
+[B]3.44.60[/B]
+• Numerous custom language strings changed (Not available in non-EN langs)
+
+[B]3.44.52[/B]
+• Adds Auto Solo GUI mode for artwork.
+
+[B]3.44.51[/B]
+• Corrects missing texture for Weather loading
+
+[B]3.44.50[/B]
+• Corrects shadow for new Settings area
+
+[B]3.44.49[/B]
+• Reverts to previous background images used
+
+[B]3.44.48[/B]
+• Tweaks to overlays on default theme
+
+[B]3.44.47[/B]
+• Redesigned Profiles settings area to match other panels (beta)
+
+[B]3.44.46[/B]
+• Adds extra Home settings items
+• Removes onclick to enter settings
+
+[B]3.44.44[/B]
+• Reverts Home settings to original
+
+[B]3.44.43[/B]
+• Bumped due to ronie's bump from .40 to .41
+
+[B]3.44.42[/B]
 • Fixed favourites not opening when RSS enabled
 
 [B]3.44.41[/B]
