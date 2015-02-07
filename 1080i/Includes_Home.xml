@@ -1602,7 +1602,7 @@
                                 <onclick condition="!IsEmpty(Window.Property(EditTile))">ActivateWindow(3003)</onclick>
                                 <onclick condition="!IsEmpty(Window.Property(EditTile))">ClearProperty(EditTile)</onclick>
                                 <thumb>$INFO[Skin.String(HomeHomeTile1.Icon)]</thumb>
-                                <icon>windows/home/icons/video.png</icon>
+                                <icon>windows/home/icons/newmovies.png</icon>
                                 <property name="pos">top</property>
                                 <property name="showlabel">$INFO[Skin.String(HomeHomeTile1.ShowLabel)]</property>
                                 <property name="path">$INFO[Skin.String(HomeHomeTile1.Path)]</property>
@@ -1628,7 +1628,7 @@
                                 <onclick condition="!IsEmpty(Window.Property(EditTile))">ActivateWindow(3003)</onclick>
                                 <onclick condition="!IsEmpty(Window.Property(EditTile))">ClearProperty(EditTile)</onclick>
                                 <thumb>$INFO[Skin.String(HomeHomeTile2.Icon)]</thumb>
-                                <icon>windows/home/icons/tvshows.png</icon>
+                                <icon>windows/home/icons/newepisodes.png</icon>
                                 <property name="pos">top</property>
                                 <property name="showlabel">$INFO[Skin.String(HomeHomeTile2.ShowLabel)]</property>
                                 <property name="path">$INFO[Skin.String(HomeHomeTile2.Path)]</property>
