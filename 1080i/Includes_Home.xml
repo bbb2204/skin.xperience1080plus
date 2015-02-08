@@ -1050,29 +1050,29 @@
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
 						<control type="image">
-							<posx>163</posx>
-							<posy>100</posy>
-							<width>256</width>
-							<height>256</height>
+							<posx>195</posx>
+							<posy>154</posy>
+							<width>192</width>
+							<height>192</height>
 							<aspectratio>scale</aspectratio>
 							<texture>windows/home/nocontent/nocontent.png</texture>
 							<visible>!Library.HasContent(Video) + !Control.IsVisible(5023)</visible>
-						</control>						
+						</control>
 						<control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
-                            <posy>360</posy>
-                            <width>582</width>
+                            <posy>350</posy>
+                            <width>573</width>
                             <height>64</height>
                             <label>$LOCALIZE[106] [B]$LOCALIZE[41162] $LOCALIZE[21870][/B] $LOCALIZE[42235]</label>
-                            <font>Font-Condensed-S34</font>
+                            <font>Font-Condensed-S28</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>center</align>
                             <aligny>center</aligny>
                             <enable>false</enable>
                             <visible>!Library.HasContent(Video) + !Control.IsVisible(5023)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>					
+                        </control>
                         <control type="wraplist" id="5022">
                             <posx>0</posx>
                             <posy>0</posy>
@@ -2520,22 +2520,22 @@
                             <texture border="7">windows/home/tile.png</texture>
                         </control>
 						<control type="image">
-							<posx>212</posx>
-							<posy>100</posy>
-							<width>256</width>
-							<height>256</height>
+							<posx>244</posx>
+							<posy>154</posy>
+							<width>192</width>
+							<height>192</height>
 							<aspectratio>scale</aspectratio>
 							<texture>windows/home/nocontent/nocontent.png</texture>
 							<visible>!Library.HasContent(TVShows) + !Control.IsVisible(3023)</visible>
-						</control>						
+						</control>
 						<control type="button">
                             <description>Title label</description>
-                            <posx>0</posx>
-                            <posy>360</posy>
-                            <width>681</width>
+                            <posx>54</posx>
+                            <posy>350</posy>
+                            <width>573</width>
                             <height>64</height>
                             <label>$LOCALIZE[106] [B]$LOCALIZE[41162] $LOCALIZE[21870][/B] $LOCALIZE[42235]</label>
-                            <font>Font-Condensed-S34</font>
+                            <font>Font-Condensed-S28</font>
                             <disabledcolor>aawhite</disabledcolor>
                             <align>center</align>
                             <aligny>center</aligny>
@@ -3235,7 +3235,7 @@
 							<aspectratio>scale</aspectratio>
 							<texture>windows/home/nocontent/nocontent.png</texture>
 							<visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
-						</control>						
+						</control>
 						<control type="button">
                             <description>Title label</description>
                             <posx>0</posx>
@@ -3250,7 +3250,7 @@
                             <enable>false</enable>
 							<visible>!Library.HasContent(Music) + !Control.IsVisible(4023)</visible>
                             <include>visiblehidefadeinfodelayvisible</include>
-                        </control>			
+                        </control>
                         <control type="wraplist" id="4022">
                             <posx>0</posx>
                             <posy>0</posy>
