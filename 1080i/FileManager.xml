@@ -139,7 +139,7 @@
                                 <posy>1</posy>
                                 <width>752</width>
                                 <height>60</height>
-                                <texture>selected.png</texture>
+                                <texture>windows/filemanager/selected.png</texture>
                                 <colordiffuse>08FFFFFF</colordiffuse>
                                 <aspectratio aligny="top">keep</aspectratio>
                                 <visible>ListItem.IsSelected</visible>
@@ -200,7 +200,7 @@
                                 <posy>1</posy>
                                 <width>752</width>
                                 <height>60</height>
-                                <texture>selected.png</texture>
+                                <texture>windows/filemanager/selected.png</texture>
                                 <colordiffuse>08FFFFFF</colordiffuse>
                                 <aspectratio aligny="top">keep</aspectratio>
                                 <visible>ListItem.IsSelected</visible>
