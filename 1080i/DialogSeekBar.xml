@@ -8,20 +8,20 @@
         <include>OSDChapterInfo</include>
         <control type="group">
             <animation type="WindowOpen">
-                <effect easing="inout" end="100" start="0" time="200" tween="sine" type="fade"/>
-                <effect easing="out" end="0,0" start="0,85" time="300" tween="cubic" type="slide"/>
+                <effect easing="inout" end="100" start="0" time="200" tween="sine" type="fade" />
+                <effect easing="out" end="0,0" start="0,85" time="300" tween="cubic" type="slide" />
             </animation>
             <animation type="WindowClose">
-                <effect easing="in" end="0" start="100" time="200" tween="sine" type="fade"/>
-                <effect easing="in" end="0,85" start="0,0" time="300" tween="sine" type="slide"/>
+                <effect easing="in" end="0" start="100" time="200" tween="sine" type="fade" />
+                <effect easing="in" end="0,85" start="0,0" time="300" tween="sine" type="slide" />
             </animation>
             <animation type="Visible">
-                <effect easing="inout" end="100" start="0" time="200" tween="sine" type="fade"/>
-                <effect easing="out" end="0,0" start="0,85" time="300" tween="cubic" type="slide"/>
+                <effect easing="inout" end="100" start="0" time="200" tween="sine" type="fade" />
+                <effect easing="out" end="0,0" start="0,85" time="300" tween="cubic" type="slide" />
             </animation>
             <animation type="Hidden">
-                <effect easing="in" end="0" start="100" time="200" tween="sine" type="fade"/>
-                <effect easing="in" end="0,85" start="0,0" time="300" tween="sine" type="slide"/>
+                <effect easing="in" end="0" start="100" time="200" tween="sine" type="fade" />
+                <effect easing="in" end="0,85" start="0,0" time="300" tween="sine" type="slide" />
             </animation>
             <control type="group">
                 <visible>!Window.IsVisible(DialogPVRInfo.xml)</visible>
@@ -341,7 +341,7 @@
                         <effect type="fade" start="0" end="100" time="300" tween="sine" easing="inout" delay="150" />
                     </animation>
                     <animation reversible="false" type="Hidden">
-                        <effect easing="out" end="0" start="100" time="200" tween="sine" type="fade"/>
+                        <effect easing="out" end="0" start="100" time="200" tween="sine" type="fade" />
                     </animation>
                     <control type="group">
                         <posy>117</posy>
@@ -529,7 +529,7 @@
                         </control>
                         <control type="group">
                             <posy>825</posy>
-                            <visible>VideoPlayer.Content(Episodes)</visible>
+                            <visible>VideoPlayer.Content(Episodes) + !SubString(Player.Folderpath,googlevideo.com) + !SubString(Player.Folderpath,vimeo)</visible>
                             <control type="image">
                                 <posx>80</posx>
                                 <posy>-35</posy>
@@ -635,7 +635,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(LiveTV)</visible>
+                            <visible>!VideoPlayer.Content(Movies) + ![VideoPlayer.Content(Episodes) + !SubString(Player.Folderpath,googlevideo.com) + !SubString(Player.Folderpath,vimeo)] + !VideoPlayer.Content(LiveTV)</visible>
                             <posy>825</posy>
                             <control type="image">
                                 <posx>80</posx>
@@ -645,7 +645,19 @@
                                 <bordersize>20</bordersize>
                                 <bordertexture border="30">osd/fullscreen/cover-shadow.png</bordertexture>
                                 <texture background="true" fallback="views/fallbacks/DefaultVideo.png/medium.png">$INFO[VideoPlayer.Cover]</texture>
-                                <aspectratio align="right">keep</aspectratio>
+                                <aspectratio align="right" aligny="top">keep</aspectratio>
+                                <visible>!SubString(Player.Folderpath,googlevideo.com) + !SubString(Player.Folderpath,vimeo)</visible>
+                            </control>
+                            <control type="image">
+                                <posx>-2</posx>
+                                <posy>90</posy>
+                                <width>360</width>
+                                <height>220</height>
+                                <bordersize>20</bordersize>
+                                <bordertexture border="30">osd/fullscreen/widescreen-shadow.png</bordertexture>
+                                <texture background="true">$INFO[VideoPlayer.Cover]</texture>
+                                <aspectratio align="center">scale</aspectratio>
+                                <visible>SubString(Player.Folderpath,googlevideo.com) | SubString(Player.Folderpath,vimeo)</visible>
                             </control>
                             <control type="label">
                                 <posx>360</posx>
