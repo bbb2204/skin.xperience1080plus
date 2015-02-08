@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="5533">
-    <zorder>0</zorder>
+    <!-- <zorder>0</zorder> -->
 	<defaultcontrol always="true">1000</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0</backgroundcolor>
+    <!-- <allowoverlay>no</allowoverlay>
+    <backgroundcolor>0</backgroundcolor> -->
     <controls>
         <include>CommonSettingsItems</include>
         <include>SettingsHeader</include>
-
-        <!-- <include>CommonBackground</include> -->
         <!-- <control type="image">
-            <left>0</left>
-            <top>100r</top>
-            <width>1280</width>
-            <height>100</height>
-            <texture>default/floor.png</texture>
-            <include>VisibleFadeEffect</include>
-        </control>
-        <control type="image">
             <description>Section header image</description>
             <left>20</left>
             <top>3</top>
@@ -25,19 +15,6 @@
             <height>35</height>
             <aspectratio>keep</aspectratio>
             <texture>icon_system.png</texture>
-        </control>
-        <control type="grouplist">
-            <left>65</left>
-            <top>5</top>
-            <width>1000</width>
-            <height>30</height>
-            <orientation>horizontal</orientation>
-            <align>left</align>
-            <itemgap>5</itemgap>
-            <control type="label">
-                <include>WindowTitleCommons</include>
-                <label>$ADDON[service.openelec.settings 600]</label>
-            </control>
         </control> -->
         <control type="group">
             <include>OptionsShutdownAnimation</include>
@@ -88,10 +65,6 @@
                     <posy>281</posy>
                     <width>338</width>
                     <height>609</height>
-                    <!-- <onleft>5</onleft>
-                    <onright>5</onright>
-                    <onup>30</onup>
-                    <ondown>30</ondown> -->
                     <scrolltime>0</scrolltime>
                     <pagecontrol>-</pagecontrol>
                     <itemlayout height="76">
@@ -155,7 +128,7 @@
                     <width>338</width>
                     <align>left</align>
                     <font>Font-Condensed-S25-B</font>
-                    <label>[UPPERCASE]$LOCALIZE[5]:[/UPPERCASE]$INFO[Container(30).ListItem.Label, ,]</label>
+                    <label>[UPPERCASE]$LOCALIZE[5]:[/UPPERCASE]$INFO[Container(1000).ListItem.Label, ,]</label>
                     <textcolor>aawhite</textcolor>
                 </control>
                           
@@ -178,6 +151,7 @@
 
                 <control type="group">
                     <animation effect="slide" start="0" end="526" time="500" tween="cubic" easing="inout" condition="Control.HasFocus(71)">Conditional</animation>
+                    <visible>!StringCompare(Container(1000).ListItem.Property(listTyp), 1900) + IsEmpty(Control.GetLabel(1501))</visible>
                     <control type="image">
                         <posx>1520</posx>
                         <posy>252</posy>
@@ -200,35 +174,13 @@
                         <textcolor>aawhite</textcolor>
                     </control>
                 </control>
-
-
-
-                
-
             <!-- <control type="image">
-                <description>LOGO</description>
-                <left>30</left>
-                <top>15</top>
-                <width>220</width>
-                <height>80</height>
-                <aspectratio>keep</aspectratio>
-                <texture>$INFO[Container(5533).Property(DIST_MEDIA)]/Logo.png</texture>
-            </control> -->
-
-	    <control type="image">
-		<left>269</left>
-		<top>510</top>
-		<width>793</width>
-		<height>2</height>
-		<texture>separator2.png</texture>
-	    </control>
-            <control type="image">
                 <left>269</left>
                 <top>60</top>
                 <width>793</width>
                 <height>450</height>
                 <texture border="5">default/button-nofocus.png</texture>
-            </control>   
+            </control> -->
 	    <!-- Other Content (right)-->
             <control type="group">
                 <left>355</left>
@@ -240,116 +192,98 @@
                     <top>0</top>
                     <width>796</width>
                     <height>446</height>
-                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1900)</visible>  
-                    <control type="image">
+                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1900)</visible>
+                    <!-- <control type="image">
                         <left>580</left>
                         <top>10</top>
                         <width>200</width>
                         <height>200</height>
-                        <texture border="1">default/logo_big.png</texture>
-                    </control>	
-                    <control type="label">
-                        <left>20</left>
-                        <top>20</top>
-                        <width>400</width>
-                        <height>16</height>
-                        <font>font12</font>
-                        <textcolor>blue</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$ADDON[service.openelec.settings 606]</label>
-                    </control>	
-                    <control type="label">
-                        <left>140</left>
-                        <top>20</top>
-                        <width>400</width>
-                        <height>16</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(5533).Property(Distri)] ($INFO[Container(5533).Property(build)])</label>
-                    </control>
-                    <control type="label">
-                        <left>20</left>
-                        <top>42</top>
-                        <width>400</width>
-                        <height>16</height>
-                        <font>font12</font>
-                        <textcolor>blue</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$ADDON[service.openelec.settings 607]</label>
-                    </control>	
-                    <control type="label">
-                        <left>140</left>
-                        <top>42</top>
-                        <width>400</width>
-                        <height>16</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(5533).Property(Version)]</label>
-                    </control>
-                    <control type="label">
-                        <left>20</left>
-                        <top>64</top>
-                        <width>400</width>
-                        <height>16</height>
-                        <font>font12</font>
-                        <textcolor>blue</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$ADDON[service.openelec.settings 608]</label>
-                    </control>
-                    <control type="label">
-                        <left>140</left>
-                        <top>64</top>
-                        <width>400</width>
-                        <height>16</height>
-                        <font>font12</font>
-                        <textcolor>white</textcolor>
-                        <align>left</align>
-                        <aligny>center</aligny>
-                        <label>$INFO[Container(5533).Property(Arch)]</label>
-                    </control>	
-                    <control type="textbox">
-                        <left>20</left>
-                        <top>117</top>
-                        <width>550</width>
-                        <height>100</height>
-                        <font>font10</font>
-                        <textcolor>white</textcolor>
-                        <label>$ADDON[service.openelec.settings 609]</label>
-                    </control>		
-                    <control type="textbox">
-                        <left>20</left>
-                        <top>200</top>
-                        <width>550</width>
-                        <height>200</height>
-                        <font>font10</font>
-                        <textcolor>white</textcolor>
-                        <label>$ADDON[service.openelec.settings 610]</label>
+                        <texture border="1">special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/logo_big.png</texture>
+                    </control> -->
+                    <control type="image">
+                        <left>0</left>
+                        <top>380</top>
+                        <width>1210</width>
+                        <height>77</height>
+                        <texture border="90,3,90,3">views/list/other/separator.png</texture>
                     </control>
                     <control type="image">
-                        <left>20</left>
-                        <top>100</top>
-                        <width>535</width>
-                        <height>2</height>
-                        <texture>default/blue_line.png</texture>
-                    </control>	
+                        <left>865</left>
+                        <top>452</top>
+                        <width>336</width>
+                        <height>168</height>
+                        <texture>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/Logo.png</texture>
+                    </control>
+                    <control type="group">
+                        <top>478</top>
+                        <control type="label">
+                            <top>0</top>
+                            <label>$ADDON[service.openelec.settings 606]</label>
+                            <textcolor>CFFFFFFF</textcolor>
+                            <include>SettingsSystemInfoLabel</include>
+                        </control>
+                        <control type="label">
+                            <left>200</left>
+                            <top>0</top>
+                            <label>$INFO[Container(5533).Property(Distri)] ($INFO[Container(5533).Property(build)])</label>
+                            <textcolor>CFFFFFFF</textcolor>
+                            <include>SettingsSystemInfoLabel</include>
+                        </control>
+                        <control type="label">
+                            <top>35</top>
+                            <label>$ADDON[service.openelec.settings 607]</label>
+                            <textcolor>CFFFFFFF</textcolor>
+                            <include>SettingsSystemInfoLabel</include>
+                        </control>
+                        <control type="label">
+                            <left>200</left>
+                            <top>35</top>
+                            <label>$INFO[Container(5533).Property(Version)]</label>
+                            <textcolor>CFFFFFFF</textcolor>
+                            <include>SettingsSystemInfoLabel</include>
+                        </control>
+                        <control type="label">
+                            <top>70</top>
+                            <label>$ADDON[service.openelec.settings 608]</label>
+                            <textcolor>CFFFFFFF</textcolor>
+                            <include>SettingsSystemInfoLabel</include>
+                        </control>
+                        <control type="label">
+                            <left>200</left>
+                            <top>70</top>
+                            <label>$INFO[Container(5533).Property(Arch)]</label>
+                            <textcolor>CFFFFFFF</textcolor>
+                            <include>SettingsSystemInfoLabel</include>
+                        </control>
+                    </control>
                     <control type="textbox">
-                        <left>20</left>
-                        <top>380</top>
-                        <width>780</width>
-                        <height>40</height>
-                        <font>font10</font>
-                        <textcolor>white</textcolor>
-                        <align>left</align>
+                        <left>35</left>
+                        <top>20</top>
+                        <width>1140</width>
+                        <height>200</height>
+                        <textcolor>96FFFFFF</textcolor>
+                        <font>Font-Condensed-S29-B</font>
+                        <label>$ADDON[service.openelec.settings 609]</label>
+                    </control>
+                    <control type="textbox">
+                        <left>35</left>
+                        <top>220</top>
+                        <width>1140</width>
+                        <height>160</height>
+                        <textcolor>96FFFFFF</textcolor>
+                        <font>Font-Condensed-S29-B</font>
+                        <label>$ADDON[service.openelec.settings 610]</label>
+                    </control>
+                    <control type="textbox">
+                        <left>435</left>
+                        <top>220</top>
+                        <width>740</width>
+                        <height>160</height>
+                        <textcolor>96FFFFFF</textcolor>
+                        <font>Font-Condensed-S28</font>
                         <label>$ADDON[service.openelec.settings 611]</label>
                     </control>
-                </control>                        
+                </control>
                 <!-- simple list content -->
                 <control type="list" id="1100">
                     <left>0</left>
@@ -358,9 +292,10 @@
                     <height>609</height>
                     <onleft>1000</onleft>
                     <!-- <onright>1097</onright> -->
-                    <onright>71</onright>
+                    <onright condition="IsEmpty(Control.GetLabel(1501))">71</onright>
+                    <onright condition="!IsEmpty(Control.GetLabel(1501))">1500</onright>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <pagecontrol>1097</pagecontrol>
+                    <!-- <pagecontrol>1097</pagecontrol> -->
                     <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1100)</visible>    
                     <itemlayout height="76">
                         <control type="group">
@@ -388,7 +323,7 @@
                                 <width>1210</width>
                                 <align>right</align>
                                 <aligny>center</aligny>
-                                <textcolor>96FFFFFF</textcolor>
+                                <textcolor>SelectedBlue</textcolor>
                                 <selectedcolor>eewhite</selectedcolor>
                                 <font>Font-Condensed-S30-B</font>
                                 <info>ListItem.Property(value)</info>
@@ -472,7 +407,7 @@
                                 <width>1210</width>
                                 <align>right</align>
                                 <aligny>center</aligny>
-                                <textcolor>eewhite</textcolor>
+                                <textcolor>SelectedBlue</textcolor>
                                 <font>Font-Condensed-S30-B</font>
                                 <info>ListItem.Property(value)</info>
                                 <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + Control.HasFocus(1100)</visible>
@@ -494,7 +429,7 @@
                                 <width>1210</width>
                                 <align>right</align>
                                 <aligny>center</aligny>
-                                <textcolor>96FFFFFF</textcolor>
+                                <textcolor>SelectedBlue</textcolor>
                                 <font>Font-Condensed-S30-B</font>
                                 <info>ListItem.Property(value)</info>
                                 <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + !Control.HasFocus(1100)</visible>
@@ -559,8 +494,9 @@
                     <width>1210</width>
                     <height>609</height>
                     <onleft>1000</onleft>
-                    <onright>1098</onright>
-                    <pagecontrol>1098</pagecontrol>
+                    <onright>71</onright>
+                    <!-- <onright>1098</onright>
+                    <pagecontrol>1098</pagecontrol> -->
                     <scrolltime>300</scrolltime>
                     <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1200)</visible>    
                     <itemlayout height="76">
@@ -876,8 +812,9 @@
                     <width>1210</width>
                     <height>609</height>
                     <onleft>1000</onleft>
-                    <onright>1099</onright>
-                    <pagecontrol>1099</pagecontrol>
+                    <onright>71</onright>
+                    <!-- <onright>1099</onright>
+                    <pagecontrol>1099</pagecontrol> -->
                     <scrolltime>300</scrolltime>
                     <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1300)</visible>    
                     <itemlayout height="76">
@@ -1289,22 +1226,13 @@
                     <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71) + !Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                     <font>Font-Condensed-S32</font>
                 </control>
-                <control type="scrollbar" id="71">
-                    <posx>490</posx>
-                    <posy>281</posy>
-                    <width>6</width>
-                    <height>608</height>
-                    <texturesliderbackground>-</texturesliderbackground>
-                    <texturesliderbar border="1">views/other/scrollbar-sq.png</texturesliderbar>
-                    <texturesliderbarfocus border="1">views/other/scrollbar-sq.png</texturesliderbarfocus>
-                    <textureslidernib>-</textureslidernib>
-                    <textureslidernibfocus>-</textureslidernibfocus>
-                    <onleft>1100</onleft>
+                <control type="button" id="71">
+					<description>fake button - previously scrollbar</description>
+                    <onleft condition="StringCompare(Container(1000).ListItem.Property(listTyp), 1100)">1100</onleft>
+                    <onleft condition="StringCompare(Container(1000).ListItem.Property(listTyp), 1200)">1200</onleft>
+                    <onleft condition="StringCompare(Container(1000).ListItem.Property(listTyp), 1300)">1300</onleft>
                     <onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
-                    <showonepage>false</showonepage>
-                    <orientation>vertical</orientation>
-                    <animation effect="fade" start="45" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(71)">Conditional</animation>
-                    <visible allowhiddenfocus="true">Control.HasFocus(71)</visible>
+					<onclick>-</onclick>
                 </control>
             </control>
             <!-- <control type="textbox" id="1400">
@@ -1325,8 +1253,8 @@
                 <height>40</height>
                 <visible>true</visible>
                 <colordiffuse>FFFFFFFF</colordiffuse>
-                <texturefocus>default/button-focus.png</texturefocus>
-                <texturenofocus>default/button-nofocus.png</texturenofocus>
+                <texturefocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-focus.png</texturefocus>
+                <texturenofocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-nofocus.png</texturenofocus>
                 <label>
                 </label>
                 <font>font12</font>
@@ -1346,8 +1274,8 @@
                 <height>40</height>
                 <visible>true</visible>
                 <colordiffuse>FFFFFFFF</colordiffuse>
-                <texturefocus>default/button-focus.png</texturefocus>
-                <texturenofocus>default/button-nofocus.png</texturenofocus>
+                <texturefocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-focus.png</texturefocus>
+                <texturenofocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-nofocus.png</texturenofocus>
                 <label>
                 </label>
                 <font>font12</font>
@@ -1367,8 +1295,8 @@
                 <height>40</height>
                 <visible>true</visible>
                 <colordiffuse>FFFFFFFF</colordiffuse>
-                <texturefocus>default/button-focus.png</texturefocus>
-                <texturenofocus>default/button-nofocus.png</texturenofocus>
+                <texturefocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-focus.png</texturefocus>
+                <texturenofocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-nofocus.png</texturenofocus>
                 <label>
                 </label>
                 <font>font12</font>
@@ -1388,8 +1316,8 @@
                 <height>40</height>
                 <visible>true</visible>
                 <colordiffuse>FFFFFFFF</colordiffuse>
-                <texturefocus>default/button-focus.png</texturefocus>
-                <texturenofocus>default/button-nofocus.png</texturenofocus>
+                <texturefocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-focus.png</texturefocus>
+                <texturenofocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-nofocus.png</texturenofocus>
                 <label>
                 </label>
                 <font>font12</font>
@@ -1409,8 +1337,8 @@
                 <height>40</height>
                 <visible>true</visible>
                 <colordiffuse>FFFFFFFF</colordiffuse>
-                <texturefocus>default/button-focus.png</texturefocus>
-                <texturenofocus>default/button-nofocus.png</texturenofocus>
+                <texturefocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-focus.png</texturefocus>
+                <texturenofocus>special://xbmc/addons/service.openelec.settings/resources/skins/Default/media/default/button-nofocus.png</texturenofocus>
                 <label>
                 </label>
                 <font>font12</font>
