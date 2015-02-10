@@ -5033,7 +5033,7 @@
 				<posx>121</posx>
 				<posy>80</posy>
 				<width>430</width>
-				<height>470</height>
+				<height>490</height>
 				<label>$INFO[ListItem.Plot]</label>
 				<textcolor>CCFFFFFF</textcolor>
 				<font>Font-Condensed-S34</font>
