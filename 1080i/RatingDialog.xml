@@ -71,8 +71,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/1.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/1.png</texturenofocus>
+					<texturefocus>dialogs/trakt/1.png</texturefocus>
+					<texturenofocus>dialogs/trakt/1.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11039</ondown>
@@ -88,8 +88,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/2.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/2.png</texturenofocus>
+					<texturefocus>dialogs/trakt/2.png</texturefocus>
+					<texturenofocus>dialogs/trakt/2.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11030</ondown>
@@ -105,7 +105,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/2_b.png</texture>
+					<texture>dialogs/trakt/2_b.png</texture>
 					<visible>Control.HasFocus(11030)</visible>
 				</control>
 				<control type="button" id="11032">
@@ -115,8 +115,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/3.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/3.png</texturenofocus>
+					<texturefocus>dialogs/trakt/3.png</texturefocus>
+					<texturenofocus>dialogs/trakt/3.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11031</ondown>
@@ -132,7 +132,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/3_b.png</texture>
+					<texture>dialogs/trakt/3_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)</visible>
 				</control>
 				<control type="button" id="11033">
@@ -142,8 +142,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/4.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/4.png</texturenofocus>
+					<texturefocus>dialogs/trakt/4.png</texturefocus>
+					<texturenofocus>dialogs/trakt/4.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11032</ondown>
@@ -159,7 +159,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/4_b.png</texture>
+					<texture>dialogs/trakt/4_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)</visible>
 				</control>
 				<control type="button" id="11034">
@@ -169,8 +169,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/5.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/5.png</texturenofocus>
+					<texturefocus>dialogs/trakt/5.png</texturefocus>
+					<texturenofocus>dialogs/trakt/5.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11033</ondown>
@@ -186,7 +186,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/5_b.png</texture>
+					<texture>dialogs/trakt/5_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)</visible>
 				</control>
 				<control type="button" id="11035">
@@ -196,8 +196,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/6.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/6.png</texturenofocus>
+					<texturefocus>dialogs/trakt/6.png</texturefocus>
+					<texturenofocus>dialogs/trakt/6.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11034</ondown>
@@ -213,7 +213,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/6_b.png</texture>
+					<texture>dialogs/trakt/6_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)</visible>
 				</control>
 				<control type="button" id="11036">
@@ -223,8 +223,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/7.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/7.png</texturenofocus>
+					<texturefocus>dialogs/trakt/7.png</texturefocus>
+					<texturenofocus>dialogs/trakt/7.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11035</ondown>
@@ -240,7 +240,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/7_b.png</texture>
+					<texture>dialogs/trakt/7_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)</visible>
 				</control>
 				<control type="button" id="11037">
@@ -250,8 +250,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/8.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/8.png</texturenofocus>
+					<texturefocus>dialogs/trakt/8.png</texturefocus>
+					<texturenofocus>dialogs/trakt/8.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11036</ondown>
@@ -267,7 +267,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/8_b.png</texture>
+					<texture>dialogs/trakt/8_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)</visible>
 				</control>
 				<control type="button" id="11038">
@@ -277,8 +277,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/9.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/9.png</texturenofocus>
+					<texturefocus>dialogs/trakt/9.png</texturefocus>
+					<texturenofocus>dialogs/trakt/9.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11037</ondown>
@@ -294,7 +294,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/9_b.png</texture>
+					<texture>dialogs/trakt/9_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)</visible>
 				</control>
 				<control type="button" id="11039">
@@ -304,8 +304,8 @@
 					<width>60</width>
 					<height>60</height>
 					<label></label>
-					<texturefocus>special://home/addons/script.trakt/resources/skins/Default/media/10.png</texturefocus>
-					<texturenofocus>special://home/addons/script.trakt/resources/skins/Default/media/10.png</texturenofocus>
+					<texturefocus>dialogs/trakt/10.png</texturefocus>
+					<texturenofocus>dialogs/trakt/10.png</texturenofocus>
 					<align>center</align>
 					<aligny>center</aligny>
 					<ondown>11038</ondown>
@@ -321,7 +321,7 @@
 					<posy>205</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture>special://home/addons/script.trakt/resources/skins/Default/media/10_b.png</texture>
+					<texture>dialogs/trakt/10_b.png</texture>
 					<visible>Control.HasFocus(11030)|Control.HasFocus(11031)|Control.HasFocus(11032)|Control.HasFocus(11033)|Control.HasFocus(11034)|Control.HasFocus(11035)|Control.HasFocus(11036)|Control.HasFocus(11037)|Control.HasFocus(11038)</visible>
 				</control>
 			</control>
