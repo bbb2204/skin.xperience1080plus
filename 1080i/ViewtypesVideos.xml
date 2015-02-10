@@ -5266,7 +5266,7 @@
                             <textcolor>77white</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
-                             <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
+                            <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible>
                         </control>
                         <control type="label">
                             <posx>100</posx>
