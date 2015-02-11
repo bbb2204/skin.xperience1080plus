@@ -36,6 +36,7 @@
                     <scroll>false</scroll>
                     <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
 					<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+					<include>visiblehidefadeinfo</include>
 					<visible>Skin.HasSetting(Guide.HideWeather)</visible>	
                 </control>
 				<control type="image">
@@ -56,14 +57,15 @@
 					<description>Clock label</description>
 					<posx>335r</posx>
 					<posy>950</posy>
-					<width>300</width>
+					<width>100</width>
 					<height>100</height>
-					<label>[B]$INFO[System.Date(DDD d)] • $INFO[System.Time][/B]</label>
+					<label>$INFO[System.Time][/B]</label>
 					<font>Font-Condensed-S34-B</font>
 					<textcolor>eewhite</textcolor>
 					<shadowcolor>22000000</shadowcolor>
 					<align>right</align>
 					<scroll>false</scroll>
+					<include>visiblehidefadeinfo</include>
 					<visible>Skin.HasSetting(Guide.HideClock)</visible>	
 					<animation effect="slide" end="344" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather">Conditional</animation>	
 					<animation effect="slide" end="172" time="300" tween="sine" easing="inout" condition="Skin.HasSetting(Guide.HideWeather) + !IsFetched.Weather + !Control.IsEnabled(weather)">Conditional</animation>
