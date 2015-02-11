@@ -4949,6 +4949,7 @@
 				<width>1216</width>
 				<height>66</height>
 				<label>$INFO[ListItem.Label]</label>
+				<selectedcolor>SelectedGreen</selectedcolor>
 				<textcolor>aawhite</textcolor>
 				<font>Font-Condensed-S38</font>
 				<align>left</align>
@@ -4972,7 +4973,7 @@
 				<posy>680</posy>
 				<width>430</width>
 				<font>Font-Condensed-S30</font>
-				<label>$VAR[ListItem.Year]</label>
+				<label>$INFO[ListItem.Year]</label>
 				<textcolor>77white</textcolor>
 				<shadowcolor>22000000</shadowcolor>
 				<align>left</align>
