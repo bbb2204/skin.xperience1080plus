@@ -246,8 +246,8 @@
                     <textcolor>eewhite</textcolor>
                     <align>left</align>
                     <scroll>false</scroll>  
-                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="Control.HasFocus(9333) | Control.HasFocus(9335) | Control.HasFocus(1101) | Control.HasFocus(1104) | Control.HasFocus(1105) | Control.HasFocus(1110) | Control.HasFocus(70) | Control.HasFocus(71) | Window.IsActive(script-Actors-DialogInfo.xml) | [!IsEmpty(Window(3004).Property(ChooseArt)) + [Window.IsActive(filebrowser) | Window.IsActive(selectdialog) | Window.IsActive(DialogSelect.xml)]]">Conditional</animation>
-                     <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
+                    <animation effect="fade" start="100" end="50" time="200" tween="sine" easing="inout" condition="!Control.HasFocus(50)">Conditional</animation>
+                    <visible>IntegerGreaterThan(Container(50).NumItems,0)</visible>
                 </control>
                 <!-- Right Arrow Label -->
                 <control type="label">
