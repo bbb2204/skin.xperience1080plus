@@ -1,4 +1,16 @@
-﻿[B]3.45.30[/B]
+[B]3.45.30-alpha5[/B]
+• Correction of Date/Time and Weather animations on Home (freeman212 merge)
+
+[B]3.45.30-alpha4[/B]
+• New Rating textures for the trakt add-on theme integration.
+
+[B]3.45.30-alpha3[/B]
+• Corrects option arrow from Left/Right to Up/Down on Fanart Viewtype.
+
+[B]3.45.30-alpha2[/B]
+• Fixes Date/Time width on Home.
+
+[B]3.45.30[/B]
 • Integration of trakt theme files into skin.
 (This only applies if you use the trakt add-on, otherwise you will see no change).
 • Change Skin Settings order for Overlay (now at top) and renamed to 'Set Custom Overlay'
