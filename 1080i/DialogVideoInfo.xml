@@ -310,7 +310,7 @@
                     <posx>100</posx>
                     <posy>220</posy>
                     <control type="group">
-                        <visible>!Player.HasVideo</visible>
+                        <visible>!Player.HasVideo | Skin.HasSetting(BackgroundVideo)</visible>
                         <include>visiblehidefadeinfo</include>
                         <control type="image">
                             <posx>0</posx>
@@ -329,7 +329,7 @@
                         </control>
                     </control>
                     <control type="group">
-                        <visible>Player.HasVideo</visible>
+                        <visible>Player.HasVideo + !Skin.HasSetting(BackgroundVideo)</visible>
                         <include>visiblehidefadeinfo</include>
                         <control type="image">
                             <description>black</description>
@@ -432,10 +432,10 @@
                     <onright condition="!Control.IsVisible(70) + !Control.IsVisible(71) + !IntegerGreaterThan(Container(50).NumItems,0)">SetProperty(BounceRight,1,Home)</onright>
                     <onright condition="!Control.IsVisible(70) + !Control.IsVisible(71) + IntegerGreaterThan(Container(50).NumItems,0)">SendClick(2003,5)</onright>
                     <onright condition="!Control.IsVisible(70) + !Control.IsVisible(71) + IntegerGreaterThan(Container(50).NumItems,0)">SetFocus(9334)</onright>
-                    <onup condition="!Player.HasVideo">9333</onup>
-                    <onup condition="Player.HasVideo">9336</onup>
-                    <ondown condition="!Player.HasVideo">9333</ondown>
-                    <ondown condition="Player.HasVideo">9336</ondown>
+                    <onup condition="!Player.HasVideo | Skin.HasSetting(BackgroundVideo)">9333</onup>
+                    <onup condition="Player.HasVideo + !Skin.HasSetting(BackgroundVideo)">9336</onup>
+                    <ondown condition="!Player.HasVideo | Skin.HasSetting(BackgroundVideo)">9333</ondown>
+                    <ondown condition="Player.HasVideo + !Skin.HasSetting(BackgroundVideo)">9336</ondown>
                     <scrolltime>0</scrolltime>
                     <orientation>vertical</orientation>
                     <focusposition>0</focusposition>
