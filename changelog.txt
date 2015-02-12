@@ -1,3 +1,15 @@
+[B]3.45.31[/B]
+• Updated language files from Transifex
+• Support now for English, English (US), German, Dutch, French (Canada), Lithuanian, Portuguese (Brazil), Polish and Korean.
+
+[B]3.45.30-alpha8[/B]
+• New Clock texture for both themes (xperience theme now uses appropriate texture).
+• Removed non-required texture from both themes.
+• One XML file updated.
+
+[B]3.45.30-alpha7[/B]
+• Corrected overlap in text when pressing O to see codec information and stats.
+
 [B]3.45.30-alpha6[/B]
 • Incorrect string corrected
 
