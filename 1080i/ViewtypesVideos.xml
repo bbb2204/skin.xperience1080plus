@@ -466,7 +466,7 @@
                         <height>54</height>
                         <font>Font-Condensed-S28</font>
                         <align>left</align>
-                        <label>$INFO[ListItem.Premiered]</label>
+                        <label>$INFO[ListItem.Premiered] • $INFO[ListItem.Studio]</label>
                         <selectedcolor>D4FFFFFF</selectedcolor>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
@@ -960,7 +960,7 @@
                             <height>54</height>
                             <font>Font-Condensed-S28</font>
                             <align>left</align>
-                            <label>$INFO[ListItem.Premiered]</label>
+                            <label>$INFO[ListItem.Premiered] • $INFO[ListItem.Studio]</label>
                             <selectedcolor>D4FFFFFF</selectedcolor>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
