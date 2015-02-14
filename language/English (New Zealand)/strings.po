@@ -586,15 +586,7 @@ msgctxt "#41448"
 msgid "Pictures"
 msgstr ""
 
-#empty string with id 41449
-
-msgctxt "#41450"
-msgid "New Movies"
-msgstr ""
-
-msgctxt "#41451"
-msgid "New TV Shows"
-msgstr ""
+#empty strings from id 41449 to 41451
 
 msgctxt "#41452"
 msgid "No Media Playing"

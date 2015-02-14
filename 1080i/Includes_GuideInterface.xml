@@ -267,7 +267,7 @@
                 <visible>Skin.HasSetting(Guide.Custom2) + !IsEmpty(Skin.String(Guide.Custom2.Path))</visible>
             </item>
             <item id="7">
-                <label>$LOCALIZE[41450]</label>
+                <label>$LOCALIZE[41552]</label>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(videos,RecentlyAddedMovies,return)</onclick>
                 <visible>!Skin.HasSetting(Guide.Custom3) + IsEmpty(Skin.String(Guide.Custom3.Path))</visible>
@@ -282,7 +282,7 @@
                 <visible>Skin.HasSetting(Guide.Custom3) + !IsEmpty(Skin.String(Guide.Custom3.Path))</visible>
             </item>
             <item id="9">
-                <label>$LOCALIZE[41451]</label>
+                <label>$LOCALIZE[41553]</label>
                 <include>GuideDialogClose</include>
                 <onclick>ActivateWindow(videos,RecentlyAddedEpisodes,return)</onclick>
                 <visible>!Skin.HasSetting(Guide.Custom4) + IsEmpty(Skin.String(Guide.Custom4.Path))</visible>
