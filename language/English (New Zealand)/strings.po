@@ -1072,7 +1072,7 @@ msgid "Thumbnail List"
 msgstr ""
 
 msgctxt "#42235"
-msgid "Display Date & Time"
+msgid "Display Time"
 msgstr ""
 
 msgctxt "#42236"
@@ -1096,7 +1096,7 @@ msgid "TV Show Tiles (Green)"
 msgstr ""
 
 msgctxt "#42241"
-msgid "Music Tiles (Orange)"
+msgid "Music Tiles (Red)"
 msgstr ""
 
 msgctxt "#42242"
