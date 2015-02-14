@@ -667,7 +667,7 @@ msgid "New Movies"
 msgstr ""
 
 msgctxt "#41553"
-msgid "New TV Shows"
+msgid "New Episodes"
 msgstr ""
 
 msgctxt "#41554"
