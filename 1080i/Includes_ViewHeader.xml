@@ -32,7 +32,7 @@
         <value condition="substring(Container.FolderPath,musicdb://compilations/,left)">$LOCALIZE[521]</value>
         <value condition="substring(Container.FolderPath,musicdb://years/,left)">$LOCALIZE[652]</value>
         <value condition="stringcompare(Container.FolderPath,special://musicplaylists/) | substring(Container.FolderPath,special://profile/playlists/music/,left)">$LOCALIZE[136]</value>
-        <value condition="stringcompare(Container.FolderPath,addons://sources/audio/) | substring(Container.FolderPath,plugin://plugin,left)">$LOCALIZE[1038]</value>
+        <value condition="stringcompare(Container.FolderPath,addons://sources/audio/) | substring(Container.FolderPath,plugin://plugin,left)">$INFO[Container.FolderName]</value>
         <value>$LOCALIZE[2]</value>
     </variable>
     
@@ -338,7 +338,7 @@
                     <textcolor>aawhite</textcolor>
                     <scroll>false</scroll>
                     <align>left</align>
-                    <visible>!stringcompare(Container.FolderPath,musicdb://genres/) + !stringcompare(Container.FolderPath,musicdb://artists/) + !stringcompare(Container.FolderPath,musicdb://albums/) + !stringcompare(Container.FolderPath,musicdb://songs/) + !stringcompare(Container.FolderPath,musicdb://top100/) + !stringcompare(Container.FolderPath,musicdb://recentlyaddedalbums/) + !stringcompare(Container.FolderPath,musicdb://recentlyplayedalbums/) + !stringcompare(Container.FolderPath,musicdb://compilations/) + !stringcompare(Container.FolderPath,musicdb://years/) + !stringcompare(Container.FolderPath,musicdb://top100/songs/) + !stringcompare(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums)</visible>
+                    <visible>stringcompare(Container.FolderPath,addons) + !stringcompare(Container.FolderPath,musicdb://genres/) + !stringcompare(Container.FolderPath,musicdb://artists/) + !stringcompare(Container.FolderPath,musicdb://albums/) + !stringcompare(Container.FolderPath,musicdb://songs/) + !stringcompare(Container.FolderPath,musicdb://top100/) + !stringcompare(Container.FolderPath,musicdb://recentlyaddedalbums/) + !stringcompare(Container.FolderPath,musicdb://recentlyplayedalbums/) + !stringcompare(Container.FolderPath,musicdb://compilations/) + !stringcompare(Container.FolderPath,musicdb://years/) + !stringcompare(Container.FolderPath,musicdb://top100/songs/) + !stringcompare(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums)</visible>
                 </control>
                 <control type="label">
                     <width min="0" max="500">auto</width>
