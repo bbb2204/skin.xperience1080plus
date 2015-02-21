@@ -459,7 +459,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <description>Year / Genre</description>
+                        <description>YouTube: Upload Date / Channel Name</description>
                         <posx>362</posx>
                         <posy>43</posy>
                         <width>1028</width>
@@ -470,6 +470,21 @@
                         <selectedcolor>D4FFFFFF</selectedcolor>
                         <textcolor>99FFFFFF</textcolor>
                         <scroll>false</scroll>
+                        <visible>substring(Container.FolderPath,plugin://plugin.video.youtube)</visible>
+                    </control>
+                    <control type="label">
+                        <description>Premiere Date</description>
+                        <posx>362</posx>
+                        <posy>43</posy>
+                        <width>1028</width>
+                        <height>54</height>
+                        <font>Font-Condensed-S28</font>
+                        <align>left</align>
+                        <label>$INFO[ListItem.Premiered]</label>
+                        <selectedcolor>D4FFFFFF</selectedcolor>
+                        <textcolor>99FFFFFF</textcolor>
+                        <scroll>false</scroll>
+                        <visible>!substring(Container.FolderPath,plugin://plugin.video.youtube)</visible>
                     </control>
                     <control type="label">
                         <posx>366</posx>
@@ -953,7 +968,7 @@
                             <textcolor>eewhite</textcolor>
                         </control>
                         <control type="label">
-                            <description>Premiered / Duration</description>
+                            <description>YouTube: Upload Date / Channel Name</description>
                             <posx>362</posx>
                             <posy>43</posy>
                             <width>1028</width>
@@ -964,6 +979,21 @@
                             <selectedcolor>D4FFFFFF</selectedcolor>
                             <textcolor>D4FFFFFF</textcolor>
                             <scroll>false</scroll>
+                            <visible>substring(Container.FolderPath,plugin://plugin.video.youtube)</visible>
+                        </control>
+                        <control type="label">
+                            <description>Premiere Date</description>
+                            <posx>362</posx>
+                            <posy>43</posy>
+                            <width>1028</width>
+                            <height>54</height>
+                            <font>Font-Condensed-S28</font>
+                            <align>left</align>
+                            <label>$INFO[ListItem.Premiered]</label>
+                            <selectedcolor>D4FFFFFF</selectedcolor>
+                            <textcolor>D4FFFFFF</textcolor>
+                            <scroll>false</scroll>
+                            <visible>!substring(Container.FolderPath,plugin://plugin.video.youtube)</visible>
                         </control>
                         <control type="image">
                             <description>Watched/unwatched overlay</description>
