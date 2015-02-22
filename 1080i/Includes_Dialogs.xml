@@ -1915,12 +1915,18 @@
             <animation type="WindowOpen" condition="Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings)" reversible="false">
                 <effect type="fade" start="0" end="100" time="0" delay="500" />
             </animation>
-            <control type="image">
+            <!-- <control type="image">
                 <include>FullscreenDimensions</include>
                 <texture background="true">fade/black_content.png</texture>
                 <animation effect="fade" time="300" start="0" end="95" tween="sine" easing="out">WindowOpen</animation>
                 <animation effect="fade" time="300" start="95" end="0" tween="sine" easing="in">WindowClose</animation>
                 <visible>Window.IsVisible(fullscreenvideo)</visible>
+            </control> -->
+            <control type="image">
+                <include>FullscreenDimensions</include>
+                <texture background="true">fade/overlay.png</texture>
+                <animation effect="fade" time="300" start="0" end="100" tween="sine" easing="out">WindowOpen</animation>
+                <animation effect="fade" time="300" start="100" end="0" tween="sine" easing="in">WindowClose</animation>
             </control>
             <control type="group">
                 <include>KeyboardAnimations</include>
