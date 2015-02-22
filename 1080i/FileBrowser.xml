@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol always="true">450</defaultcontrol>
-    <!-- <include condition="IsEmpty(Window(3004).Property(ChooseArt))">ZOrder3</include>
-    <include condition="!IsEmpty(Window(3004).Property(ChooseArt))">ZOrder0</include> -->
-    <include>ZOrder3</include>
+    <include condition="IsEmpty(Window(3004).Property(ChooseArt))">ZOrder3</include>
+    <include condition="!IsEmpty(Window(3004).Property(ChooseArt))">ZOrder0</include>
     <onload condition="Window.IsActive(networksetup)">SetProperty(ShowDialog,1,Home)</onload>
     <onload condition="Window.IsActive(networksetup)">SetProperty(ShowDialog,1)</onload>
     <onunload>ClearProperty(ShowDialog,home)</onunload>
@@ -16,7 +15,7 @@
     <onunload condition="!IsEmpty(Window(selectdialog).Property(Property))">ClearProperty(Property,selectdialog)</onunload>
     
     <controls>
-        <include condition="IsEmpty(Window(3004).Property(ChooseArt)) | Window.IsVisible(musicinformation)">FileBrowserDefault</include>
-        <include condition="!IsEmpty(Window(3004).Property(ChooseArt)) + !Window.IsVisible(musicinformation)">FileBrowserArt</include>
+        <include condition="IsEmpty(Window(3004).Property(ChooseArt))">FileBrowserDefault</include>
+        <include condition="!IsEmpty(Window(3004).Property(ChooseArt))">FileBrowserArt</include>
     </controls>
 </window>
