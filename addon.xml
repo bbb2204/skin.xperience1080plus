@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.xperience1080" version="3.49.00" name="Xperience1080" provider-name="Piers|freem@n">
+<addon id="skin.xperience1080+" version="3.50.02" name="Xperience1080+" provider-name="Piers|freem@n">
 	<requires>
 		<import addon="xbmc.gui" version="5.3.0" />
 		<import addon="service.skin.widgets" version="0.0.29" />
@@ -16,15 +16,12 @@
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-        <summary lang="de">1080X für Kodi 14.x aktualisiert von Piers - freem@n's Mod</summary>
-        <summary lang="en">1080XF by Piers, xhaggi and Black - modded by freem@n</summary>
-        <description lang="de">1080XF liefert Ihnen eine Haut mit gesundem Menschenverstand Home-Bildschirm, einem Schwerpunkt auf grafische Qualität, flüssige Animationen und sehr gut integrierte Funktionen / Add-ons.</description>
-        <description lang="en">1080XF delivers a common sense home screen, a focus on modern textures, smooth animations and very well integrated functions/add-ons.</description>
-        <disclaimer lang="de">Nur kompatibel mit Kodi 14.x "Helix"</disclaimer>
-        <disclaimer lang="en">Kodi v14.x Helix</disclaimer>
+        <summary lang="en">A clean, modern, 1920x1080 panel-based skin</summary>
+		<description lang="en">Xperience1080 provides a clean, full-width, panel-based interface. Mod by freem@n[CR]Thanks to: xhaggi, Black</description>
+        <disclaimer lang="en">Mouse and Touch devices are not supported</disclaimer>
         <platform>all</platform>
         <license>CCACC BY-NC-SA 3.0</license>
-        <forum>http://forum.kodi.tv/showthread.php?tid=210425</forum>
-        <source>https://github.com/freeman212/1080X</source>
+        <forum>http://forum.kodi.tv/forumdisplay.php?fid=197</forum>
+        <source>https://github.com/vonH/Xperience1080/tree/Helix</source>
 	</extension>
 </addon>

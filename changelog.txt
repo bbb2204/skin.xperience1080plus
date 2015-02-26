@@ -1,9 +1,31 @@
-[B]3.45.51[/B]
+[B]3.50.02[/B]
+• Corrects overlay not displaying on startup for new installs
+• Replaces overlay.png with Xperience1080 overlay (14 options are available)
+
+[B]3.50.01[/B]
+• Corrects - instead of noop value
+• Corrects incorrectly defined variable
+• Corrects unmatched parenthesis for episodes
+• Corrects incorrect ID being used for 'No Media Content Available' in Movies on Home
+• Removes reference to 1080XF in Skin Header
+• Removes unrequired animation from codecinfo on Music, adds matching styling to text
+
+[B]3.49.24[/B]
+• Changes Song Count to Album count (requested more than once).
+• Corrects Search going to Power button instead of Search 'bar'.
+
+[B]3.49.22[/B]
+• Adds an option to reset the skin to default settings, use with caution.
+
+[B]3.49.21[/B]
 • Changes to small progress indicator to Video and Audio when pressing 'M'.
 • Includes current position/end time in same area, in keeping with the skin.
 
-[B]3.45.50[/B]
+[B]3.49.20[/B]
 • Adds small progress indicator to Video and Audio when pressing 'M'.
+
+[B]3.49.10[/B]
+• New Helix branch based on 1080XF
 
 [B]3.45.496[/B]
 • File Manager now corrected.
