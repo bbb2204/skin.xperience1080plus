@@ -222,7 +222,7 @@
                     <description>button area</description>
                     <posx>544</posx>
                     <posy>180</posy>
-                    <width>86</width>
+                    <width>64</width>
                     <height>60</height>
                     <itemgap>0</itemgap>
                     <onleft>8000</onleft>
@@ -231,14 +231,14 @@
                     <ondown>12</ondown>
                     <orientation>horizontal</orientation>
                     <control type="button" id="15">
-                        <width>43</width>
+                        <width>32</width>
                         <height>60</height>
                         <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                         <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
                         <onclick>DecreaseRating</onclick>
                     </control>
                     <control type="button" id="16">
-                        <width>43</width>
+                        <width>32</width>
                         <height>60</height>
                         <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                         <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
