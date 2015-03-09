@@ -331,7 +331,7 @@
                         </control>
                         <control type="group">
                             <posy>825</posy>
-                            <visible>VideoPlayer.Content(Episodes) + !SubString(Player.Folderpath,googlevideo.com)</visible>
+                            <visible>VideoPlayer.Content(Episodes) + !SubString(Player.Folderpath,googlevideo.com) + !SubString(Player.Folderpath,vimeo)</visible>
                             <control type="image">
                                 <posx>80</posx>
                                 <posy>-35</posy>
@@ -447,7 +447,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <visible>!VideoPlayer.Content(Movies) + ![VideoPlayer.Content(Episodes) + !SubString(Player.Folderpath,googlevideo.com)] + !VideoPlayer.Content(LiveTV)</visible>
+                            <visible>!VideoPlayer.Content(Movies) + ![VideoPlayer.Content(Episodes) + !SubString(Player.Folderpath,googlevideo.com) + !SubString(Player.Folderpath,vimeo)] + !VideoPlayer.Content(LiveTV)</visible>
                             <posy>825</posy>
                             <control type="image">
                                 <posx>80</posx>
@@ -458,7 +458,7 @@
                                 <bordertexture border="30">osd/fullscreen/cover-shadow.png</bordertexture>
                                 <texture background="true">$INFO[VideoPlayer.Cover]</texture>
                                 <aspectratio aligny="top">keep</aspectratio>
-                                <visible>!SubString(Player.Folderpath,googlevideo.com)</visible>
+                                <visible>!SubString(Player.Folderpath,googlevideo.com) + !SubString(Player.Folderpath,vimeo)</visible>
                             </control>
 							<control type="image">
 								<posx>-2</posx>
@@ -469,7 +469,7 @@
                                 <bordertexture border="30">osd/fullscreen/widescreen-shadow.png</bordertexture>
                                 <texture background="true">$INFO[VideoPlayer.Cover]</texture>
 								<aspectratio align="center">scale</aspectratio>
-								<visible>SubString(Player.Folderpath,googlevideo.com)</visible>
+								<visible>SubString(Player.Folderpath,googlevideo.com) | SubString(Player.Folderpath,vimeo)</visible>
                             </control>
                             <control type="label">
                                 <posx>360</posx>
