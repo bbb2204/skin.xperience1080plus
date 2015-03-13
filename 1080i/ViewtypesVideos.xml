@@ -5733,9 +5733,9 @@
                         </control>
                         <control type="image">
                             <posx>33</posx>
-                            <posy>35</posy>
+                            <posy>34</posy>
                             <width>466</width>
-                            <height>263</height>
+                            <height>264</height>
                             <texture diffuse="views/banner/diffuse/episode.png" background="true">$VAR[BannerLandscape]</texture>
                             <aspectratio scalediffuse="false">scale</aspectratio>
                         </control>
