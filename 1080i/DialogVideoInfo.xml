@@ -826,6 +826,31 @@
                             <scroll>false</scroll>
                         </control>
                     </control>
+                    <control type="group">
+                        <!-- Channel -->
+                        <width>1044</width>
+                        <height>59</height>
+                        <visible>substring(Container.FolderPath,plugin://plugin.video) + !IsEmpty(ListItem.Artist)</visible>
+                        <control type="image">
+                            <posx>0</posx>
+                            <posy>-6</posy>
+                            <width>49</width>
+                            <height>49</height>
+                            <texture>views/other/director-icon.png</texture>
+                        </control>
+                        <control type="label">
+                            <posx>50</posx>
+                            <posy>0</posy>
+                            <width>1002</width>
+                            <height>36</height>
+                            <font>Font-Condensed-S34</font>
+                            <align>left</align>
+                            <label>$INFO[ListItem.Artist]</label>
+                            <textcolor>aawhite</textcolor>
+                            <scroll>false</scroll>
+                        </control>
+                    </control>
+
                     <control type="grouplist">
                         <width>1044</width>
                         <height>40</height>
