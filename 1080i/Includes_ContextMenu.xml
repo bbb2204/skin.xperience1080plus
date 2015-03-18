@@ -110,7 +110,7 @@
                     <label>rate on trakt.tv</label>
                     <onclick>RunScript(script.trakt,action=rate)</onclick>
                     <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
-					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(episodes)] + System.HasAddon(script.trakt) + Control.IsVisible(1006) + !substring(ListItem.Path,plugin.video.youtube) + !substring(ListItem.Path,plugin.video.vimeo)</visible>
+					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + System.HasAddon(script.trakt) + Control.IsVisible(1006) + !substring(ListItem.Path,plugin.video.youtube) + !substring(ListItem.Path,plugin.video.vimeo)</visible>
                 </control>
             </control>
             <control type="group">
