@@ -137,7 +137,7 @@
 				<visible>!Weather.IsFetched | !Skin.HasSetting(Guide.HideWeather)</visible>
             </control>			
             <control type="group">
-                <visible>![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                <visible>![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)] + Skin.HasSetting(Guide.HideWeather)</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Small weather</description>
@@ -163,7 +163,7 @@
                 </control>
             </control>
             <control type="group">
-                <visible>stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)</visible>
+                <visible>stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/) + Skin.HasSetting(Guide.HideWeather)</visible>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <description>Weather loading background</description>
