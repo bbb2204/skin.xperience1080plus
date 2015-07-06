@@ -4,7 +4,6 @@
     <allowoverlay>yes</allowoverlay>
     <views>50,52,53,54,55,500,501,502,60</views>
     <backgroundcolor>0</backgroundcolor>
-    <onload condition="System.HasAddon(script.tvtunes) + Library.HasContent(TVShows) + !Player.HasMedia + Skin.HasSetting(TVTunes.Enabled)">RunScript(script.tvtunes,backend=True&amp;loop=False)</onload>
     <onload condition="System.HasAddon(script.tv.show.next.aired) + Library.HasContent(TVShows) + Skin.HasSetting(NextAired.Enabled)">RunScript(script.tv.show.next.aired,backend=True)</onload>
     <controls>
 
@@ -167,7 +166,6 @@
                         <textcolor>FF484848</textcolor>
                         <focusedcolor>DDFFFFFF</focusedcolor>
                         <textoffsetx>75</textoffsetx>
-                        <scroll>false</scroll>
                         <label>587</label>
                         <pulseonselect>false</pulseonselect>
                         <texturefocus border="62,2,62,2">dialogs/options/buttons/filter-fo.png</texturefocus>

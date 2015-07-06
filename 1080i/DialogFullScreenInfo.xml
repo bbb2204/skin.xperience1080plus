@@ -24,6 +24,8 @@
             <animation effect="slide" start="0,0" end="0,205" time="300" tween="cubic" easing="inout" condition="Window.IsActive(videoosd) | [!Window.IsActive(videoosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]">Conditional</animation>
             <visible>!Window.IsActive(videoosd) + ![!Window.IsActive(videoosd) + [Window.IsActive(SubtitleSearch) | Window.IsActive(pvrguideinfo) | Window.IsActive(pvrosdchannels) | Window.IsActive(pvrosdguide) | Window.IsActive(yesnodialog) | Window.IsActive(okdialog) | Window.IsActive(progressdialog) | Window.IsActive(virtualkeyboard) | Window.IsActive(numericinput) | Window.IsActive(shutdownmenu) | Window.IsActive(osdvideosettings) | Window.IsActive(osdaudiosettings) | Window.IsActive(videobookmarks)]]</visible>
             <control type="grouplist" id="5">
+                <visible>!Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
+                <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>    
                 <posx>1550</posx>
                 <posy>637</posy>
                 <width>300</width>
@@ -45,6 +47,28 @@
                     <onclick condition="VideoPlayer.Content(LiveTV) + !IsEmpty(Window(seekbar).Property(ShowNext))">ClearProperty(ShowNext,seekbar)</onclick>
                     <visible>VideoPlayer.Content(LiveTV)</visible>
                 </control>
+                <control type="togglebutton" id="52">
+                    <posx>4</posx>
+                    <posy>0</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texturefocus border="0,0,100,0">buttons/up-fo.png</texturefocus>
+                    <texturenofocus border="0,0,100,0">buttons/up-nf.png</texturenofocus>
+                    <alttexturefocus border="0,0,100,0">buttons/down-fo.png</alttexturefocus>
+                    <alttexturenofocus border="0,0,100,0">buttons/down-nf.png</alttexturenofocus>
+                    <usealttexture>!IsEmpty(Window(seekbar).Property(ExtendPlot))</usealttexture>
+                    <onclick condition="IsEmpty(Window(seekbar).Property(ExtendPlot))">SetProperty(ExtendPlot,1,seekbar)</onclick>
+                    <onclick condition="!IsEmpty(Window(seekbar).Property(ExtendPlot))">ClearProperty(ExtendPlot,seekbar)</onclick>
+                </control>
+                <control type="button" id="53">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>100</width>
+                    <height>100</height>
+                    <texturenofocus border="100,0,0,0">buttons/cancel-nf.png</texturenofocus>
+                    <texturefocus border="100,0,0,0">buttons/cancel-fo.png</texturefocus>
+                    <onclick>PreviousMenu</onclick>
+                </control>                                                
             </control>
             <control type="textbox">
                 <posx>360</posx>
@@ -57,6 +81,8 @@
                 <align>justify</align>
                 <autoscroll delay="11500" time="5000" repeat="7500">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                 <visible>!IsEmpty(VideoPlayer.Plot) + !IsEmpty(Window(seekbar).Property(ExtendPlot))</visible>
+                <visible>!Window.IsVisible(script-nextup-notification-NextUpInfo.xml)</visible>
+                <visible>!Window.IsVisible(script-nextup-notification-StillWatchingInfo.xml)</visible>
                 <include>visiblehidefadeinfo</include>
             </control>
         </control>

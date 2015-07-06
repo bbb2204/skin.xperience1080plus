@@ -533,7 +533,7 @@
                 <visible>!Window.IsActive(movieinformation) + !Window.IsActive(favourites)</visible>
                 <include>BannerListInfoAnimation</include>
                 <animation effect="slide" end="-76" time="300" tween="sine" easing="inout" condition="Window.IsActive(busydialog)">Conditional</animation>
-                <animation type="Conditional" condition="Window.IsActive(volumebar) | Window.IsActive(extendedprogressdialog) | Window.IsActive(infodialog) | [Player.HasMedia + IsEmpty(Window(videos).property(TvTunesIsAlive))]">
+                <animation type="Conditional" condition="Window.IsActive(volumebar) | Window.IsActive(extendedprogressdialog) | Window.IsActive(infodialog) | [Player.HasMedia + IsEmpty(Window(10025).Property(PlayingBackgroundMedia))]">
                     <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
                     <effect type="zoom" start="100" end="50" center="1745,100" tween="sine" easing="inout" time="300" />
                 </animation>
@@ -555,7 +555,7 @@
                         <posy>33</posy>
                         <width>500</width>
                         <height>120</height>
-                        <label>$INFO[Window(Home).Property(NextAired.AirTime),, • ]$INFO[Window(Home).Property(NextAired.NextDate)]</label>
+                        <label>$INFO[Window(Home).Property(NextAired.AirTime),, • ]$INFO[Window(Home).Property(NextAired.NextDate),, • ]$INFO[Window(Home).Property(NextAired.LatestNumber)]</label>
                         <font>Font-Condensed-S28</font>
                         <textcolor>80FFFFFF</textcolor>
                         <scroll>false</scroll>
@@ -580,7 +580,7 @@
                         <posy>33</posy>
                         <width>500</width>
                         <height>120</height>
-                        <label>$INFO[Window(Home).Property(NextAired.Status),, • ]$INFO[Window(Home).Property(NextAired.LatestDate)]</label>
+                        <label>$INFO[Window(Home).Property(NextAired.Status),, • ]$INFO[Window(Home).Property(NextAired.LatestDate),, • ]$INFO[Window(Home).Property(NextAired.LatestNumber)]</label>
                         <font>Font-Condensed-S28</font>
                         <textcolor>80FFFFFF</textcolor>
                         <scroll>false</scroll>

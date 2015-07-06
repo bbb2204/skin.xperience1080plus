@@ -1,3 +1,275 @@
+﻿[B]4.1.023[/B]
+• Video Extras: animation tweak
+• Extendedinfo: animation tweak
+
+[B]4.1.022[/B]
+• Video Extras: Integrates add-on into skin (context and main)
+• Button added for Video Extras to Movie Information
+
+[B]4.1.013[/B]
+• Episode/Show Play: re-adds Play buttons to episodes and show (displays all seasons)
+
+[B]4.1.012[/B]
+• Next Up Notifications: Change of textures and (small) layout correction
+
+[B]4.1.011[/B]
+• Cinema Experience: added select dialog for playback option.
+
+[B]4.1.010[/B]
+• Next Up Notifications (NextUp): Rating added, re-designed button layout, missing IDs added.
+• Next Up Notifications (ContinueWatching): Rating added, re-designed button layout, moved title, missing IDs added.
+
+[B]4.1.004[/B]
+• DialogNumeric: adds missing background fade when in focus and above addonsettings
+
+[B]4.1.003[/B]
+• Header: corrects Sort By not being displayed in containers with less than 1 page
+• Adds close/more buttons to info when enabled via menu
+
+[B]4.09.99[/B]
+• Fixes a few issues
+• Submit to repo
+
+[B]4.0998[/B]
+• Fixes control not allow button focus for add-on settings with only one option
+• version should not have been 4.1
+• Submit to repo
+
+[B]4.0997[/B]
+• Cleanup and submit to repository.
+
+[B]4.0991.2[/B]
+• Trakt: context menu alignment
+• Textures: created xbt for beta testers. THESE WILL BE REMOVED FROM THE FINAL VERSION (they are created automatically)
+• Theme: renamed 'alterantive' to 'flat'
+• TvTunes: removed skin settings, now disabled via add-on
+• removed extendedinfo as a requirement
+• cleaned up old controls
+
+[B]4.0990.1[/B]
+• Fixed 140 parentheses errors
+
+[B]4.0990[/B]
+• TvTunes: Updates to skin integration
+• Home Widgets: Multiple fixes for extendedinfo widgets
+• Home Widgets: Default behaviour for extendedinfo widget is to now play a trailer for movie, list for all else
+• Other changes and fixes.
+
+[B]4.0985[/B]
+• Alternative Theme: Opacity added to multiple textures
+• Both themes: mini-progress colour changed to blue
+• Extendedinfo: animations changed, DialogVideoInfo removed until completed
+• Language: EN strings updated
+• Trakt: dialogues integrated, context menu supported
+• Metadata Actors: No longer supported, removed.
+• Other changes: see git commits.
+
+[B]4.0973[/B]
+• Search: actors added to global search
+• Trakt: integrated window
+• A few other fixes
+
+[B]4.0920[/B]
+• Corrected: missing parentheses
+• Extendedinfo: a few further updates to animations
+• Trakt: completed context integration, removed due to upcoming context add-ons
+And a few more items
+
+[B]4.091[/B]
+• Version: corrected previous version number
+• Extendedinfo: entirely re-written the extendedinfo dialoginfo 
+• - now includes all options apart from YouTube
+(repo skin version will be 4.1 or higher)
+
+[B]4.202.01[/B]
+• Extendedinfo: Further additions to extendedinfo layout
+
+[B]4.14.01[/B]
+• Special labels: Resolves issue with special episodes displaying incorrect label
+
+[B]4.14.00[/B]
+• Sort By location: Moved sort by label to header for all items. May cause some issues
+
+[B]4.11.00[/B]
+• Textures: Created missing textures for Systeminfo and System header
+
+[B]4.10.12[/B]
+• Trakt QR: Resdesigned QRCode dialog
+
+[B]4.10.10[/B]
+• NextEpisode Add-on: Full skin integration
+• NextEpisode Add-on: Additional textures for both themes
+
+[B]4.09.20[/B]
+• NextEpisode Add-on: Initial skin integration
+
+[B]4.09.10[/B]
+• Home Profile Stats: Reverted change (label is still there, uncomment to use)
+
+[B]4.09.04[/B]
+• Home PVR Widget: Text scrolling only on item focus
+
+[B]4.09.03[/B]
+• Home PVR Widget: Adds missing texture from Loading string
+• Home PVR Widget: Changes texture diffuse for selected
+• Home PVR Widget: Corrects 1px offset
+
+[B]4.09.01[/B]
+• Home PVR Widget: Adds 'up' control to widget, in addition to existing 'down' control
+
+[B]4.09.00[/B]
+• Home: Complete redesign of the Home PVR section
+• Home: Adds PVR Widget
+• Home: Additional EN strings added
+
+[B]4.08.30[/B]
+• Icons: Adds additional icons, Blu-ray, DVD, Amazon, hulu, 4od, Steam, TVTunes, PseudoTV
+• Backgrounds: Adds attitional backgrounds
+
+[B]4.08.20[/B]
+• Tiles: Adds autopath when selecting icon for Home Tiles (extras/icons/home)
+• Tile Textures: Adds 65 new icons to choose from
+
+[B]4.08.13[/B]
+• Fix: Corrects label showing where it should not be
+• Language: EN strings updated
+
+[B]4.08.11[/B]
+• Sounds: Removes Sounds directory and moves sounds to add-on: resource.uisounds.xperience1080
+• Sounds: Adds two additional sounds, one for 'back' and 'screenshot'
+
+[B]4.08.10[/B]
+• Textures: Adds new header texture items for Add-ons (default and alternative themes)
+• Textures: Adds new items to variable
+
+[B]4.08.00[/B]
+• Extendedinfo: Integration start for Extendedinfo DialogVideoInfo
+
+[B]4.07.40[/B]
+• Extendedinfo: Changes focus for cast
+
+[B]4.07.20[/B]
+• Extendedinfo: Changes layout, leaving only Known Movie and Known TV roles
+
+[B]4.07.10[/B]
+• Extendedinfo: adds fade behind slide images
+• Extendedinfo: adds fade when container item is selected
+
+[B]4.07.06[/B]
+• Home: corrects incorrect label for album count on profile
+• Home: adds episode count in addition to tv show count
+• Home: adds song count in addition to album count
+
+[B]4.07.02[/B]
+• Extendedinfo: additional textures added
+
+[B]4.07.01[/B]
+• Extendedinfo: first public release of working alpha for Xperience1080
+
+[B]4.06.00[/B]
+• Extendedinfo: reverts alignment
+
+[B]4.05.70[/B]
+• Extendedinfo: next public release of integration of dialog 1/2
+
+[B]4.05.64[/B]
+• Weather: corrects overlap in string for languages like German
+
+[B]4.05.61[/B]
+• Runtime: swaps ordering for 4.05.60
+
+[B]4.05.60[/B]
+• Runtime: adds runtime to List and InfoList viewtypes for Movies and Episodes
+
+[B]4.05.57[/B]
+• TV Next Aired: corrects mistake in 4.05.56
+
+[B]4.05.56[/B]
+• TV Next Aired: adds episode number in 00x00 format to TV Show Next Aired at the top right TV Shows viewtypes when enabled
+
+[B]4.05.50[/B]
+• Framework: changes the date displayed to the regional format selected
+
+[B]4.05.40[/B]
+• Requirements updated
+• script.globalsearch from 3.0.4 to 4.0.1
+• script.artistslideshow from 1.7.0 to 1.8.2
+
+[B]4.05.30[/B]
+• Full Screen Information: Restores 52 and 53 buttons for information dialog when in full screen, to be fixed in core [xhaggi]
+
+[B]4.05.20[/B]
+• Colours: Restores original colours for select, playing, active item
+
+[B]4.05.18[/B]
+• Thumbnails: Corrects image previews not displaying in Isengard when using the FileBrowser in container 451
+
+[B]4.05.14[/B]
+• Home: Corrects Profile item count ordering and visibility
+
+[B]4.05.00[/B]
+• Weather: New design for standard weather view when fanart is not being used
+
+[B]4.04.11[/B]
+• Language: Additional strings
+
+[B]4.04.10[/B]
+• Add-ons: Updates for 15
+• Additional language strings
+
+[B]4.04.00[/B]
+• Profiles: Fixes outstanding issues for Profile Management
+• Profiles: Updates for 15
+
+[B]4.03.00[/B]
+• Video OSD Settings: Updates for 15
+• Audio OSD Settings: Updates for 15
+
+[B]4.02.70[/B]
+• Playlist Editor: Updates for 15
+
+[B]4.02.65[/B]
+• Peripheral Settings: Updates for 15
+
+[B]4.02.61[/B]
+• Visualisation: Updates for 15
+
+[B]4.02.38[/B]
+• Trakt: QR Dialog integration
+
+[B]4.02.31[/B]
+• GUI Version: Bump to 5.9.0
+
+[B]4.02.30[/B]
+• PVR: Display timer epg info if available
+• PVR: Display no info available if recording info is missing
+• VideoInfo: Separates name and role of actors
+
+[B]4.02.10[/B]
+• Beta extendedinfo integration *ONLY FOR TESTING*
+
+[B]4.02.00[/B]
+• Merges xhaggi's bookmark changes
+• New texture, removal of texture
+
+[B]4.01.00[/B]
+• Adds Premiered date to episodes on certain viewtypes
+• Adds Premiered date to episode info
+
+[B]4.00.08[/B]
+• Removes unrequired buttons from PVR Channel Manager
+• Separates name and role of actors in videoinfo
+• Adjusts control IDs & Label for Visualisations
+• Visual progress seek for Isengard
+• Adds new info label Player.SeekStepSize
+• Temporary fix for Home profile image information
+• Merges of xhaggi's PVR updates
+
+[B]4.00.00-a[/B]
+• Bumps xbmc gui
+• Removes non-required options from addon.xml
+• I just swallowed a filling
+
 [B]3.50.05[/B]
 • Corrects conditional dialog issue when playing music.
 • Updated strings from Transifex: Bulgarian, Catalan, Danish, Dutch, French, German, Korean, Polish, Romanian, Serbian (Cyrillic), Spanish (User submission).

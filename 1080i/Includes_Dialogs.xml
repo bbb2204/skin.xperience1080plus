@@ -33,6 +33,17 @@
         <width>350</width>
         <height>100</height>
     </include>
+
+    <include name="DialogButtonDimensionsRightAlignSmall">
+        <textcolor>ddwhite</textcolor>
+        <focusedcolor>ddwhite</focusedcolor>
+        <disabledcolor>99FFFFFF</disabledcolor>
+        <align>right</align>
+        <textoffsetx>85</textoffsetx>
+        <textwidth>200</textwidth>
+        <width>250</width>
+        <height>100</height>
+    </include>    
 	  
     <include name="PVRGuideInfoZOrder">
         <zorder>3</zorder>
@@ -78,6 +89,12 @@
         <value>$INFO[ListItem.ActualIcon,views/fallbacks/,/banner.png]</value>
     </variable>
     
+	<variable name="SeekLabel">
+		<value condition="!IsEmpty(Player.SeekStepSize)">$INFO[Player.SeekStepSize,$LOCALIZE[773] ,]</value>
+        <value condition="Player.DisplayAfterSeek">$INFO[Player.SeekOffset,$LOCALIZE[773] ,]</value>
+	    <value condition="Player.Seeking">$LOCALIZE[773]</value>
+    </variable>
+
     <include name="ArtDialogPanelWidthPoster">
         <width>992</width>
     </include>
@@ -200,7 +217,7 @@
                         <pagecontrol>30</pagecontrol>
                         <onleft>9</onleft>
                         <onright>30</onright>
-                        <onup>2</onup>
+                        <onup>10</onup>
                         <ondown>2</ondown>
                         <scrolltime tween="cubic" easing="out">500</scrolltime>
                     </control>
@@ -2100,7 +2117,8 @@
                         </control>
                     </focusedlayout>
                 </control>
-                <control type="list" id="451">
+                <control type="list" id="450">
+                <!-- corrects thumbs not displaying in Isengard, commit noted <control type="list" id="451"> -->    
                     <posx>479</posx>
                     <posy>300</posy>
                     <width>644</width>
