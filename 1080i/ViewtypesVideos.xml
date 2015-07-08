@@ -3117,6 +3117,7 @@
             </control>
 
             <control type="group">
+                <animation effect="slide" start="0,0" end="0,250" time="0" condition="!Skin.HasSetting(ExtendedPlot)">Conditional</animation>
                 <visible>!Window.IsActive(movieinformation) + !Window.IsActive(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsActive(script-ExtendedInfo Script-DialogVideoInfo.xml) + IsEmpty(Window(Home).Property(script.metadata.actors.hasparent)) + Control.IsVisible(54) + !Window.IsActive(favourites)</visible>
                 <animation effect="fade" start="100" end="0" time="0" reversible="false">Hidden</animation>
                 <animation effect="fade" start="0" end="100" time="0" delay="1000" reversible="false">Visible</animation>
