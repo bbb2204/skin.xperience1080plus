@@ -1,4 +1,39 @@
-﻿[B]4.1.023[/B]
+﻿[B]4.1.110[/B]
+• OSD: Adds audio channel icon
+• Home Pictures: Fixes onright condition (ty mkortstiege)
+
+[B]4.1.100-beta[/B]
+• Tidy: General tidy up
+• Language: EN updated
+• Home Pictures: Adds a new Pictures section to Home, makes use of extendedinfo
+(partly based on im85288)
+
+[B]4.1.056[/B]
+• TV Rating: Adds rating to TV Show information when network logo is found
+• Play: Changes 'Play' to 'Open' when looking at TV Show overview
+
+[B]4.1.055[/B]
+• OSD: Adds option to hide Clock & Weather in OSD
+• OSD: Adds option to hide Chapter Information in OSD
+
+[B]4.1.054[/B]
+• Audio Channels: Audio channel textures created
+• Audio Channels: Added to movieinformation
+
+[B]4.1.052[/B]
+• Artwork Downloader: Smaller text so more info is visible
+• Language: English strings updated
+
+[B]4.1.050[/B]
+• Studio Flags: Adds additional 370+ studio logos
+• Studio Flags: 1,600+ higher resolution flags
+• Language: English strings updated
+
+[B]4.1.040[/B]
+• Language: All strings now # compliant
+• Language: English strings updated
+
+[B]4.1.023[/B]
 • Video Extras: animation tweak
 • Extendedinfo: animation tweak
 

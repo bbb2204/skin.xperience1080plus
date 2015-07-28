@@ -3,7 +3,7 @@
     <defaultcontrol always="true">10</defaultcontrol>
     <allowoverlay>no</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
-    <include condition="!Skin.HasSetting(Skin.Initialization)">HomeWidgets.Initialization</include>
+    <include>HomeWidgets.Initialization</include>
     <onunload condition="IsEmpty(Window(startup).Property(Started))">SetProperty(Started,1)</onunload>
     <controls>
         <include>CommonSettingsItems</include>
@@ -64,7 +64,7 @@
                 <align>center</align>
                 <aligny>center</aligny>
                 <textcolor>99FFFFFF</textcolor>
-                <label>$LOCALIZE[41601]...</label>
+                <label>$LOCALIZE[31601]...</label>
                 <scroll>false</scroll>
             </control>
         </control>

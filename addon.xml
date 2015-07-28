@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<addon id="skin.xperience1080+" version="4.1.023" name="Xperience1080+" provider-name="Piers|freem@n">
+<addon id="skin.xperience1080+" version="4.1.110" name="Xperience1080+" provider-name="Piers|freem@n">
 	<requires>
 		<import addon="xbmc.gui" version="5.9.0" />
 		<import addon="service.skin.widgets" version="0.0.29" />
@@ -10,18 +10,18 @@
 		<import addon="script.artistslideshow" version="1.8.2" />
 		<import addon="script.videolanguage" version="0.1.0" />
 		<import addon="script.randomandlastitems" version="2.2.2" />
-                <import addon="script.toolbox" version="1.0.1" />
+		<import addon="script.toolbox" version="1.0.1" />
 	</requires>
 	<extension point="xbmc.gui.skin" effectslowdown="0.76" debugging="false">
 		<res width="1920" height="1080" aspect="16:9" default="true" folder="1080i" />
 	</extension>
 	<extension point="xbmc.addon.metadata">
-                <summary lang="en">A clean, modern, 1920x1080 panel-based skin</summary>
-                <description lang="en">Xperience1080 provides a clean, fluid, 1920x1080, panel-based interface. Mod by freem@n[CR]Thanks to: xhaggi, Black</description>
-                <disclaimer lang="en">Mouse and Touch inputs are not supported</disclaimer>
-                <platform>all</platform>
-                <license>Creative Commons Attribution-Noncommercial-Share Alike 3.0</license>
-                <forum>http://forum.kodi.tv/forumdisplay.php?fid=197</forum>
-                <source>https://github.com/vonH/Xperience1080</source>
+        <summary lang="en">A clean, modern, 1920x1080 panel-based skin</summary>
+        <description lang="en">Xperience1080 provides a clean, fluid, 1920x1080, panel-based interface. Mod by freem@n[CR]Thanks to: xhaggi, Black</description>
+        <disclaimer lang="en">Mouse and Touch inputs are not supported</disclaimer>
+        <platform>all</platform>
+        <license>Creative Commons Attribution-Noncommercial-Share Alike 3.0</license>
+        <forum>http://forum.kodi.tv/forumdisplay.php?fid=197</forum>
+        <source>https://github.com/vonH/Xperience1080</source>
 	</extension>
 </addon>
