@@ -42,7 +42,7 @@
                     <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
 					<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
 					<include>visiblehidefadeinfo</include>
-					<visible>Skin.HasSetting(Guide.HideWeather)</visible>
+					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
 				<control type="image">
 					<description>Clock image</description>
@@ -61,7 +61,7 @@
 					<description>Clock label</description>
 					<posx>335r</posx>
 					<posy>955</posy>
-					<width>600</width>
+					<width>100</width>
 					<height>100</height>
 					<label>$INFO[System.Time][/B]</label>
 					<font>Font-Condensed-S34-B</font>
