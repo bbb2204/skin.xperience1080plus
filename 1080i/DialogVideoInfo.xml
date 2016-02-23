@@ -6,7 +6,6 @@
     <onload condition="Skin.HasSetting(MovieInformation.PlayTrailer)">AlarmClock(PlayTrailer,PlayMedia($INFO[ListItem.Trailer],false,1),00:01,silent)</onload>
     <onload condition="System.HasAddon(script.videoextras)">RunScript(script.videoextras,check,"$INFO[ListItem.FilenameAndPath]")</onload>
     <onunload>ClearProperty(fanart_image,home)</onunload>
-    <allowoverlay>no</allowoverlay>
     <controls>
         <!-- Movies, TVShows, Seasons, Episodes -->
         <control type="group">
@@ -552,7 +551,12 @@
                             <label>$LOCALIZE[31022]</label>
                             <onclick>RunScript(script.videoextras,display,"$INFO[ListItem.FilenameAndPath]")</onclick>
                             <visible>System.HasAddon(script.videoextras) + [Container.Content(movies) | Container.Content(episodes) | Container.Content(TVShows) | Container.Content(musicvideos)] + IsEmpty(Window(movieinformation).Property("HideVideoExtrasButton"))</visible>
-                        </item>                        
+                        </item>  
+                        <item id="8">
+                            <description>User Rating</description>
+                            <label>$LOCALIZE[38023]</label>
+                            <onclick>SendClick(2003,7)</onclick>
+                        </item>                      
                     </content>
                 </control>
 
@@ -1157,6 +1161,11 @@
         <!-- Invisible Buttons -->
         <control type="button" id="5">
             <description>Cast/Crew</description>
+            <visible>false</visible>
+        </control>
+
+        <control type="button" id="7">
+            <description>User rating button</description>
             <visible>false</visible>
         </control>
 

@@ -1,4 +1,35 @@
-﻿[B]4.1.110[/B]
+﻿[B]5.0.020[/B]
+• Classic Home: Removes Tile Colour Settings and Navigation Arrow Skin Options if Classic Home is enabled.
+• Classic Home: Fixes focus issue when using toggle to enable/disable Classic Home.
+
+[B]5.0.014[/B]
+• Volume: Adds option to use dB volume indicator instead of percentages.
+• Language: EN strings updated.
+
+[B]5.0.010[/B]
+• Weather: Reverts weather when not using Fanart to original layout.
+• Weather: Moves Weather Fanart settings to Skin Settings -> Views.
+• Language: EN strings updated.
+
+[B]4.1.201[/B]
+• Skin Settings: Fixes up/down for Home Settings.
+
+[B]4.1.201[/B]
+• Skin Settings: Fixes up/down for Home Settings.
+
+[B]4.1.200[/B]
+• Home: Class Home is now available as an option [xhaggi].
+
+[B]4.1.120[/B]
+• Home Pictures: Adds visual indicator if the pictures path has not been set.
+
+[B]4.1.113[/B]
+• 15.1: Fixes crash on startup
+
+[B]4.1.112[/B]
+• 15.1 changes
+
+[B]4.1.110[/B]
 • OSD: Adds audio channel icon
 • Home Pictures: Fixes onright condition (ty mkortstiege)
 

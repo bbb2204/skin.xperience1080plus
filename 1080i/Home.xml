@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>525</defaultcontrol>
-    <allowoverlay>yes</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <onload condition="!Skin.HasSetting(Skin.Initialization)">SetProperty(Skin.Initialization,1,startup)</onload>
     <onload condition="!Skin.HasSetting(Skin.Initialization) | IsEmpty(Window(startup).Property(Started))">AlarmClock(Skin.Initialization,ReplaceWindow(startup),00:01,silent)</onload>
@@ -15,13 +14,16 @@
     <onunload>CancelAlarm(HomeTileMoveTwo,true)</onunload>
     <onunload>CancelAlarm(HomeTileMoveThree,true)</onunload>
     <onunload condition="!Skin.HasSetting(HideHomeProfileInfo)">CancelAlarm(ProfileMove,true)</onunload>
+    <onunload condition="Skin.HasSetting(Skin.Initialization) + !IsEmpty(Window(startup).Property(Started))">CancelAlarm(HomeTileMove,true)</onunload>
     <controls>
         <!-- Backgrounds -->
         <include>CommonItemsHome</include>
         <!-- Home screen -->
-        <include>HomeControlList</include>
+        <include condition="!Skin.HasSetting(HomeClassicMode)">HomeControlList</include>
+        <include condition="Skin.HasSetting(HomeClassicMode)">HomeControlListClassic</include>
         <include>HomeControlListLabels</include>
-        <include>HomeItems</include>
+        <include condition="!Skin.HasSetting(HomeClassicMode)">HomeItems</include>
+        <include condition="Skin.HasSetting(HomeClassicMode)">HomeItemsClassic</include>
         <include>HomeProfileInfo</include>
         <!-- Bottom buttons -->
         <include condition="!Skin.HasSetting(HideHomeButtons)">shutdown-favs</include>

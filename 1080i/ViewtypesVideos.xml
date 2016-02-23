@@ -84,7 +84,7 @@
                         <align>left</align>
                         <label>$INFO[ListItem.Label]</label>
                         <textcolor>aawhite</textcolor>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
@@ -173,7 +173,7 @@
                         <font>Font-Condensed-S34-B</font>
                         <align>left</align>
                         <label>$VAR[ListItem.Label.Offset]</label>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <visible>IsEmpty(ListItem.Genre)</visible>
@@ -187,7 +187,7 @@
                         <font>Font-Condensed-S34-B</font>
                         <align>left</align>
                         <label>$VAR[ListItem.Label.Offset]</label>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <visible>!IsEmpty(ListItem.Genre)</visible>
@@ -441,7 +441,7 @@
                         <font>Font-Condensed-S36</font>
                         <align>left</align>
                         <label>$VAR[ListItem.Season]$VAR[ListItem.Episode]</label>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                          <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
@@ -455,7 +455,7 @@
                         <font>Font-Condensed-S34-B</font>
                         <align>left</align>
                         <label>$VAR[ListItem.Title]</label>
-                        <selectedcolor>SelectedGreen</selectedcolor>
+                        <selectedcolor>SelectedColor</selectedcolor>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                     </control>
@@ -561,7 +561,7 @@
                             <align>left</align>
                             <label>$VAR[ListItem.Label]</label>
                             <textcolor>eewhite</textcolor>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                         </control>
                         <control type="label">
                             <description>Label 2</description>
@@ -640,7 +640,7 @@
                             <font>Font-Condensed-S34-B</font>
                             <align>left</align>
                             <label>$VAR[ListItem.Label.Offset.Focus]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>eewhite</textcolor>
                             <visible>IsEmpty(ListItem.Genre)</visible>
                         </control>
@@ -653,7 +653,7 @@
                             <font>Font-Condensed-S34-B</font>
                             <align>left</align>
                             <label>$VAR[ListItem.Label.Offset.Focus]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>eewhite</textcolor>
                             <visible>!IsEmpty(ListItem.Genre)</visible>
                         </control>
@@ -952,7 +952,7 @@
                             <font>Font-Condensed-S36</font>
                             <align>left</align>
                             <label>$VAR[ListItem.Season]$VAR[ListItem.Episode]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>eewhite</textcolor>
                             <scroll>false</scroll>
                              <!-- <visible>!IsEmpty(ListItem.Season) + !IsEmpty(ListItem.Episode)</visible> -->
@@ -966,7 +966,7 @@
                             <font>Font-Condensed-S34-B</font>
                             <align>left</align>
                             <label>$VAR[ListItem.Title.Focus]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>eewhite</textcolor>
                         </control>
                         <control type="label">
@@ -1391,7 +1391,7 @@
                             <width>630</width>
                             <font>Font-Condensed-S29-B</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
@@ -1443,7 +1443,7 @@
                             <width>560</width>
                             <font>Font-Condensed-S29-B</font>
                             <label>$INFO[ListItem.Label]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
@@ -1455,7 +1455,7 @@
                             <width>560</width>
                             <font>Font-Condensed-S31</font>
                             <label>$VAR[ListItem.Label2]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <align>right</align>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
@@ -1468,7 +1468,7 @@
                             <font>Font-Condensed-S31</font>
                             <label fallback="[COLOR=28FFFFFF]0000[/COLOR]">$INFO[ListItem.Year]</label>
                             <align>right</align>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
@@ -1519,7 +1519,7 @@
                             <font>Font-Condensed-S31</font>
                             <label fallback="[COLOR=28FFFFFF]0000[/COLOR]">$INFO[ListItem.Year]</label>
                             <align>right</align>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
@@ -1532,7 +1532,7 @@
                             <width>521</width>
                             <font>Font-Condensed-S31</font>
                             <label>$VAR[ListItem.Label2]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <align>right</align>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
@@ -1596,7 +1596,7 @@
                             <width>591</width>
                             <font>Font-Condensed-S31</font>
                             <label>$VAR[ListItem.Property(NumEpisodes)]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <align>right</align>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
@@ -1640,7 +1640,7 @@
                             <width>70</width>
                             <font>Font-Condensed-S31</font>
                             <label>$VAR[ListItem.Season]$VAR[ListItem.Episode]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
@@ -1653,7 +1653,7 @@
                             <width>545</width>
                             <font>Font-Condensed-S29-B</font>
                             <label>$VAR[ListItem.Title]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
                             <scroll>false</scroll>
@@ -1665,7 +1665,7 @@
                             <width>545</width>
                             <font>Font-Condensed-S31</font>
                             <label>$VAR[ListItem.Label2]</label>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <align>right</align>
                             <textcolor>77white</textcolor>
                             <shadowcolor>22000000</shadowcolor>
@@ -1786,7 +1786,7 @@
                                 <width>560</width>
                                 <font>Font-Condensed-S29-B</font>
                                 <label>$INFO[ListItem.Label]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <visible>!Container.Content(Episodes)</visible>
@@ -1798,7 +1798,7 @@
                                 <width>560</width>
                                 <font>Font-Condensed-S31</font>
                                 <label>$VAR[ListItem.Label2.Focus]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <align>right</align>
@@ -1811,7 +1811,7 @@
                                 <font>Font-Condensed-S31</font>
                                 <label fallback="[COLOR=50FFFFFF]0000[/COLOR]">$VAR[ListItem.Year]</label>
                                 <align>right</align>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
@@ -1866,7 +1866,7 @@
                                 <font>Font-Condensed-S31</font>
                                 <label fallback="[COLOR=50FFFFFF]0000[/COLOR]">$VAR[ListItem.Year]</label>
                                 <align>right</align>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
@@ -1879,7 +1879,7 @@
                                 <width>521</width>
                                 <font>Font-Condensed-S29-B</font>
                                 <label>$INFO[ListItem.Label]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                             </control>
@@ -1890,7 +1890,7 @@
                                 <width>521</width>
                                 <font>Font-Condensed-S31</font>
                                 <label>$VAR[ListItem.Label2]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <align>right</align>
@@ -1969,7 +1969,7 @@
                                 <width>591</width>
                                 <font>Font-Condensed-S31</font>
                                 <label>$VAR[ListItem.Property(NumEpisodes)]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <align>right</align>
@@ -2029,7 +2029,7 @@
                                 <width>70</width>
                                 <font>Font-Condensed-S31</font>
                                 <label>$VAR[ListItem.Season]$VAR[ListItem.Episode]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
@@ -2042,7 +2042,7 @@
                                 <width>545</width>
                                 <font>Font-Condensed-S29-B</font>
                                 <label>$VAR[ListItem.Title.Focus]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                             </control>
@@ -2053,7 +2053,7 @@
                                 <width>545</width>
                                 <font>Font-Condensed-S31</font>
                                 <label>$VAR[ListItem.Label2.Focus]</label>
-                                <selectedcolor>SelectedGreen</selectedcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <textcolor>eewhite</textcolor>
                                 <shadowcolor>22000000</shadowcolor>
                                 <align>right</align>
@@ -5227,7 +5227,7 @@
                             <height>62</height>
                             <label fallback="[COLOR=33FFFFFF]0000[/COLOR]">$VAR[ListItem.Year]</label>
                             <font>Font-Condensed-S36</font>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
@@ -5252,7 +5252,7 @@
                             <height>64</height>
                             <label>$VAR[ListItem.Label]</label>
                             <font>Font-Condensed-S34-B</font>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>C0FFFFFF</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>
@@ -5322,7 +5322,7 @@
                             <height>62</height>
                             <label>$VAR[ListItem.Season]$VAR[ListItem.Episode]</label>
                             <font>Font-Condensed-S36</font>
-                            <selectedcolor>SelectedGreen</selectedcolor>
+                            <selectedcolor>SelectedColor</selectedcolor>
                             <textcolor>77white</textcolor>
                             <scroll>false</scroll>
                             <align>left</align>

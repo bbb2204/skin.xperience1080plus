@@ -6,7 +6,7 @@
     <onload>SetProperty(Studio,$INFO[ListItem.Studio],1122)</onload>
     <onload>SetProperty(Genre,$INFO[ListItem.Genre],1122)</onload>
     <onload>SetProperty(Plot,$ESCINFO[ListItem.Plot],1122)</onload>
-    <onload>SetProperty(Fanart,$INFO[ListItem.Property(fanart_image)],1122)</onload>
+    <onload>SetProperty(Fanart,$INFO[ListItem.Art(fanart)],1122)</onload>
     <onunload>ClearProperty(Title,1122)</onunload>
     <onunload>ClearProperty(Year,1122)</onunload>
     <onunload>ClearProperty(Studio,1122)</onunload>
@@ -14,7 +14,6 @@
     <onunload>ClearProperty(Plot,1122)</onunload>
     <onunload>ClearProperty(Fanart,1122)</onunload>
     <onunload>ClearProperty(ChooseArt,3004)</onunload>
-    <allowoverlay>no</allowoverlay>
     <controls>
         <!-- Advanced Launcher Game Info -->
         <control type="group">
@@ -211,7 +210,6 @@
                             <height>356</height>
                             <aspectratio>stretch</aspectratio>
                             <include>visiblehidefadeinfo</include>
-                            <visible>Window.IsActive(movieinformation)</visible>
                         </control>
                     </control>
                 </control>

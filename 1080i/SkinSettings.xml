@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
     <defaultcontrol>30</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
     <backgroundcolor>0</backgroundcolor>
     <onload condition="IsEmpty(Skin.String(music.name))">Skin.SetString(music.name,$LOCALIZE[14022])</onload>
     <onload condition="IsEmpty(Skin.String(rss.setting))">Skin.SetString(rss.setting,$LOCALIZE[1223])</onload>
@@ -150,11 +149,11 @@
                 </control>
             </control>
             <control type="group">
-                <posx>175</posx> 
+                <posx>175</posx>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="75" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="75" />
-                    <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="75" /> 
+                    <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="75" />
                 </animation>
                 <control type="label">
                     <description>Category</description>
@@ -184,7 +183,8 @@
                     <height>150</height>
                     <texture>windows/home/item-shadow.png</texture>
                 </control>
-                <!-- ================ -->    
+
+                <!-- ================ -->
                 <!-- General Settings -->
                 <!-- ================ -->
                 <control type="grouplist" id="5">
@@ -198,7 +198,7 @@
                         <onclick>Skin.ToggleSetting(BackgroundVideo)</onclick>
                         <label>$LOCALIZE[31102]</label>
                     </control>
-                    <control type="radiobutton" id="1012">
+                    <control type="radiobutton" id="1003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(SpinControl.Default)</selected>
@@ -215,13 +215,20 @@
                     <control type="radiobutton" id="1006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(UsedBVolume)</selected>
+                        <onclick>Skin.ToggleSetting(UsedBVolume)</onclick>
+                        <label>$LOCALIZE[31045]</label>
+                    </control>
+                    <control type="radiobutton" id="1007">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideOptionsButton)</selected>
                         <onclick>Skin.ToggleSetting(HideOptionsButton)</onclick>
                         <label>$LOCALIZE[31201]</label>
                         <enable>!Skin.HasSetting(KioskMode)</enable>
                         <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(1006)">Conditional</animation>
                     </control>
-                    <control type="group" id="1007">
+                    <control type="group" id="1008">
                         <description>Fake spin control</description>
                         <width>1210</width>
                         <height>77</height>
@@ -231,7 +238,7 @@
                             <width>1210</width>
                             <height>77</height>
                             <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                            <visible>!ControlGroup(1007).HasFocus</visible>
+                            <visible>!ControlGroup(1008).HasFocus</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -240,16 +247,16 @@
                             <height>77</height>
                             <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
                             <aspectratio>stretch</aspectratio>
-                            <visible>ControlGroup(1007).HasFocus</visible>
+                            <visible>ControlGroup(1008).HasFocus</visible>
                         </control>
-                        <control type="button" id="10071">
+                        <control type="button" id="10081">
                             <posx>1111</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>10072</onleft>
-                            <onright>10072</onright>
-                            <onup>1006</onup>
+                            <onleft>10082</onleft>
+                            <onright>10082</onright>
+                            <onup>1007</onup>
                             <ondown>1002</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
@@ -270,15 +277,15 @@
                             <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.SetString(rss.setting,$LOCALIZE[1223])</onclick>
                             <onclick condition="stringcompare(Skin.String(rss.setting.pos),2)">Skin.Reset(rss.setting.pos)</onclick>
                         </control>
-                        <control type="button" id="10072">
+                        <control type="button" id="10082">
                             <posx>1145</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>10071</onleft>
-                            <onright>10071</onright>
-                            <onup>1009</onup>
-                            <ondown>1001</ondown>
+                            <onleft>10081</onleft>
+                            <onright>10081</onright>
+                            <onup>1007</onup>
+                            <ondown>1002</ondown>
                             <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
                             <onclick condition="IsEmpty(Skin.String(rss.setting.pos))">Skin.Reset(GlobalRSS.Top)</onclick>
@@ -325,11 +332,11 @@
                             <label>$LOCALIZE[20304]</label>
                             <label2>$INFO[Skin.String(rss.setting)]</label2>
                             <visible>ControlGroup(1007).HasFocus</visible>
-                        </control>             
+                        </control>
                     </control>
                 </control>
-                       
-                <!-- ============= -->  
+
+                <!-- ============= -->
                 <!-- Home Settings -->
                 <!-- ============= -->
                 <control type="grouplist" id="5">
@@ -364,15 +371,6 @@
                         <onclick>SetProperty(Dialog,$LOCALIZE[31140])</onclick>
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[31140]</label>
-                    </control>
-                    <control type="button" id="20021">
-                        <width>1210</width>
-                        <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
-                        <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
-                        <include>SettingsCategoryDefaultButtonVars</include>
-                        <onclick>SetProperty(Dialog,$LOCALIZE[42256])</onclick>
-                        <onclick>ActivateWindow(3001)</onclick>
-                        <label>$LOCALIZE[31144]</label>
                     </control>
                     <control type="radiobutton" id="2003">
                         <width>1210</width>
@@ -521,10 +519,10 @@
                             <visible>ControlGroup(2007).HasFocus</visible>
                         </control>
                     </control>
-                </control>              
-                
-                <!-- ============== --> 
-                <!-- View Settings  -->
+                </control>
+
+                <!-- ============== -->
+                <!-- Views Settings -->
                 <!-- ============== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
@@ -565,7 +563,7 @@
                         <label2 fallback="US">[COLOR=SelectedBlue]$VAR[MovieMPAALangLabel][/COLOR]</label2>
                         <onclick>ActivateWindow(3006)</onclick>
                     </control>
-                    <control type="radiobutton" id="10001">
+                    <control type="radiobutton" id="3006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(EPGGenreColors.Enabled)</selected>
@@ -573,9 +571,49 @@
                         <label>$LOCALIZE[31221]</label>
                         <visible>System.GetBool(pvrmanager.enabled)</visible>
                     </control>
-                 </control>
-                
-                <!-- ============= --> 
+                    <control type="button" id="3007">
+                        <description>Set weather fanart path</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <label>$LOCALIZE[31043]</label>
+                        <onclick>Skin.SetPath(WeatherFanartDir)</onclick>
+                    </control>
+                    <control type="button" id="3008">
+                        <description>Reset weather fanart path</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <label>- $LOCALIZE[31044]</label>
+                        <onclick>Skin.Reset(WeatherFanartDir)</onclick>
+                        <onclick>ReloadSkin</onclick>
+                        <enable>!Skin.SetPath(WeatherFanartDir)</enable>
+                        <visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                    </control>
+                    <control type="radiobutton" id="3009">
+                        <description>Hide weather fanart</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <label>$LOCALIZE[31041]</label>
+                        <onclick>Skin.ToggleSetting(ShowWeatherFanart)</onclick>
+                        <onclick condition="Skin.HasSetting(ShowWeatherFanart)">Skin.SetBool(ShowDailyWeatherFanart)</onclick>
+                        <onclick condition="!Skin.HasSetting(ShowWeatherFanart)">Skin.Reset(ShowDailyWeatherFanart)</onclick>
+                        <onclick>ReloadSkin</onclick>
+                        <selected>!Skin.HasSetting(ShowWeatherFanart)</selected>
+                        <visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                    </control>
+                    <control type="radiobutton" id="3010">
+                        <description>Hide daily weather fanart</description>
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <label>$LOCALIZE[31042]</label>
+                        <onclick>Skin.ToggleSetting(ShowDailyWeatherFanart)</onclick>
+                        <selected>!Skin.HasSetting(ShowDailyWeatherFanart)</selected>
+                        <enable>Skin.HasSetting(ShowWeatherFanart)</enable>
+                        <visible>!IsEmpty(Skin.String(WeatherFanartDir))</visible>
+                        <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(3010)">Conditional</animation>
+                    </control>
+                </control>
+
+                <!-- ============= -->
                 <!-- OSD Settings  -->
                 <!-- ============= -->
                 <control type="grouplist" id="5">
@@ -639,8 +677,11 @@
                         <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(8007)">Conditional</animation>
                     </control>
                 </control>
-                
-                <!-- Background Settings -->
+
+
+                <!-- ==================== -->
+                <!-- Backgrounds Settings -->
+                <!-- ==================== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
@@ -655,7 +696,7 @@
                         <onclick>ClearProperty(CustomDialog)</onclick>
                         <onclick>SetProperty(Dialog,$LOCALIZE[31251])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
-                    </control>                  
+                    </control>
                     <control type="button" id="5001">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
@@ -723,9 +764,9 @@
                         <onclick>ActivateWindow(3002)</onclick>
                     </control>
                 </control>
-                
-                <!-- =================== -->    
-                <!-- Guide menu Settings -->
+
+                <!-- =================== -->
+                <!-- Skin Frame Settings -->
                 <!-- =================== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
@@ -741,28 +782,28 @@
                         <onclick>ClearProperty(CustomDialog)</onclick>
                         <onclick>SetProperty(Dialog,$LOCALIZE[42262])</onclick>
                         <onclick>ActivateWindow(3002)</onclick>
-                    </control>                  
+                    </control>
                     <control type="radiobutton" id="6001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(Guide.HideClock)</selected>
+                        <selected>!Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
                         <label>$LOCALIZE[42235]</label>
-                    </control>                                      
+                    </control>
                     <control type="radiobutton" id="60012">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(Guide.HideWeather)</selected>
+                        <selected>!Skin.HasSetting(Guide.HideWeather)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideWeather)</onclick>
-                        <label>$LOCALIZE[42236]</label>
-                    </control>  
+                        <label>$LOCALIZE[31976]</label>
+                    </control>
                     <control type="radiobutton" id="6002">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(Guide.HideUserImage)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideUserImage)</onclick>
                         <label>$LOCALIZE[31271]</label>
-                    </control>                  
+                    </control>
                     <control type="radiobutton" id="6003">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -844,8 +885,8 @@
                         <visible>Skin.HasSetting(Guide.Custom4)</visible>
                     </control>
                 </control>
-                
-                <!-- ================= -->    
+
+                <!-- ================= -->
                 <!-- Advanced Settings -->
                 <!-- ================= -->
                                 <control type="grouplist" id="5">
@@ -881,7 +922,6 @@
                         <onclick>ReloadSkin</onclick>
                         <label>$LOCALIZE[31352]</label>
                     </control>
-                
                     <control type="button" id="10092">
                         <width>1210</width>
                         <include>SettingsCategoryReloadSkin</include>
@@ -891,8 +931,8 @@
                                         
                 </control>
 
-                      
-                <!-- =============== -->    
+
+                <!-- =============== -->
                 <!-- Add-on Settings -->
                 <!-- =============== -->
                 <control type="grouplist" id="5">
@@ -951,7 +991,7 @@
                         <visible>System.HasAddon(script.artwork.downloader)</visible>
                     </control>
                 </control>
-                
+
                 <control type="image" id="42">
                     <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
                 </control>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="600">
     <defaultcontrol always="true">50</defaultcontrol>
-    <allowoverlay>no</allowoverlay>
+    <menucontrol>100</menucontrol>
     <views>50</views>
     <controls>
         <include>CommonPVRItems</include>
@@ -13,9 +13,6 @@
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
             </animation>
-            
-			<include>PVRMenu</include>
-
             <control type="group" id="110">
                 <include>FullscreenDimensions</include>
                 <include>OptionsShutdownAnimation</include>
@@ -237,6 +234,7 @@
                                 <align>right</align>
                                 <label>$VAR[ListItem.ChannelNumberLabel]</label>
                                 <textcolor>44FFFFFF</textcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                             </control>
                             <control type="label">
@@ -249,6 +247,7 @@
                                 <align>left</align>
                                 <label>$VAR[ListItem.Label]</label>
                                 <textcolor>aawhite</textcolor>
+                                <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
                                 <visible>!ListItem.HasEpg</visible>
                             </control>
@@ -279,7 +278,7 @@
                                     <midtexture>windows/pvr/progress-mid.png</midtexture>
                                     <righttexture>windows/pvr/progress-leftright.png</righttexture>
                                     <info>ListItem.Progress</info>
-                                    <colordiffuse>SelectedGreen</colordiffuse>
+                                    <colordiffuse>SelectedColor</colordiffuse>
                                     <visible>ListItem.IsPlaying</visible>
                                 </control>
                                 <control type="label">
@@ -304,6 +303,7 @@
                                     <align>left</align>
                                     <label>$VAR[ListItem.Title]</label>
                                     <textcolor>77white</textcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                 </control>
                             </control>
@@ -386,6 +386,7 @@
                                     <align>right</align>
                                     <label>$VAR[ListItem.ChannelNumberLabel]</label>
                                     <textcolor>aawhite</textcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                 </control>
                                 <control type="label">
@@ -398,6 +399,7 @@
                                     <align>left</align>
                                     <label>$VAR[ListItem.Label]</label>
                                     <textcolor>bbwhite</textcolor>
+                                    <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
                                     <visible>!ListItem.HasEpg</visible>
                                 </control>
@@ -413,6 +415,7 @@
                                         <align>left</align>
                                         <label>$VAR[ListItem.Label]</label>
                                         <textcolor>bbwhite</textcolor>
+                                        <selectedcolor>SelectedColor</selectedcolor>
                                         <scroll>false</scroll>
                                     </control>
                                     <control type="progress">
@@ -440,7 +443,7 @@
                                         <midtexture>windows/pvr/progress-mid.png</midtexture>
                                         <righttexture>windows/pvr/progress-leftright.png</righttexture>
                                         <info>ListItem.Progress</info>
-                                        <colordiffuse>SelectedGreen</colordiffuse>
+                                        <colordiffuse>SelectedColor</colordiffuse>
                                         <visible>ListItem.IsPlaying</visible>
                                     </control>
                                     <control type="label">
@@ -453,6 +456,7 @@
                                         <align>left</align>
                                         <label>$VAR[ListItem.Title]</label>
                                         <textcolor>bbwhite</textcolor>
+                                        <selectedcolor>SelectedColor</selectedcolor>
                                         <scroll>false</scroll>
                                     </control>
                                 </control>
