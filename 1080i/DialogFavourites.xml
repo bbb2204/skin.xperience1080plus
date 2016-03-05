@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog">
     <defaultcontrol always="true">450</defaultcontrol>
-    <zorder>-1</zorder>
+    <!--<zorder>-1</zorder>-->
     <onload condition="IsEmpty(Window(Home).Property(Favourites))">SetProperty(Favourites,1,Home)</onload>
     <onload condition="IsEmpty(Window(Home).Property(Favourites))">Control.Move(450,-1)</onload>
     <onload condition="!Control.IsVisible(63)">PreviousMenu</onload>
@@ -121,6 +121,7 @@
                 <animation type="Conditional" condition="!Window.IsActive(shutdownmenu)" reversible="false">
                     <effect type="zoom" start="92" end="100" time="300" delay="250" center="auto" tween="sine" easing="in"  />
                 </animation>
+                <include>OptionsShutdownAnimation</include>
                 <control type="fixedlist" id="450">
                     <description>Fav list</description>
                     <posx>-221</posx>
@@ -139,7 +140,7 @@
                     <focusposition>1</focusposition>
                     <itemlayout width="326" height="750">
                         <control type="group">
-                            <animation effect="fade" end="50" time="0" condition="true">Conditional</animation>
+                            <animation effect="fade" end="30" time="0" condition="true">Conditional</animation>
                             <control type="image">
                                 <description>Bottom shadow</description>
                                 <posx>-10</posx>
@@ -169,7 +170,7 @@
                             </control>
                         </control>
                         <control type="group">
-                            <animation effect="fade" end="75" time="0" condition="true">Conditional</animation>
+                            <animation effect="fade" end="40" time="0" condition="true">Conditional</animation>
                             <control type="image">
                                 <posx>-5</posx>
                                 <posy>-5</posy>
@@ -224,7 +225,6 @@
                                     <textcolor>aawhite</textcolor>
                                     <shadowcolor>22000000</shadowcolor>
                                     <aligny>center</aligny>
-                                    <visible>!Window.IsActive(contextmenu)</visible>
                                     <animation effect="fade" time="300" start="0" end="90" tween="sine" easing="out">Visible</animation>
                                     <animation effect="fade" time="300" start="90" end="0" tween="sine" easing="in">Hidden</animation>
                                 </control>
@@ -298,5 +298,6 @@
                 </control>
             </control>
         </control>
+        <include>Common-Info-NoOptions</include>
     </controls>
 </window>

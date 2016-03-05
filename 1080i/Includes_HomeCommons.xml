@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <includes>
+    <include name="FocusSettingsCategory">
+        <onload>SetFocus(20,$INFO[Container(20).NumItems])</onload>
+        <onload>SetFocus(825)</onload>
+        <onload>SetFocus(801)</onload>
+        <onload>ClearProperty(CategoryChanged,Home)</onload>
+    </include>
+
     <!--Home shutdown-favs Buttons-->
     <include name="shutdown-favs">
         <control type="group" id="80">
@@ -384,19 +391,19 @@
                 <visible>System.HasAddon(script.globalsearch)</visible>
             </control>
             <control type="label">
+                <description>Home</description>
+                <include>HomeLabel</include>
+                <label>$VAR[HomeDVDLabel]</label>
+                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(2)">Conditional</animation>
+                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(525)">Conditional</animation>
+            </control>
+            <control type="label">
                 <description>Live TV</description>
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[31220]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(9)">Conditional</animation>
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(925)">Conditional</animation>
                 <visible>System.GetBool(pvrmanager.enabled)</visible>
-            </control>
-            <control type="label">
-                <description>Home</description>
-                <include>HomeLabel</include>
-                <label>$VAR[HomeDVDLabel]</label>
-                <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(2)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(525)">Conditional</animation>
             </control>
             <control type="group">
                 <posx>0</posx>
@@ -511,10 +518,6 @@
                 <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="19,50" condition="!Control.HasFocus(825)">Conditional</animation>
             </control>
         </control>
-    </include>
-
-    <include name="HomeControlListFocus2">
-        <focusposition>2</focusposition>
     </include>
 
     <include name="HomeControlListFocus1">

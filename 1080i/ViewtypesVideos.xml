@@ -116,15 +116,15 @@
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(genres)</visible>
+                        <visible>!Container.Content(genres) | stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>89</posx>
                         <posy>5</posy>
                         <width>60</width>
                         <height>90</height>
-                        <texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
-                        <visible>Container.Content(genres)</visible>
+                        <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
+                        <visible>Container.Content(genres) + !stringcompare(ListItem.Label,..)</visible>
                     </control>
                 </itemlayout>
                 <itemlayout height="100" condition="Container.Content(movies)">
@@ -536,15 +536,15 @@
                         <height>85</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
                         <aspectratio>keep</aspectratio>
-                        <visible>!Container.Content(genres)</visible>
+                        <visible>!Container.Content(genres) | stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="image">
                         <posx>89</posx>
                         <posy>5</posy>
                         <width>60</width>
                         <height>90</height>
-                        <texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
-                        <visible>Container.Content(genres)</visible>
+                        <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
+                        <visible>Container.Content(genres) + !stringcompare(ListItem.Label,..)</visible>
                     </control>
                     <control type="group">
                         <animation type="Focus" condition="[Container(50).OnNext | Container(50).OnPrevious] + !Container(50).ListItem.IsPlaying" reversible="false">
@@ -2461,7 +2461,7 @@
                 <posy>260</posy>
 				<animation effect="slide" start="0,0" end="0,250" time="0" condition="!Skin.HasSetting(ExtendedPlot)">Conditional</animation>
                 <animation effect="fade" start="0" end="100" time="0" reversible="false">Visible</animation>
-                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(karaoke) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(81)</visible>
+                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(81)</visible>
                 <control type="group">
                     <animation type="WindowOpen">
                         <effect type="fade" start="0" end="100" delay="100" tween="sine" easing="in" time="300" />
@@ -3183,7 +3183,7 @@
                                 <align>left</align>
                             </control>
                             <control type="label">
-								<visible>Container.Content(episodes)</visible>							 
+								<visible>Container.Content(episodes)</visible>
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
@@ -3205,7 +3205,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>							
+                            </control>
                             <control type="textbox">
                                 <description>Plot</description>
                                 <posx>20</posx>
@@ -3316,9 +3316,9 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>					
+                            </control>
                             <control type="label">
-								<visible>Container.Content(episodes)</visible>							 
+								<visible>Container.Content(episodes)</visible>
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
@@ -3330,7 +3330,7 @@
                                 <align>left</align>
                             </control>
                             <control type="label">
-								<visible>!Container.Content(episodes)</visible>							 
+								<visible>!Container.Content(episodes)</visible>
                                 <posx>20</posx>
                                 <posy>329</posy>
                                 <width>440</width>
@@ -3340,7 +3340,7 @@
                                 <shadowcolor>22000000</shadowcolor>
                                 <scroll>false</scroll>
                                 <align>left</align>
-                            </control>							
+                            </control>
                             <control type="textbox">
                                 <description>Plot</description>
                                 <posx>20</posx>
@@ -3478,7 +3478,7 @@
                 <posx>113</posx>
                 <posy>240</posy>
                 <animation effect="fade" start="0" end="100" time="0" reversible="false">Visible</animation>
-                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(karaoke) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(80)</visible>
+                <visible>Window.Next(Home) | Window.Next(programs) | Window.Next(pictures) | Window.Next(filemanager) | Window.Next(settings) | Window.Next(music) | Window.Next(systeminfo) | Window.Next(screencalibration) | Window.Next(picturessettings) | Window.Next(programssettings) | Window.Next(weathersettings) | Window.Next(musicsettings) | Window.Next(systemsettings) | Window.Next(videossettings) | Window.Next(servicesettings) | Window.Next(appearancesettings) | Window.Next(pvrsettings) | Window.Next(videos) | Window.Next(videoplaylist) | Window.Next(LoginScreen) | Window.Next(profiles) | Window.Next(addonbrowser) | Window.Next(filebrowser) | Window.Next(ProfileSettings) | Window.Next(LockSettings) | Window.Next(smartplaylisteditor) | Window.Next(smartplaylistrule) | Window.Next(musicplaylist) | Window.Next(musicfiles) | Window.Next(musiclibrary) | Window.Next(fullscreenvideo) | Window.Next(visualisation) | Window.Next(slideshow) | Window.Next(weather) | Window.Next(pvr) | Window.Next(script-NextAired-TVGuide.xml) | !Control.IsVisible(80)</visible>
                 <control type="group">
                     <animation type="Conditional" condition="true">
                         <effect type="zoom" start="100" end="94.7368421" time="0" center="-186,301" />
@@ -4631,7 +4631,7 @@
                             <texture background="true">$VAR[WallPoster]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!Container.Content(Genres)</visible>
+                            <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -4639,10 +4639,10 @@
                             <posy>12</posy>
                             <width>155</width>
                             <height>232</height>
-                            <texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
+                            <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>Container.Content(Genres)</visible>
+                            <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <posx>117</posx>
@@ -4664,7 +4664,7 @@
                             <texture background="true">$VAR[WallPoster]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>!Container.Content(Genres)</visible>
+                            <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <description>Poster</description>
@@ -4672,10 +4672,10 @@
                             <posy>12</posy>
                             <width>236</width>
                             <height>354</height>
-                            <texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
+                            <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
-                            <visible>Container.Content(Genres)</visible>
+                            <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                         </control>
                         <control type="image">
                             <posx>173</posx>
@@ -4702,7 +4702,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="true">$VAR[WallPoster]</texture>
-                                <visible>!Container.Content(Genres)</visible>
+                                <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <description>Poster</description>
@@ -4710,9 +4710,9 @@
                                 <posy>12</posy>
                                 <width>155</width>
                                 <height>232</height>
-                                <texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
+                                <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <visible>Container.Content(Genres)</visible>
+                                <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>117</posx>
@@ -4755,7 +4755,7 @@
                                 <bordertexture border="1">windows/common/darkgrey.png</bordertexture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
                                 <texture background="true">$VAR[WallPoster]</texture>
-                                <visible>!Container.Content(Genres)</visible>
+                                <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <description>Poster</description>
@@ -4763,9 +4763,9 @@
                                 <posy>12</posy>
                                 <width>236</width>
                                 <height>354</height>
-                                <texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
+                                <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                                 <aspectratio scalediffuse="false">scale</aspectratio>
-                                <visible>Container.Content(Genres)</visible>
+                                <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                             </control>
                             <control type="image">
                                 <posx>173</posx>
@@ -4837,7 +4837,7 @@
                     <texture background="true">$VAR[PosterViewPoster]</texture>
                     <fadetime>500</fadetime>
                     <aspectratio>scale</aspectratio>
-                    <visible>!Container.Content(Genres)</visible>
+                    <visible>!Container.Content(Genres) | stringcompare(ListItem.Label,..)</visible>
                 </control>
                 <control type="image">
                     <description>Poster</description>
@@ -4846,9 +4846,9 @@
                     <width>480</width>
                     <height>720</height>
                     <fadetime>500</fadetime>
-                    <texture background="true" fallback="special://skin/extras/moviegenres/Default.jpg">$INFO[ListItem.Label,special://skin/extras/moviegenres/,.jpg]</texture>
+                    <texture background="true" fallback="resource://resource.images.moviegenreicons.white/Default.jpg">$INFO[ListItem.Label,resource://resource.images.moviegenreicons.white/,.jpg]</texture>
                     <aspectratio>scale</aspectratio>
-                    <visible>Container.Content(Genres)</visible>
+                    <visible>Container.Content(Genres) + !stringcompare(ListItem.Label,..)</visible>
                 </control>
                 <control type="group">
                     <posx>1304</posx>
@@ -4971,7 +4971,7 @@
 				<posy>647</posy>
 				<width>1230</width>
 				<height>87</height>
-				<texture border="7">views/fanart/slide-overlay.png</texture>		 
+				<texture border="7">views/fanart/slide-overlay.png</texture>
 			</control>
 			<control type="image">
 				<posx>1715</posx>
@@ -5025,7 +5025,7 @@
 				<align>right</align>
 				<aligny>center</aligny>
 				<scroll>false</scroll>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>121</posx>
 				<posy>680</posy>
@@ -5051,7 +5051,7 @@
 				<aligny>center</aligny>
 				<scroll>false</scroll>
 				<visible>Container.Content(episodes) + !IsEmpty(ListItem.Premiered)</visible>
-			</control>	
+			</control>
 			<control type="label">
 				<posx>121</posx>
 				<posy>640</posy>
@@ -5076,18 +5076,18 @@
 				<aligny>center</aligny>
 				<scroll>true</scroll>
 				<visible>IntegerGreaterThan(ListItem.Property(unWatchedEpisodes),0)</visible>
-			</control>		
+			</control>
 			<control type="label">
 				<posx>121</posx>
 				<posy>30</posy>
 				<width>510</width>
 				<font>Font-Condensed-S60</font>
-				<label>$LOCALIZE[207]</label> 
+				<label>$LOCALIZE[207]</label>
 				<textcolor>aawhite</textcolor>
 				<shadowcolor>22000000</shadowcolor>
 				<scroll>false</scroll>
 				<visible>!IsEmpty(ListItem.Plot)</visible>
-			</control>		
+			</control>
 			<control type="textbox">
 				<posx>121</posx>
 				<posy>80</posy>
@@ -5106,7 +5106,7 @@
 				<width>60</width>
 				<height>57</height>
 				<aspectratio align="right" aligny="center">keep</aspectratio>
-				<texture>$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+				<texture>$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
 				<colordiffuse>aawhite</colordiffuse>
 				<visible>Container.Content(TVShows) + !IsEmpty(ListItem.Studio)</visible>
 			</control>
@@ -5161,7 +5161,7 @@
 				<onup condition="!Skin.HasSetting(KioskMode)">9010</onup>
 				<onup condition="Skin.HasSetting(KioskMode)">502</onup>
 				<ondown condition="!Skin.HasSetting(KioskMode)">9010</ondown>
-				<ondown condition="Skin.HasSetting(KioskMode)">502</ondown>				
+				<ondown condition="Skin.HasSetting(KioskMode)">502</ondown>
 				<onleft>502</onleft>
 				<onright>502</onright>
 				<preloaditems>0</preloaditems>
@@ -5175,7 +5175,7 @@
 			</control>
 		</control>
 	</include>
-	
+
 <!-- =========== -->
 <!-- Banner (60) -->
 <!-- =========== -->
@@ -5446,7 +5446,7 @@
                                 <width>60</width>
                                 <height>57</height>
                                 <aspectratio align="center" aligny="center">keep</aspectratio>
-                                <texture background="true">$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+                                <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                                 <colordiffuse>FF383838</colordiffuse>
                                 <visible>Container.Content(TVShows) + !IsEmpty(ListItem.Studio)</visible>
                             </control>
@@ -5591,7 +5591,7 @@
                                 <width>161</width>
                                 <aspectratio align="center" aligny="center">center</aspectratio>
                                 <height>120</height>
-                                <texture background="true">$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+                                <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                                 <colordiffuse>FF383838</colordiffuse>
                                 <visible>!IsEmpty(ListItem.Studio)</visible>
                             </control>
@@ -5709,7 +5709,7 @@
                             <width>161</width>
                             <aspectratio align="right" aligny="bottom">center</aspectratio>
                             <height>120</height>
-                            <texture background="true">$INFO[ListItem.Studio,special://skin/extras/studioflags/,.png]</texture>
+                            <texture background="true">$INFO[ListItem.Studio,resource://resource.images.studios.white/,.png]</texture>
                             <colordiffuse>FF383838</colordiffuse>
                             <visible>!IsEmpty(ListItem.Studio)</visible>
                         </control>
