@@ -514,7 +514,11 @@ msgctxt "#31240"
 msgid "Enable Music Visualisation"
 msgstr ""
 
-#empty strings from id 31241 to 31249
+msgctxt "#31242"
+msgid "Set default focus to subtitle button (video osd)"
+msgstr ""
+
+#empty strings from id 31243 to 31249
 
 msgctxt "#31250"
 msgid "Backgrounds"
