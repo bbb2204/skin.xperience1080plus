@@ -112,6 +112,21 @@
                     <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
 					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + System.HasAddon(script.trakt) + Control.IsVisible(1006) + !substring(ListItem.Path,plugin.video.youtube) + !substring(ListItem.Path,plugin.video.vimeo)</visible>
                 </control>
+                <control type="button" id="993">
+                    <description>Rate on Trakt.tv</description>
+                    <width>404</width>
+                    <height>57</height>
+                    <font>Font-Condensed-S34</font>
+                    <align>left</align>
+                    <textcolor>FF484848</textcolor>
+                    <focusedcolor>DDFFFFFF</focusedcolor>
+                    <disabledcolor>FF484848</disabledcolor>
+                    <textoffsetx>25</textoffsetx>
+                    <label>Rate on Trakt.tv</label>
+                    <onclick>RunScript(script.trakt,action=rate)</onclick>
+                    <texturefocus>dialogs/options/buttons/default-fo.png</texturefocus>
+                    <visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + System.HasAddon(script.trakt) + Control.IsVisible(1006) + !substring(ListItem.Path,plugin.video.youtube) + !substring(ListItem.Path,plugin.video.vimeo)</visible>
+                </control>
             </control>
             <control type="group">
                 <control type="image">
