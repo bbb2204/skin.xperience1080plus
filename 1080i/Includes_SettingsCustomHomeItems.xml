@@ -633,8 +633,6 @@
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeMusicTile3.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeMusicTile3)</selected>
                         </control>
-<!-- <<<<<<< HEAD
-======= -->
                         <control type="radiobutton" id="433">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31032] 1</label>
@@ -715,7 +713,6 @@
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomePicturesTile4.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomePicturesTile4)</selected>
                         </control>
-<!-- >>>>>>> refs/remotes/standard/master -->
                         <control type="radiobutton" id="44">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31161] 2</label>
@@ -776,8 +773,6 @@
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeMusicTile2.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeMusicTile2)</selected>
                         </control>
-<<<<<<< HEAD
-=======
                         <control type="radiobutton" id="461">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31161] 5</label>
@@ -818,7 +813,6 @@
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeMusicTile6.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeMusicTile6)</selected>
                         </control>
->>>>>>> refs/remotes/standard/master
                         <control type="radiobutton" id="47">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
                             <label>$LOCALIZE[31159] 1</label>
@@ -978,9 +972,6 @@
                             <onfocus>SetProperty(HomeTileEdit.ShowLabel,$INFO[Skin.String(HomeProgramTile4.ShowLabel)])</onfocus>
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeProgramTile4.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeProgramTile4)</selected>
-<<<<<<< HEAD
-                        </control>
-=======
                         </control>
                         <control type="radiobutton" id="55">
                             <include>SettingsBackgroundDialogRadioButtonVars</include>
@@ -1022,7 +1013,6 @@
                             <onfocus>SetProperty(HomeTileEdit.Animate,$INFO[Skin.String(HomeProgramTile10.Animate)])</onfocus>
                             <selected>Skin.HasSetting(HomeProgramTile10)</selected>
                         </control>
->>>>>>> refs/remotes/standard/master
                     </control>
                     
                     <control type="group">
@@ -1124,14 +1114,9 @@
                     <include condition="StringCompare(Window.Property(SingleDialog),widget3)">PanelDialogHomeWidget3</include>
                     <include condition="StringCompare(Window.Property(SingleDialog),widget4)">PanelDialogHomeWidget4</include>
                     <include condition="StringCompare(Window.Property(SingleDialog),widget5)">PanelDialogHomeWidget5</include>
-<<<<<<< HEAD
-                </control> 
-                
-=======
                     <include condition="StringCompare(Window.Property(SingleDialog),widget10)">PanelDialogHomeWidget6</include>
                 </control>
 
->>>>>>> refs/remotes/standard/master
                 <control type="group">
                     <posx>682</posx>
                     <posy>716</posy>
