@@ -360,7 +360,7 @@
                         <onclick>ActivateWindow(3001)</onclick>
                         <label>$LOCALIZE[31131]</label>
                     </control>
-                    <control type="button" id="2001">
+                    <control type="button" id="2002">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
@@ -369,7 +369,7 @@
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[31136]</label>
                     </control>
-                    <control type="button" id="2002">
+                    <control type="button" id="2003">
                         <width>1210</width>
                         <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
                         <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
@@ -378,14 +378,24 @@
                         <onclick>ActivateWindow(3003)</onclick>
                         <label>$LOCALIZE[31140]</label>
                     </control>
-                    <control type="radiobutton" id="2003">
+                    <control type="button" id="2004">
+                        <width>1210</width>
+                        <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
+                        <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <onclick>SetProperty(Dialog,$LOCALIZE[31989])</onclick>
+                        <onclick>ActivateWindow(3001)</onclick>
+                        <label>$LOCALIZE[31144]</label>
+                        <visible>!Skin.HasSetting(HomeClassicMode)</visible>
+                    </control>
+                    <control type="radiobutton" id="2005">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideHomeProfileInfo)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeProfileInfo)</onclick>
                         <label>$LOCALIZE[31134]</label>
                     </control>
-                    <control type="radiobutton" id="2004">
+                    <control type="radiobutton" id="2006">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideHomeSubmenuArrow)</selected>
@@ -419,8 +429,8 @@
                             <height>60</height>
                             <onleft>20072</onleft>
                             <onright>20072</onright>
-                            <onup>2004</onup>
-                            <ondown>4001</ondown>
+                            <onup>2006</onup>
+                            <ondown>2000</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
