@@ -1,4 +1,8 @@
-﻿[B]5.99.000[/B]
+﻿[B]5.1.500[/B]
+• Version: Changed to be backported to 16
+• Home Default: Widgets entirely rewritten (NOT for Classic Home)
+
+[B]5.99.000[/B]
 • Version: bumped for 17 and backport for 16
 • Cleanup: old metadata.actors script - support now entirely removed
 • Animations: Correction to a few animations
