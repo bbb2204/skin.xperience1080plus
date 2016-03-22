@@ -1,4 +1,29 @@
-﻿[B]5.0.800[/B]
+﻿[B]5.1.500[/B]
+• Version: Changed to be backported to 16
+• Home Default: Widgets entirely rewritten (NOT for Classic Home)
+
+[B]5.99.000[/B]
+• Version: bumped for 17 and backport for 16
+• Cleanup: old metadata.actors script - support now entirely removed
+• Animations: Correction to a few animations
+• Add-on List: Correction of label positioning
+• Fixes: Various throughout different files
+• Dependencies: library.addon.provider added for upcoming changes to widgets
+
+[B]5.1.0[/B]
+• Version: bumped for official repository
+
+[B]5.0.820[/B]
+• GlobalSearch: Fix blank screen being displayed if no results found
+• ExtendedInfo: Fix slideshow and adds loading indicator
+• Keyboard: Adjustments for chinese keyboard layout
+• Home: Fixes live tv widget visbility when moving to 200
+• Quicknav: Changed skin version, show count to episode, music label to songs
+
+[B]5.0.810[/B]
+• Home: Adds "Tags" to movies sub-menu items
+
+[B]5.0.800[/B]
 • Music: Adds back codec information when pressing 'o' 
 • PVR: Adds blank DialogPVRRadioRDSInfo (until we work out whether to add it in)
 • Music: Fixes visualisation author not being displayed correctly 
@@ -7,7 +32,7 @@
 • Music: Fix wrong texture for parent folder item
 • Video: Fix wrong texture for parent folder item
 • Weather: Adds new dependency for weather artwork
-• Starup: Allows videos to be included for the startup playlist 
+• Startup: Allows videos to be included for the startup playlist 
 
 [B]5.0.700[/B]
 • Extras: Get rid of movie genre icons, music genre icons, studio flags and use resource addons instead

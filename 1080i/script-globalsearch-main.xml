@@ -14,7 +14,7 @@
                 <visible>!Window.IsActive(movieinformation) + !Window.IsActive(musicinformation) + !Window.IsActive(addoninformation)</visible>
                 <animation effect="slide" end="-76" time="300" tween="sine" easing="inout" condition="Window.IsActive(busydialog)">Conditional</animation>
                 <animation type="Conditional" condition="Window.IsActive(infodialog) | Window.IsActive(volumebar)">
-                    <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
+                    <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                     <effect type="zoom" start="100" end="50" center="1745,100" tween="sine" easing="inout" time="300" />
                 </animation>
                 <control type="group">
@@ -60,15 +60,34 @@
                         <visible>false</visible>
                     </control>
                 </control>
-                <control type="group">
-                    <visible>Control.IsVisible(198)</visible>
-                    <include>visiblehidefadeinfo</include>
-                    <control type="image">
-                        <description>No results icon</description>
-                    </control>
-                    <control type="label" id="198">
-                        <description>No results</description>
-                    </control>
+            </control>
+            <control type="group">
+                <visible>Control.IsVisible(199)</visible>
+                <animation effect="fade" start="0" end="100" time="400" tween="sine" delay="100" easing="in">WindowOpen</animation>
+                <animation effect="fade" start="0" end="100" time="400" tween="sine" delay="200" easing="in">Visible</animation>
+                <control type="button" id="198">
+                    <description>New search button</description>
+                    <visible allowhiddenfocus="true">false</visible>
+                </control>
+                <control type="label" id="199">
+                    <posx>0</posx>
+                    <posy>120</posy>
+                    <width>1920</width>
+                    <height>1080</height>
+                    <label>$LOCALIZE[284]</label>
+                    <font>Font-Condensed-S40-B</font>
+                    <textcolor>80FFFFFF</textcolor>
+                    <align>center</align>
+                    <aligny>center</aligny>
+                </control>
+                <control type="image">
+                    <posx>832</posx>
+                    <posy>372</posy>
+                    <width>256</width>
+                    <height>256</height>
+                    <align>center</align>
+                    <aspectratio>keep</aspectratio>
+                    <texture>windows/home/nocontent/nocontent.png</texture>
                 </control>
             </control>
             <control type="group">
@@ -95,11 +114,11 @@
                     <texture>DefaultMusicSearch.png</texture>
                     <visible>!Container(111).Scrolling + !Container(211).Scrolling + !Container(121).Scrolling + !Container(131).Scrolling + !Container(141).Scrolling + !Container(151).Scrolling + !Container(161).Scrolling + !Container(171).Scrolling + !Container(181).Scrolling</visible>
                     <animation type="Hidden">
-                        <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" /> 
+                        <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                         <effect type="zoom" start="100" end="50" center="60,75" tween="sine" easing="inout" time="300" />
                     </animation>
                     <animation type="Visible">
-                        <effect type="fade" start="8" end="100" tween="sine" easing="out" time="300" delay="2000" /> 
+                        <effect type="fade" start="8" end="100" tween="sine" easing="out" time="300" delay="2000" />
                         <effect type="zoom" start="50" end="100" center="60,75" tween="sine" easing="inout" time="300" delay="2000" />
                     </animation>
                 </control>
@@ -584,9 +603,6 @@
                         </control>
                     </control>
                 </control>
-            </control>
-            <control type="button" id="199">
-                <description>New search button</description>
             </control>
             <control type="group">
                 <animation type="WindowClose" reversible="false">
