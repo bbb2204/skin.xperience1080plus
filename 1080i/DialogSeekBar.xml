@@ -272,7 +272,7 @@
                             </control>
                             <control type="image">
                                 <posx>80</posx>
-                                <posy>27</posy>
+                                <posy>67</posy>
                                 <width>276</width>
                                 <height>276</height>
                                 <texture background="true" fallback="views/fallbacks/DefaultAudio.png/square-small.png">$INFO[Player.Art(thumb)]</texture>
@@ -283,7 +283,7 @@
                             <control type="button">
                                 <posx>360</posx>
                                 <posy>83</posy>
-                                <width>1320</width>
+                                <width>1250</width>
                                 <height>56</height>
                                 <label>$INFO[MusicPlayer.PlaylistPosition,,. ]$INFO[MusicPlayer.Title]</label>
                                 <label2>$INFO[MusicPlayer.Rating,★ ,.0]</label2>
