@@ -32,7 +32,7 @@
         <value condition="substring(Container.FolderPath,musicdb://compilations/,left)">$LOCALIZE[521]</value>
         <value condition="substring(Container.FolderPath,musicdb://years/,left)">$LOCALIZE[652]</value>
         <value condition="stringcompare(Container.FolderPath,special://musicplaylists/) | substring(Container.FolderPath,special://profile/playlists/music/,left)">$LOCALIZE[136]</value>
-        <value condition="stringcompare(Container.FolderPath,addons://sources/audio/) | substring(Container.FolderPath,plugin://plugin,left)">$INFO[Container.FolderName]</value>
+        <value condition="stringcompare(Container.FolderPath,addons://sources/audio/) | substring(Container.FolderPath,plugin://plugin,left)">$LOCALIZE[1038]</value>
         <value>$LOCALIZE[2]</value>
     </variable>
 
@@ -60,7 +60,7 @@
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedmovies.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[342]</value>
         <value condition="substring(Container.FolderPath,library://video/recentlyaddedepisodes.xml/,left) | stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[20387]</value>
         <value condition="substring(Container.FolderPath,special://videoplaylists/,left) | substring(Container.FolderPath,special://profile/playlists/video/,left)">$LOCALIZE[20012]</value>
-        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">$INFO[Container.FolderName]</value>
+        <value condition="substring(Container.FolderPath,addons://sources/video/,left) | substring(Container.FolderPath,plugin://plugin.video,left)">$LOCALIZE[1037]</value>
         <value condition="!IsEmpty(Container.FolderPath)">$LOCALIZE[1214]</value>
         <value>$LOCALIZE[3]</value>
     </variable>
@@ -124,7 +124,7 @@
         <value condition="Window.IsActive(musicsettings)">DefaultAddonMusic.png</value>
         <value condition="Window.IsActive(profiles)">DefaultActor.png</value>
         <value condition="Window.IsActive(videossettings)">DefaultMovies.png</value>
-        <value condition="Window.IsActive(settings) | Window.IsActive(servicesettings) | Window.IsActive(mainWindow.xml)">DefaultAddonService.png</value>
+        <value condition="Window.IsActive(settings) | Window.IsActive(servicesettings)">DefaultAddonService.png</value>
         <value>DefaultAddonProgram.png</value>
     </variable>
 
@@ -140,7 +140,6 @@
         <value condition="Control.HasFocus(103) | Window.IsActive(profiles)">$LOCALIZE[13200]</value>
         <value condition="Control.HasFocus(102) | Window.IsActive(videossettings)">$LOCALIZE[157]</value>
         <value condition="Control.HasFocus(101) | Window.IsActive(servicesettings)">$LOCALIZE[14036]</value>
-        <value condition="Window.IsActive(mainWindow.xml)">OpenELEC Settings</value>
         <value>$LOCALIZE[480]</value>
     </variable>
 
@@ -156,7 +155,6 @@
         <value condition="Control.HasFocus(103) | Window.IsActive(profiles)">$LOCALIZE[20067] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[20096]</value>
         <value condition="Control.HasFocus(102) | Window.IsActive(videossettings)">$LOCALIZE[14022] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[14086] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[24012] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[14087]</value>
         <value condition="Control.HasFocus(101) | Window.IsActive(servicesettings)">$LOCALIZE[20187] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[33101] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[790] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[1259] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[1273] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[1200]</value>
-        <value condition="Window.IsActive(mainWindow.xml)">System Configuration</value>
         <value>$LOCALIZE[166] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[14090] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[14081] [COLOR=44FFFFFF]/[/COLOR] $LOCALIZE[360]</value>
     </variable>
 
@@ -210,7 +208,7 @@
                 <align>left</align>
                 <visible>![Container.Content(files) | Container.Content(songs) | Container.Content(artists) | Container.Content(albums) | Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes) | Container.Content(musicvideos) | Container.Content(sets)] + IntegerGreaterThan(Container.NumPages,1) + !Window.IsVisible(script-videoextras-main.xml)</visible>
             </control>
-            <!-- <control type="label">
+            <control type="label">
                 <width min="50" max="400">auto</width>
                 <height>120</height>
                 <label>$INFO[Container.CurrentPage, [COLOR=44FFFFFF]•[/COLOR] $LOCALIZE[31819] ,]$INFO[Container.NumPages,/,]</label>
@@ -229,7 +227,7 @@
                 <scroll>false</scroll>
                 <align>left</align>
                 <visible>Window.IsVisible(script-videoextras-main.xml)</visible>
-            </control> -->
+            </control>
         </control>
     </include>
 
@@ -317,17 +315,17 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!substring(Container.FolderPath,special,left) + stringcompare(Container.FolderPath,addons) + !substring(Container.FolderPath,sources,left) + !Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://movies/) + !stringcompare(Container.FolderPath,videodb://recentlyaddedmovies/)</visible>
+                        <visible>!substring(Container.FolderPath,special,left) + !substring(Container.FolderPath,addons,left) + !substring(Container.FolderPath,sources,left) + !Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://movies/)</visible>
                     </control>
                     <control type="label">
                         <width min="0" max="500">auto</width>
                         <height>120</height>
-                        <label>$INFO[Container.ListItem.TVShowTitle,: ,]</label>
+                        <label>$INFO[Container.ListItem.TVShowTitle,: ,]$INFO[Container.ListItem.Season, (,)]</label>
                         <font>Font-Condensed-S36-B</font>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>Container.Content(episodes) + !stringcompare(Container.FolderPath,videodb://recentlyaddedepisodes/)</visible>
+                        <visible>Container.Content(episodes)</visible>
                     </control>
                 </control>
             </control>
@@ -400,7 +398,7 @@
                     <textcolor>aawhite</textcolor>
                     <scroll>false</scroll>
                     <align>left</align>
-                    <visible>stringcompare(Container.FolderPath,addons) + !stringcompare(Container.FolderPath,musicdb://genres/) + !stringcompare(Container.FolderPath,musicdb://artists/) + !stringcompare(Container.FolderPath,musicdb://albums/) + !stringcompare(Container.FolderPath,musicdb://songs/) + !stringcompare(Container.FolderPath,musicdb://top100/) + !stringcompare(Container.FolderPath,musicdb://recentlyaddedalbums/) + !stringcompare(Container.FolderPath,musicdb://recentlyplayedalbums/) + !stringcompare(Container.FolderPath,musicdb://compilations/) + !stringcompare(Container.FolderPath,musicdb://years/) + !stringcompare(Container.FolderPath,musicdb://top100/songs/) + !stringcompare(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums)</visible>
+                    <visible>!stringcompare(Container.FolderPath,musicdb://genres/) + !stringcompare(Container.FolderPath,musicdb://artists/) + !stringcompare(Container.FolderPath,musicdb://albums/) + !stringcompare(Container.FolderPath,musicdb://songs/) + !stringcompare(Container.FolderPath,musicdb://top100/) + !stringcompare(Container.FolderPath,musicdb://recentlyaddedalbums/) + !stringcompare(Container.FolderPath,musicdb://recentlyplayedalbums/) + !stringcompare(Container.FolderPath,musicdb://compilations/) + !stringcompare(Container.FolderPath,musicdb://years/) + !stringcompare(Container.FolderPath,musicdb://top100/songs/) + !stringcompare(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums)</visible>
                 </control>
                 <control type="label">
                     <width min="0" max="500">auto</width>

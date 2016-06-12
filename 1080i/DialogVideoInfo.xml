@@ -309,52 +309,6 @@
                     <texture border="3">views/list/panel/panel.png</texture>
                 </control>
 
-                <!-- Fanart / Thumb / Overlay -->
-<!--                 <control type="group">
-                    <posx>100</posx>
-                    <posy>220</posy>
-                    <control type="group">
-                        <visible>!Player.HasVideo | Skin.HasSetting(BackgroundVideo)</visible>
-                        <include>visiblehidefadeinfo</include>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>634</width>
-                            <height>355</height>
-                            <aspectratio>scale</aspectratio>
-                            <texture background="true">$VAR[VideoInfoArt]</texture>
-                        </control>
-                        <control type="image">
-                            <posx>534</posx>
-                            <posy>0</posy>
-                            <width>100</width>
-                            <height>100</height>
-                            <texture>$VAR[VideoInfoOverlay]</texture>
-                        </control>
-                    </control>
-                    <control type="group">
-                        <visible>Player.HasVideo + !Skin.HasSetting(BackgroundVideo)</visible>
-                        <include>visiblehidefadeinfo</include>
-                        <control type="image">
-                            <description>black</description>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>634</width>
-                            <height>355</height>
-                            <texture border="1">windows/common/black.png</texture>
-                        </control>
-                        <control type="videowindow">
-                            <description>video</description>
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>634</width>
-                            <height>356</height>
-                            <include>visiblehidefadeinfo</include>
-                            <visible>Window.IsActive(movieinformation)</visible>
-                        </control>
-                    </control>
-                </control> -->
-
                 <!-- OSD Back -->
                 <control type="image">
                     <posx>324</posx>
@@ -863,31 +817,6 @@
                             <scroll>false</scroll>
                         </control>
                     </control>
-                    <control type="group">
-                        <!-- Channel -->
-                        <width>1044</width>
-                        <height>59</height>
-                        <visible>substring(Container.FolderPath,plugin://plugin.video) + !IsEmpty(ListItem.Artist)</visible>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>-6</posy>
-                            <width>49</width>
-                            <height>49</height>
-                            <texture>views/other/director-icon.png</texture>
-                        </control>
-                        <control type="label">
-                            <posx>50</posx>
-                            <posy>0</posy>
-                            <width>1002</width>
-                            <height>36</height>
-                            <font>Font-Condensed-S34</font>
-                            <align>left</align>
-                            <label>$INFO[ListItem.Artist]</label>
-                            <textcolor>aawhite</textcolor>
-                            <scroll>false</scroll>
-                        </control>
-                    </control>
-
                     <control type="grouplist">
                         <width>1044</width>
                         <height>40</height>
@@ -1201,7 +1130,7 @@
                     <posy>144</posy>
                     <width>200</width>
                     <height>60</height>
-                    <label>Poster</label>
+                    <label>$LOCALIZE[21371]</label>
                     <font>Font-Condensed-S45</font>
                     <textcolor>eewhite</textcolor>
                     <align>left</align>

@@ -990,9 +990,8 @@
                     <onclick>noop</onclick>
                 </item>
                 <item id="5">
-                    <description>Skin Version</description>
                     <label>$LOCALIZE[31458]</label>
-                    <label2>$INFO[System.AddonVersion(skin.xperience1080+)]</label2>
+                    <label2>5.1</label2>
                     <onclick>noop</onclick>
                 </item>
                 <item id="6">

@@ -39,12 +39,9 @@
                     <shadowcolor>22000000</shadowcolor>
                     <align>right</align>
                     <scroll>false</scroll>
+                    <include>visiblehidefadeinfo</include>
                     <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
 					<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
-<!-- <<<<<<< HEAD
-					<include>visiblehidefadeinfo</include>
-=======
->>>>>>> refs/remotes/standard/master -->
 					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
 				<control type="image">
@@ -64,9 +61,9 @@
 					<description>Clock label</description>
 					<posx>335r</posx>
 					<posy>955</posy>
-					<width>100</width>
+					<width>600</width>
 					<height>100</height>
-					<label>$INFO[System.Time][/B]</label>
+					<label>$VAR[ClockDateTimeValue]</label>
 					<font>Font-Condensed-S34-B</font>
 					<textcolor>eewhite</textcolor>
 					<shadowcolor>22000000</shadowcolor>

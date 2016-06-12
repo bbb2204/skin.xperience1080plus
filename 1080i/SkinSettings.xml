@@ -7,7 +7,7 @@
     <controls>
         <include>CommonSettingsItems</include>
         <include>SettingsHeader</include>
-        
+
         <control type="group">
             <include>OptionsShutdownAnimation</include>
             <animation type="WindowClose">
@@ -29,7 +29,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                     <effect type="zoom" start="88" end="100" center="576,560" tween="cubic" easing="out" time="400" />
                 </animation>
-                            
+
                 <control type="label">
                     <description>Category</description>
                     <posx>483</posx>
@@ -38,10 +38,10 @@
                     <width>338</width>
                     <align>right</align>
                     <font>Font-Condensed-S25-B</font>
-                    <label>[UPPERCASE]$LOCALIZE[42130][/UPPERCASE]</label>
+                    <label>[UPPERCASE]$LOCALIZE[31936][/UPPERCASE]</label>
                     <textcolor>aawhite</textcolor>
                 </control>
-                
+
                 <!-- Panel -->
                 <control type="image">
                     <posx>178</posx>
@@ -50,7 +50,7 @@
                     <width>342</width>
                     <texture border="4">views/list/panel/panel.png</texture>
                 </control>
-                
+
                 <control type="list" id="30">
                     <posx>180</posx>
                     <posy>281</posy>
@@ -77,6 +77,7 @@
                             <align>right</align>
                             <aligny>center</aligny>
                             <label>$INFO[ListItem.Label]</label>
+
                             <textcolor>96FFFFFF</textcolor>
                             <font>Font-Condensed-S30-B</font>
                             <textoffsetx>35</textoffsetx>
@@ -166,7 +167,7 @@
                     <label>[UPPERCASE]$LOCALIZE[5]:[/UPPERCASE]$INFO[Container(30).ListItem.Label, ,]</label>
                     <textcolor>aawhite</textcolor>
                 </control>
-                          
+
                 <!-- Panel -->
                 <control type="image">
                     <posx>353</posx>
@@ -391,18 +392,26 @@
                     <control type="radiobutton" id="2005">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(HomeArrows)</selected>
+                        <onclick>Skin.ToggleSetting(HomeArrows)</onclick>
+                        <label>$LOCALIZE[31994]</label>
+                        <visible>!Skin.HasSetting(HomeClassicMode)</visible>
+                    </control>
+                    <control type="radiobutton" id="2006">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideHomeProfileInfo)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeProfileInfo)</onclick>
                         <label>$LOCALIZE[31134]</label>
                     </control>
-                    <control type="radiobutton" id="2006">
+                    <control type="radiobutton" id="2007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(HideHomeSubmenuArrow)</selected>
                         <onclick>Skin.ToggleSetting(HideHomeSubmenuArrow)</onclick>
                         <label>$LOCALIZE[31135]</label>
-                    </control>                              
-                    <control type="group" id="2007">
+                    </control>
+                    <control type="group" id="2008">
                         <description>Fake spin control</description>
                         <width>1210</width>
                         <height>77</height>
@@ -412,7 +421,7 @@
                             <width>1210</width>
                             <height>77</height>
                             <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                            <visible>!ControlGroup(2007).HasFocus</visible>
+                            <visible>!ControlGroup(2008).HasFocus</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -420,16 +429,16 @@
                             <width>1210</width>
                             <height>77</height>
                             <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
-                            <visible>ControlGroup(2007).HasFocus</visible>
+                            <visible>ControlGroup(2008).HasFocus</visible>
                         </control>
-                        <control type="button" id="20071">
+                        <control type="button" id="20081">
                             <posx>1111</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>20072</onleft>
-                            <onright>20072</onright>
-                            <onup>2006</onup>
+                            <onleft>20082</onleft>
+                            <onright>20082</onright>
+                            <onup>2007</onup>
                             <ondown>2000</ondown>
                             <texturefocus>buttons/spinctrl/arrow-down-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-down-nf.png</texturenofocus>
@@ -464,15 +473,15 @@
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.SetString(music.name,$LOCALIZE[14022])</onclick>
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[1038])">Skin.Reset(music.path)</onclick>
                         </control>
-                        <control type="button" id="20072">
+                        <control type="button" id="20082">
                             <posx>1145</posx>
                             <posy>8</posy>
                             <width>32</width>
                             <height>60</height>
-                            <onleft>20071</onleft>
-                            <onright>20071</onright>
-                            <onup>2004</onup>
-                            <ondown>4001</ondown>
+                            <onleft>20081</onleft>
+                            <onright>20081</onright>
+                            <onup>2007</onup>
+                            <ondown>2000</ondown>
                             <texturefocus>buttons/spinctrl/arrow-up-fo.png</texturefocus>
                             <texturenofocus>buttons/spinctrl/arrow-up-nf.png</texturenofocus>
                             <onclick condition="stringcompare(Skin.String(music.name),$LOCALIZE[14022])">Skin.SetString(music.name,$LOCALIZE[1038])</onclick>
@@ -518,7 +527,7 @@
                             <textcolor>96FFFFFF</textcolor>
                             <label>$LOCALIZE[31152]</label>
                             <label2>$INFO[Skin.String(music.name)]</label2>
-                            <visible>!ControlGroup(2007).HasFocus</visible>
+                            <visible>!ControlGroup(2008).HasFocus</visible>
                         </control>
                         <control type="button">
                             <posx>0</posx>
@@ -532,13 +541,13 @@
                             <textcolor>white</textcolor>
                             <label>$LOCALIZE[31152]</label>
                             <label2>$INFO[Skin.String(music.name)]</label2>
-                            <visible>ControlGroup(2007).HasFocus</visible>
+                            <visible>ControlGroup(2008).HasFocus</visible>
                         </control>
                     </control>
                 </control>
 
                 <!-- ============== -->
-                <!-- Views Settings -->
+                <!-- Views Settings  -->
                 <!-- ============== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
@@ -664,34 +673,39 @@
                         <visible>Skin.HasSetting(ArtistSlideShow.Enabled)</visible>
                         <label>- $LOCALIZE[31105]</label>
                     </control>
+                    <control type="radiobutton" id="8005">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(OSD.HideWeatherClock)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideWeatherClock)</onclick>
+                        <label>$LOCALIZE[31030]</label>
+                    </control>
                     <control type="radiobutton" id="8006">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(OSD.HideChapterInfo)</selected>
+                        <onclick>Skin.ToggleSetting(OSD.HideChapterInfo)</onclick>
+                        <label>$LOCALIZE[31031]</label>
+                    </control>
+                    <control type="radiobutton" id="8007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(AutoMusicFullscreen.Enabled)</selected>
                         <onclick>Skin.ToggleSetting(AutoMusicFullscreen.Enabled)</onclick>
                         <label>$LOCALIZE[31108]</label>
                     </control>
-                    <control type="radiobutton" id="8007">
+                    <control type="radiobutton" id="8008">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(OSD.HideFileStreamPath)</selected>
                         <onclick>Skin.ToggleSetting(OSD.HideFileStreamPath)</onclick>
-                        <label>$LOCALIZE[31104]</label>                        
-                    </control>
-                    <control type="radiobutton" id="8008">
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(OSDDefaultSubtitleButton.Enabled)</selected>
-                        <onclick>Skin.ToggleSetting(OSDDefaultSubtitleButton.Enabled)</onclick>
-                        <label>$LOCALIZE[31242]</label>
-                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(8007)">Conditional</animation>
+                        <label>$LOCALIZE[31104]</label>
                     </control>
                 </control>
 
-
-                <!-- ==================== -->
+                <!-- =================== -->
                 <!-- Backgrounds Settings -->
-                <!-- ==================== -->
+                <!-- =================== -->
                 <control type="grouplist" id="5">
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
@@ -782,12 +796,33 @@
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
                     <visible>Container(30).HasFocus(36)</visible>
+                    <control type="button" id="60001">
+                        <width>1210</width>
+                        <texturefocus border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texturefocus>
+                        <texturenofocus border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texturenofocus>
+                        <include>SettingsCategoryDefaultButtonVars</include>
+                        <label>$LOCALIZE[31995]</label>
+                        <onclick>ClearProperty(CustomDialogType)</onclick>
+                        <onclick>ClearProperty(CustomDialog)</onclick>
+                        <onclick>SetProperty(Dialog,$LOCALIZE[31995])</onclick>
+                        <onclick>ActivateWindow(3002)</onclick>
+                        <visible>!Skin.HasSetting(HomeClassicMode)</visible>
+                    </control>
                     <control type="radiobutton" id="6001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>!Skin.HasSetting(Guide.HideClock)</selected>
                         <onclick>Skin.ToggleSetting(Guide.HideClock)</onclick>
-                        <label>$LOCALIZE[42235]</label>
+                        <label>$LOCALIZE[31975]</label>
+                    </control>
+                    <control type="radiobutton" id="60011">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(Guide.HideClockDate)</selected>
+                        <onclick>Skin.ToggleSetting(Guide.HideClockDate)</onclick>
+                        <label>$LOCALIZE[31996]</label>
+                        <enable>!Skin.HasSetting(Guide.HideClock)</enable>
+                        <animation effect="fade" start="100" end="42" time="0" condition="!Control.IsEnabled(60011)">Conditional</animation>
                     </control>
                     <control type="radiobutton" id="60012">
                         <width>1210</width>
@@ -888,11 +923,11 @@
                 <!-- ================= -->
                 <!-- Advanced Settings -->
                 <!-- ================= -->
-                                <control type="grouplist" id="5">
+                <control type="grouplist" id="5">
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
                     <visible>Container(30).HasFocus(37)</visible>
-                             <control type="radiobutton" id="1001">
+                    <control type="radiobutton" id="1001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
                         <selected>Skin.HasSetting(KioskMode)</selected>
@@ -925,9 +960,10 @@
                         <width>1210</width>
                         <include>SettingsCategoryReloadSkin</include>
                         <onclick>Skin.ResetSettings</onclick>
-                        <label>$LOCALIZE[10035] $LOCALIZE[166] *$LOCALIZE[19098]*</label>
+                        <label>$LOCALIZE[31024]</label>
+                        <label2>[COLOR red]$LOCALIZE[31025][/COLOR]</label2>
                     </control>
-                                        
+
                 </control>
 
 
@@ -938,28 +974,13 @@
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
                     <visible>Container(30).HasFocus(38)</visible>
-                    <control type="button" id="7001">
+                    <control type="button" id="7002">
                         <width>1210</width>
                         <include>SettingsCategoryDefaultButtonVars</include>
                         <label>$LOCALIZE[31282]</label>
                         <label2>[COLOR=SelectedBlue]$INFO[system.addontitle(Skin.String(LyricScript_Path))][/COLOR]</label2>
                         <onclick>Skin.SetAddon(LyricScript_Path,xbmc.python.lyrics)</onclick>
                     </control>
-                    <!--<control type="radiobutton" id="7005">
-
-                        <width>1210</width>
-                        <include>SettingsCategoryRadioButtonVars</include>
-                        <selected>Skin.HasSetting(TVTunes.Enabled)</selected>
-                        <onclick>Skin.ToggleSetting(TVTunes.Enabled)</onclick>
-                        <label>$LOCALIZE[31283]</label>
-                    </control>
-                    <control type="button" id="7006">
-                        <width>1210</width>
-                        <include>SettingsCategoryDefaultButtonVars</include>
-                        <onclick>RunScript(script.tvtunes)</onclick>
-                        <label>- $LOCALIZE[31284]</label>
-                        <visible>Skin.HasSetting(TVTunes.Enabled)</visible>
-                    </control>-->
                     <control type="radiobutton" id="7007">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
@@ -990,7 +1011,6 @@
                         <visible>System.HasAddon(script.artwork.downloader)</visible>
                     </control>
                 </control>
-
                 <control type="image" id="42">
                     <animation effect="fade" start="100" end="0" time="0" delay="1500">WindowOpen</animation>
                 </control>

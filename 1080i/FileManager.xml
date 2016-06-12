@@ -139,6 +139,7 @@
                                 <width>39</width>
                                 <height>39</height>
                                 <texture>windows/filemanager/selected.png</texture>
+                                <aspectratio aligny="top">keep</aspectratio>
                                 <visible>ListItem.IsSelected</visible>
                             </control>
                             <control type="image">
@@ -198,6 +199,7 @@
                                 <width>39</width>
                                 <height>39</height>
                                 <texture>windows/filemanager/selected.png</texture>
+                                <aspectratio aligny="top">keep</aspectratio>
                                 <visible>ListItem.IsSelected</visible>
                             </control>
                             <control type="image">

@@ -989,7 +989,7 @@
                         <scroll>false</scroll>
                     </control>
                     <control type="label">
-                        <posx>80</posx>
+                        <posx>624</posx>
                         <posy>0</posy>
                         <width>544</width>
                         <height>60</height>
@@ -1032,7 +1032,7 @@
                             <scroll>false</scroll>
                         </control>
                         <control type="label">
-                            <posx>80</posx>
+                            <posx>624</posx>
                             <posy>0</posy>
                             <width>544</width>
                             <height>60</height>
@@ -1066,7 +1066,7 @@
                             <textcolor>eewhite</textcolor>
                         </control>
                         <control type="label">
-                            <posx>80</posx>
+                            <posx>624</posx>
                             <posy>0</posy>
                             <width>544</width>
                             <height>60</height>
