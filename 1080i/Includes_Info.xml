@@ -14,7 +14,7 @@
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
             </animation>
             <control type="group">
-                <animation effect="slide" end="-65" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
+                <animation effect="slide" end="-65" time="300" tween="sine" easing="inout" condition="Player.Muted">Conditional</animation>
                 <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="PVR.IsRecording | PVR.HasTimer">Conditional</animation>
                 <control type="image">
                     <description>Small weather</description>
@@ -23,7 +23,7 @@
                     <width>100</width>
                     <height>100</height>
                     <texture>weather/small/$INFO[Weather.FanartCode].png</texture>
-                    <visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                    <visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
                     <include>visiblehidefadeinfo</include>
 					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
@@ -40,8 +40,8 @@
                     <align>right</align>
                     <scroll>false</scroll>
                     <include>visiblehidefadeinfo</include>
-                    <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]">Conditional</animation>
-					<visible>Weather.IsFetched + ![stringcompare(Weather.FanartCode,na) + substring(Weather.Conditions,/)]</visible>
+                    <animation effect="slide" end="60" time="300" tween="sine" easing="inout" condition="!Weather.IsFetched | [String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]">Conditional</animation>
+					<visible>Weather.IsFetched + ![String.IsEqual(Weather.FanartCode,na) + String.Contains(Weather.Conditions,/)]</visible>
 					<visible>!Skin.HasSetting(Guide.HideWeather)</visible>
                 </control>
 				<control type="image">
@@ -78,7 +78,7 @@
             </control>
             <control type="group">
                 <visible>PVR.IsRecording</visible>
-                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
+                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Player.Muted">Conditional</animation>
                 <include>visiblehidefadeinfo</include>
                 <control type="image">
                     <posx>154r</posx>
@@ -102,7 +102,7 @@
                 <width>100</width>
                 <height>100</height>
                 <texture>windows/pvr/timer.png</texture>
-                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Window.IsActive(mutebug)">Conditional</animation>
+                <animation effect="slide" end="-60" time="300" tween="sine" easing="inout" condition="Player.Muted">Conditional</animation>
                 <include>visiblehidefadeinfo</include>
                 <visible>!PVR.IsRecording + PVR.HasTimer</visible>
             </control>
@@ -114,7 +114,7 @@
                 <height>100</height>
                 <texture>overlays/volume/muted.png</texture>
                 <include>visiblehidefadeinfo</include>
-                <visible>Window.IsActive(mutebug)</visible>
+                <visible>Player.Muted</visible>
             </control>
         </control>
     </include>
@@ -147,7 +147,6 @@
                 <texturefocus>-</texturefocus>
                 <texturenofocus>-</texturenofocus>
                 <onfocus>SetFocus(9111)</onfocus>
-                <visible allowhiddenfocus="true">!Skin.HasSetting(HideOptionsButton)</visible>
             </control>
             <control type="image">
                 <description>Options Button texture</description>
@@ -155,7 +154,7 @@
                 <height>100</height>
                 <texture>$VAR[OptionsButtonTexture]</texture>
                 <include>homebuttonsanim3</include>
-                <visible>!Skin.HasSetting(HideOptionsButton) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favourites)</visible>
             </control>
             <control type="label">
                 <description>Options Label</description>
@@ -168,7 +167,7 @@
                 <textcolor>eewhite</textcolor>
                 <shadowcolor>22000000</shadowcolor>
                 <include>homebuttonsanim4</include>
-                <visible>!Skin.HasSetting(HideOptionsButton) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-ExtendedInfo Script-DialogInfo.xml) + !Window.IsVisible(script-ExtendedInfo Script-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favourites)</visible>
+                <visible>!Window.IsActive(DialogPVRInfo.xml) + !Window.IsVisible(movieinformation) + !Window.IsVisible(script-script.extendedinfo-DialogInfo.xml) + !Window.IsVisible(script-script.extendedinfo-DialogVideoInfo.xml) + !Window.IsVisible(addoninformation) + !Window.IsVisible(musicinformation) + !Window.IsVisible(songinformation) + !Window.IsVisible(1122) + !Window.IsActive(favourites)</visible>
             </control>
         </control>
     </include>
@@ -220,9 +219,9 @@
             <posx>1741</posx>
             <posy>26</posy>
             <include>BannerListInfoAnimationNoOpenClose</include>
-            <visible>Player.HasMedia + IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !Window.IsActive(visualisation)</visible>
+            <visible>Player.HasMedia + String.IsEmpty(Window(10025).Property(PlayingBackgroundMedia)) + !Window.IsActive(visualisation)</visible>
             <animation effect="slide" end="-76" time="300" tween="sine" easing="inout" condition="Window.IsActive(busydialog)">Conditional</animation>
-            <animation type="Conditional" condition="Window.IsActive(infodialog) | Window.IsActive(extendedprogressdialog) | Window.IsActive(volumebar)">
+            <animation type="Conditional" condition="Window.IsActive(notification) | Window.IsActive(extendedprogressdialog) | Window.IsActive(volumebar)">
                 <effect type="fade" start="100" end="8" tween="sine" easing="out" time="300" />
                 <effect type="zoom" start="100" end="50" center="1745,100" tween="sine" easing="inout" time="300" />
             </animation>
@@ -238,7 +237,7 @@
                     <textcolor>C0FFFFFF</textcolor>
                     <scroll>false</scroll>
                     <align>right</align>
-                    <animation effect="slide" end="0,16" time="300" tween="sine" easing="inout" condition="IsEmpty(Control.GetLabel(934))">Conditional</animation>
+                    <animation effect="slide" end="0,16" time="300" tween="sine" easing="inout" condition="String.IsEmpty(Control.GetLabel(934))">Conditional</animation>
                 </control>
                 <control type="label" id="934">
                     <description>Sub label</description>
@@ -307,7 +306,7 @@
     			    <width>100</width>
     			    <height>100</height>
     			    <texture>$INFO[Control.GetLabel(933),overlays/nowplaying/progress/p,.png]</texture>
-    			    <visible>!IsEmpty(Player.Duration)</visible>
+    			    <visible>!String.IsEmpty(Player.Duration)</visible>
     			</control>
     			<control type="image">
     			    <description>Loading indicator</description>
@@ -317,7 +316,7 @@
     			    <height>100</height>
     			    <texture>dialogs/search/loading.png</texture>
     			    <animation effect="rotate" center="auto" start="360" end="0" time="1500" loop="true" condition="!Player.Paused">Conditional</animation>
-    			    <visible>IsEmpty(Player.Duration)</visible>
+    			    <visible>String.IsEmpty(Player.Duration)</visible>
     			</control>
             </control>
         </control>

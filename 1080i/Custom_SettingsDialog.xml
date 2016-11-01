@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window type="dialog" id="3001">
     <defaultcontrol always="true">3</defaultcontrol>
-    <onunload condition="!IsEmpty(Window(skinsettings).property(Guide.Custom))">ClearProperty(Guide.Custom,skinsettings)</onunload>
+    <onunload condition="!String.IsEmpty(Window(skinsettings).property(Guide.Custom))">ClearProperty(Guide.Custom,skinsettings)</onunload>
     <controls>
         <control type="group">
             <include>KeyboardAnimations</include>
@@ -42,8 +42,16 @@
 
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
-                <visible>stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31131])</visible>
+                <visible>String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31131])</visible>
                 <control type="radiobutton" id="2101">
+                    <width>1210</width>
+                    <include>SettingsDialogRadioButtonVars</include>
+                    <selected>!Skin.HasSetting(HomeTV)</selected>
+                    <onclick>Skin.ToggleSetting(HomeTV)</onclick>
+                    <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
+                    <label>$LOCALIZE[19020]</label>
+                </control>
+                <control type="radiobutton" id="2102">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeMovies)</selected>
@@ -51,7 +59,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[342]</label>
                 </control>
-                <control type="radiobutton" id="2102">
+                <control type="radiobutton" id="2103">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeTVShows)</selected>
@@ -59,7 +67,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31446]</label>
                 </control>
-                <control type="radiobutton" id="2103">
+                <control type="radiobutton" id="2104">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeMusic)</selected>
@@ -67,7 +75,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[2]</label>
                 </control>
-                <control type="radiobutton" id="2104">
+                <control type="radiobutton" id="2105">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomePictures)</selected>
@@ -75,7 +83,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[1]</label>
                 </control>                
-                <control type="radiobutton" id="2105">
+                <control type="radiobutton" id="2106">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomePrograms)</selected>
@@ -83,7 +91,7 @@
                     <onclick>SetProperty(CategoryChanged,1,Home)</onclick>
                     <label>$LOCALIZE[31504]</label>
                 </control>
-                <control type="radiobutton" id="2106">
+                <control type="radiobutton" id="2107">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
                     <selected>!Skin.HasSetting(HomeWeather)</selected>
@@ -96,7 +104,7 @@
             <!-- Home Tile Colours -->
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
-                <visible>stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31989])</visible>
+                <visible>String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31989])</visible>
                 <control type="radiobutton" id="2201">
                     <width>1210</width>
                     <include>SettingsDialogRadioButtonVars</include>
@@ -140,7 +148,7 @@
 
             <control type="grouplist" id="3">
                 <include>SettingsDialogGrouplistVars</include>
-                <visible>!IsEmpty(Window(skinsettings).property(Guide.Custom))</visible>
+                <visible>!String.IsEmpty(Window(skinsettings).property(Guide.Custom))</visible>
                 <control type="button" id="2400">
                     <visible>!Skin.HasSetting(CustomHomePanel1) + !Skin.HasSetting(CustomHomePanel2) + !Skin.HasSetting(CustomHomePanel3) + !Skin.HasSetting(CustomHomePanel4) + !Skin.HasSetting(CustomHomePanel5) + !Skin.HasSetting(CustomHomePanel6)</visible>
                     <onfocus>SetFocus(10)</onfocus>
@@ -233,7 +241,7 @@
                     <onclick>SetProperty(CustomDialog,1,3003)</onclick>
                     <onclick>SetProperty(Dialog,$LOCALIZE[31136])</onclick>
                     <onclick>ActivateWindow(3003)</onclick>
-                    <visible>stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31272]) | stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31273]) | stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31274]) | stringcompare(Window(skinsettings).property(Dialog),$LOCALIZE[31275])</visible>
+                    <visible>String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31272]) | String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31273]) | String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31274]) | String.IsEqual(Window(skinsettings).property(Dialog),$LOCALIZE[31275])</visible>
                 </control>
             </control>
         </control>

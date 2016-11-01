@@ -111,7 +111,7 @@
                     <label>$LOCALIZE[744]</label>
                     <texturefocus border="70,2,2,2">dialogs/options/buttons/files-fo.png</texturefocus>
                     <texturenofocus border="70,2,2,2">dialogs/options/buttons/files-nf.png</texturenofocus>
-                    <onclick>replacewindow(musicfiles)</onclick>
+                    <onclick>replacewindow(music)</onclick>
                     <onclick>setfocus(50)</onclick>
                     <animation effect="fade" start="100" end="50" time="0" condition="!Control.IsEnabled(99)">Conditional</animation>
                 </control>
@@ -356,7 +356,7 @@
                     <textureradioon>buttons/radio/options-radio-button-fo.png</textureradioon>
                     <textureradiooff>buttons/radio/options-radio-button-nf.png</textureradiooff>
                     <radioposx>-19</radioposx>
-                    <visible>substring(Container.FolderPath,addons,left) | substring(Container.FolderPath,plugin,left)</visible>
+                    <visible>String.StartsWith(Container.FolderPath,addons) | String.StartsWith(Container.FolderPath,plugin)</visible>
                 </control>
                 <control type="radiobutton" id="207">
                     <description>Thumbnail</description>

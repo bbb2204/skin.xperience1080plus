@@ -8,16 +8,20 @@
         <include>PVRHeader</include>
         
         <control type="group">
+            <visible>!Window.IsActive(DialogPVRInfo.xml)</visible>
+            <include>CommonViewAnimations</include>
             <posx>0</posx>
             <animation type="WindowClose">
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="out" />
                 <effect type="zoom" start="100" end="85" time="300" center="960,600" tween="sine" easing="out" />
             </animation>
+            <include content="PVRLoadingInfo" />
             <control type="group" id="110">
+                <visible>Integer.IsGreater(Container.NumItems,0)</visible>
                 <include>FullscreenDimensions</include>
                 <include>OptionsShutdownAnimation</include>
                 <animation effect="slide" start="0" end="428" time="400" tween="sine" easing="inout" condition="ControlGroup(9001).HasFocus">Conditional</animation>
-                <include>listEndAnimation</include>
+                <include>ListEndAnimation</include>
                 <control type="group">
                     <visible>!Window.IsActive(favourites)</visible>
                     <animation type="WindowOpen" condition="!Control.IsVisible(9001)">
@@ -58,19 +62,19 @@
                             <posy>78</posy>
                             <width>516</width>
                             <height>505</height>
-                            <info>Container(50).ListItem.Plot</info>
+                            <label>$INFO[Container(50).ListItem.Plot]</label>
                             <align>justify</align>
                             <textcolor>aawhite</textcolor>
                             <shadowcolor>33000000</shadowcolor>
                             <pagecontrol>71</pagecontrol>
                             <autoscroll delay="13000" time="3000" repeat="13000">!Control.HasFocus(71)</autoscroll>
                             <font>Font-Condensed-S34</font>
-                            <visible>!IsEmpty(Container(50).ListItem.Plot)</visible>
+                            <visible>!String.IsEmpty(Container(50).ListItem.Plot)</visible>
                             <include>visiblehidefadeinfo</include>
                         </control>
 						<control type="label">
                             <description>Empty Plot</description>
-                            <visible>IsEmpty(Container(50).ListItem.Plot)</visible>
+                            <visible>String.IsEmpty(Container(50).ListItem.Plot)</visible>
                             <posx>30</posx>
                             <posy>300</posy>
                             <width>516</width>
@@ -192,7 +196,7 @@
                                 <textcolor>99FFFFFF</textcolor>
                                 <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
-                                <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                <animation effect="slide" end="0,19" time="0" condition="String.IsEmpty(ListItem.ChannelName)">Conditional</animation>
                             </control>
                             <control type="label">
                                 <description>Date + Start / End Time + Channel</description>
@@ -206,7 +210,7 @@
                                 <textcolor>77white</textcolor>
                                 <selectedcolor>SelectedColor</selectedcolor>
                                 <scroll>false</scroll>
-                                <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                             </control>
                             <control type="image">
                                 <description>Watched/unwatched overlay</description>
@@ -216,7 +220,7 @@
                                 <height>100</height>
                                 <colordiffuse>7FFFFFFF</colordiffuse>
                                 <texture>$VAR[DefaultListOverlay]</texture>
-                                <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                             </control>
                         </itemlayout>
                         <focusedlayout height="96">
@@ -265,7 +269,7 @@
                                     <textcolor>99FFFFFF</textcolor>
                                     <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
-                                    <animation effect="slide" end="0,19" time="0" condition="IsEmpty(ListItem.ChannelName)">Conditional</animation>
+                                    <animation effect="slide" end="0,19" time="0" condition="String.IsEmpty(ListItem.ChannelName)">Conditional</animation>
                                 </control>
                                 <control type="label">
                                     <description>Date + Start / End Time + Channel</description>
@@ -279,7 +283,7 @@
                                     <textcolor>77white</textcolor>
                                     <selectedcolor>SelectedColor</selectedcolor>
                                     <scroll>false</scroll>
-                                    <visible>!IsEmpty(ListItem.ChannelName)</visible>
+                                    <visible>!String.IsEmpty(ListItem.ChannelName)</visible>
                                 </control>
                                 <control type="image">
                                     <description>Watched/unwatched overlay</description>
@@ -289,7 +293,7 @@
                                     <height>100</height>
                                     <colordiffuse>D4FFFFFF</colordiffuse>
                                     <texture>$VAR[DefaultListOverlay]</texture>
-                                    <visible>!IsEmpty(ListItem.Overlay)</visible>
+                                    <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                                 </control>
                             </control>
                         </focusedlayout>
@@ -309,6 +313,7 @@
                         <animation effect="fade" start="35" end="0" time="300" tween="sine" easing="inout" condition="!Control.IsVisible(9772) + !Control.HasFocus(70)">Conditional</animation>
                     </control>
                     <control type="group">
+                        <visible>!String.IsEmpty(PVR.BackendDiskspace)</visible>
                         <description>Disk usage</description>
                         <posx>160</posx>
                         <posy>910</posy>
@@ -324,7 +329,7 @@
                             <righttexture>windows/pvr/progress-leftright.png</righttexture>
                             <info>PVR.BackendDiskspaceProgr</info>
                             <colordiffuse>aawhite</colordiffuse>
-                            <visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
+                            <visible>Integer.IsLessOrEqual(PVR.BackendDiskspaceProgr,100)</visible>
                         </control>
                         <control type="label">
                             <description>Disk usage text</description>
@@ -337,7 +342,7 @@
                             <aligny>center</aligny>
                             <textcolor>D4FFFFFF</textcolor>
                             <font>Font-Condensed-S28</font>
-                            <visible>!IntegerGreaterThan(PVR.BackendDiskspaceProgr,100)</visible>
+                            <visible>Integer.IsLessOrEqual(PVR.BackendDiskspaceProgr,100)</visible>
                         </control>
                     </control>
                 </control>

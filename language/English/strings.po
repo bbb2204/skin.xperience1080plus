@@ -201,32 +201,44 @@ msgctxt "#31040"
 msgid "Reset Pictures Path"
 msgstr ""
 
-#: \1080i\SkinSettings.xml:595
-msgctxt "#31041"
-msgid "Hide Weather Fanart"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:606
-msgctxt "#31042"
-msgid "Hide Weather Daily Fanart"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:617
-msgctxt "#31043"
-msgid "Set Weather Fanart Path"
-msgstr ""
-
-#: \1080i\SkinSettings.xml:625
-msgctxt "#31044"
-msgid "Reset Weather Fanart Path"
-msgstr ""
+#empty string from id 31041 to 31044
 
 #: \1080i\SkinSettings.xml:222
 msgctxt "#31045"
 msgid "Display Volume in dB"
 msgstr ""
 
-#empty strings from id 31046 to 31099
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:433
+msgctxt "#31046"
+msgid "Random Albums"
+msgstr ""
+
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:439
+msgctxt "#31047"
+msgid "Recent Albums"
+msgstr ""
+
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:445
+msgctxt "#31048"
+msgid "Recommended Albums"
+msgstr ""
+
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:451
+msgctxt "#31049"
+msgid "Random Songs"
+msgstr ""
+
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:539
+msgctxt "#31050"
+msgid "Set Picture Path"
+msgstr ""
+
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:537
+msgctxt "#31051"
+msgid "Custom Image Path"
+msgstr ""
+
+#empty string from id 31051 to 31099
 
 msgctxt "#31100"
 msgid "General"
@@ -256,8 +268,6 @@ msgctxt "#31106"
 msgid "Display Fanart above Visualisation"
 msgstr ""
 
-#empty string with id 31107
-
 msgctxt "#31108"
 msgid "Automatically switch to music visualisation upon Play"
 msgstr ""
@@ -266,7 +276,13 @@ msgctxt "#31109"
 msgid "Enable Auto Scrolling for text"
 msgstr ""
 
-#empty strings from id 31110 to 31111
+msgctxt "#31110"
+msgid "Enable playlist at startup"
+msgstr ""
+
+msgctxt "#31111"
+msgid "Skin"
+msgstr ""
 
 msgctxt "#31112"
 msgid "Invert Spin Control"
@@ -380,7 +396,7 @@ msgctxt "#31154"
 msgid "Recommended size 283x283px"
 msgstr ""
 
-#empty string with id 31155
+#empty strings with id 31155
 
 msgctxt "#31156"
 msgid "Show Name"
@@ -434,10 +450,12 @@ msgctxt "#31169"
 msgid "Upcoming Movies"
 msgstr ""
 
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:86
 msgctxt "#31170"
 msgid "In Theatres Now"
 msgstr ""
 
+#: /1080i/Includes_SettingsCustomHomeWidgets.xml:91
 msgctxt "#31171"
 msgid "Popular Movies"
 msgstr ""
@@ -482,9 +500,7 @@ msgctxt "#31200"
 msgid "Display Power Button (does not affect home screen)"
 msgstr ""
 
-msgctxt "#31201"
-msgid "Display Options Button"
-msgstr ""
+#empty string with id 31201
 
 msgctxt "#31202"
 msgid "Play Trailer on opening Movie Information"
@@ -494,7 +510,7 @@ msgctxt "#31203"
 msgid "Play Trailer minimized"
 msgstr ""
 
-#empty strings from id 31204 to 31219
+#empty strings from id 31203 to 31219
 
 msgctxt "#31220"
 msgid "TV"
@@ -558,13 +574,13 @@ msgctxt "#31276"
 msgid "Choose Custom Menu Item"
 msgstr ""
 
-#empty strings from id 31277 to 31279
+#empty strings from id 31276 to 31279
 
 msgctxt "#31280"
 msgid "Add-ons"
 msgstr ""
 
-#empty string with id 31281
+#empty strings with id 31281
 
 msgctxt "#31282"
 msgid "Lyrics add-on"
@@ -664,7 +680,7 @@ msgctxt "#31327"
 msgid "Year of Release"
 msgstr ""
 
-#empty string with id 31328
+#empty strings with id 31328
 
 msgctxt "#31329"
 msgid "No Biography for this actor"
@@ -678,7 +694,7 @@ msgctxt "#31331"
 msgid "Released"
 msgstr ""
 
-#empty string with id 31332
+#empty strings with id 31332
 
 msgctxt "#31333"
 msgid "Get Theme"
@@ -730,7 +746,7 @@ msgctxt "#31441"
 msgid "Quick Navigation"
 msgstr ""
 
-#empty string with id 31442
+#empty strings with id 31442
 
 msgctxt "#31443"
 msgid "Now Playing"
@@ -756,7 +772,7 @@ msgctxt "#31448"
 msgid "Pictures"
 msgstr ""
 
-#empty string with id 31449
+#empty strings with id 31449
 
 msgctxt "#31450"
 msgid "New Movies"
@@ -799,7 +815,7 @@ msgid "Kodi Version"
 msgstr ""
 
 msgctxt "#31460"
-msgid "Skin Frame"
+msgid "Quick Navigation"
 msgstr ""
 
 #empty strings from id 31461 to 31503
@@ -812,7 +828,7 @@ msgctxt "#31505"
 msgid "Press \"Up\" to Eject"
 msgstr ""
 
-#empty string with id 31506
+#empty strings with id 31506
 
 msgctxt "#31507"
 msgid "Power"
@@ -954,7 +970,7 @@ msgctxt "#31817"
 msgid "Items"
 msgstr ""
 
-#empty string with id 31818
+#empty strings with id 31818
 
 msgctxt "#31819"
 msgid "Page"
@@ -966,7 +982,24 @@ msgctxt "#31822"
 msgid "Item"
 msgstr ""
 
-#empty strings from id 31823 to 31919
+#empty strings from id 31823 to 31899
+
+#: \1080i\DialogPlayerProcess.xml
+msgctxt "#31900"
+msgid "Player information"
+msgstr ""
+
+#: \1080i\DialogPlayerProcess.xml
+msgctxt "#31901"
+msgid "Video decoder"
+msgstr ""
+
+#: \1080i\DialogPlayerProcess.xml
+msgctxt "#31902"
+msgid "Pixel format"
+msgstr ""
+
+#empty strings from id 31903 to 31919
 
 msgctxt "#31920"
 msgid "Recently Added"
@@ -1197,7 +1230,7 @@ msgid "Display Weather"
 msgstr ""
 
 msgctxt "#31977"
-msgid "No Media Source available"
+msgid "No Content available"
 msgstr ""
 
 msgctxt "#31978"

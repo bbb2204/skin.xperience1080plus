@@ -24,15 +24,20 @@
     <include file="Includes_GlobalSearch.xml" />
     <include file="Includes_Weather.xml" />
     <include file="Includes_PVR.xml" />
+    <include file="Includes_DialogSettings.xml" />
     
     <constant name="FanartCrossfadeTime">400</constant>
     <constant name="IconCrossfadeTime">400</constant>
     
     <!-- Spin control direction includes -->
     <include name="SpinControlDefault">
-        <reverse>no</reverse>
+        <reverse>false</reverse>
     </include>
     <include name="SpinControlReversed">
-        <reverse>yes</reverse>
+        <reverse>true</reverse>
+    </include>
+
+    <include name="MenuControl">
+        <menucontrol>$PARAM[id]</menucontrol>
     </include>
 </includes>

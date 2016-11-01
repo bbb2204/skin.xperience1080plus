@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window id="610">
     <defaultcontrol always="true">11</defaultcontrol>
-    <zorder>3</zorder>
     <controls>
         <control type="group">
+            <visible>!Window.IsActive(DialogPVRInfo.xml)</visible>
             <include>FullscreenDimensions</include>
+            <include>CommonViewAnimations</include>
             <control type="group">
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="105" />
@@ -55,7 +56,7 @@
                         <posy>110</posy>
                         <width>816</width>
                         <height>480</height>
-                        <info>Container(11).ListItem.Plot</info>
+                        <label>$INFO[Container(11).ListItem.Plot]</label>
                         <align>justify</align>
                         <textcolor>aawhite</textcolor>
                         <shadowcolor>33000000</shadowcolor>
@@ -152,7 +153,7 @@
                             <texture>views/other/selected.png</texture>
                             <colordiffuse>07FFFFFF</colordiffuse>
                             <aspectratio aligny="top">center</aspectratio>
-                            <visible>StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)</visible>
+                            <visible>String.IsEqual(ListItem.Title,VideoPlayer.Title) + String.IsEqual(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + String.IsEqual(ListItem.EndTime,VideoPlayer.EndTime)</visible>
                         </control>
                         <control type="label">
                             <description>Label</description>
@@ -160,7 +161,7 @@
                             <posy>0</posy>
                             <width>665</width>
                             <height>58</height>
-                            <font>Font-Condensed-S34</font>
+                            <font>Font-Condensed-S34-B</font>
                             <align>left</align>
                             <label>$VAR[ListItem.Label]</label>
                             <textcolor>aawhite</textcolor>
@@ -223,7 +224,7 @@
                             <texture>views/other/selected.png</texture>
                             <colordiffuse>07FFFFFF</colordiffuse>
                             <aspectratio aligny="top">center</aspectratio>
-                            <visible>StringCompare(ListItem.Title,VideoPlayer.Title) + StringCompare(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + StringCompare(ListItem.EndTime,VideoPlayer.EndTime)</visible>
+                            <visible>String.IsEqual(ListItem.Title,VideoPlayer.Title) + String.IsEqual(ListItem.ChannelNumberLabel,VideoPlayer.ChannelNumberLabel) + String.IsEqual(ListItem.EndTime,VideoPlayer.EndTime)</visible>
                         </control>
                         <control type="image">
                             <posx>0</posx>
@@ -247,7 +248,7 @@
                                 <posy>0</posy>
                                 <width>665</width>
                                 <height>58</height>
-                                <font>Font-Condensed-S34</font>
+                                <font>Font-Condensed-S34-B</font>
                                 <align>left</align>
                                 <label>$VAR[ListItem.Label]</label>
                                 <textcolor>bbwhite</textcolor>
