@@ -156,7 +156,6 @@
         <font>Font-Condensed-S49</font>
         <textcolor>bbwhite</textcolor>
         <focusedcolor>bbwhite</focusedcolor>
-        <shadowcolor>77000000</shadowcolor>
         <align>left</align>
         <aligny>top</aligny>
     </include>
