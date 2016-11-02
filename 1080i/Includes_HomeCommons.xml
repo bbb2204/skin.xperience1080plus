@@ -255,8 +255,8 @@
                     <focusposition>0</focusposition>
                     <scrolltime>0</scrolltime>
                     <viewtype>list</viewtype>
-                    <itemlayout width="2" height="2"/>
-                    <focusedlayout width="2" height="2"/>
+                    <itemlayout width="2" height="2" />
+                    <focusedlayout width="2" height="2" />
                     <content>
                         <item id="1">
                             <label>-</label>
@@ -382,8 +382,8 @@
             </include>
             <scrolltime>0</scrolltime>
             <viewtype>list</viewtype>
-            <itemlayout width="2" height="2"/>
-            <focusedlayout width="2" height="2"/>
+            <itemlayout width="2" height="2" />
+            <focusedlayout width="2" height="2" />
             <content>
                 <item id="1">
                     <label>$LOCALIZE[137]</label>
@@ -459,7 +459,7 @@
         <control type="grouplist">
             <description>Category labels</description>
             <animation type="WindowOpen">
-                <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in"  />
+                <effect type="fade" start="0" end="100" time="300" tween="sine" easing="in" />
                 <effect type="slide" start="0,-75" end="0,0" time="350" tween="cubic" easing="out" />
             </animation>
             <animation type="Visible">
@@ -499,7 +499,7 @@
                 <height>38</height>
                 <texture>windows/home/search.png</texture>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(1)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="19,50" condition="!Control.HasFocus(125)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="19,50" condition="!Control.HasFocus(125)">Conditional</animation>
                 <visible>System.HasAddon(script.globalsearch)</visible>
             </control>
 
@@ -508,7 +508,7 @@
                 <include>HomeLabel</include>
                 <label>$VAR[HomeDVDLabel]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(2)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(525)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(525)">Conditional</animation>
             </control>
 
             <control type="label">
@@ -516,7 +516,7 @@
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[31220]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(9)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(925)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(925)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeTV)</visible>
             </control>
 
@@ -525,7 +525,7 @@
                 <posy>0</posy>
                 <width>-50</width>
                 <height>100</height>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(225)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(225)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeMovies) + !Skin.HasSetting(HideHomeSubmenuArrow)</visible>
                 <control type="image">
                     <posx>-25</posx>
@@ -534,7 +534,7 @@
                     <height>38</height>
                     <texture>windows/home/submenu-arrow.png</texture>
                     <include>visiblehidefadeinfo</include>
-                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(225) + Container(20).HasFocus(3)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(225) + Container(20).HasFocus(3)]">Conditional</animation>
                 </control>
             </control>
             <control type="label">
@@ -542,7 +542,7 @@
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[342]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(3)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(225)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(225)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeMovies)</visible>
             </control>
 
@@ -551,7 +551,7 @@
                 <posy>0</posy>
                 <width>-50</width>
                 <height>100</height>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(325)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(325)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeTVShows) + !Skin.HasSetting(HideHomeSubmenuArrow)</visible>
                 <control type="image">
                     <posx>-25</posx>
@@ -559,7 +559,7 @@
                     <width>19</width>
                     <height>38</height>
                     <texture>windows/home/submenu-arrow.png</texture>
-                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(325) + Container(20).HasFocus(4)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(325) + Container(20).HasFocus(4)]">Conditional</animation>
                 </control>
             </control>
             <control type="label">
@@ -567,7 +567,7 @@
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[31990]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(4)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(325)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(325)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeTVShows)</visible>
             </control>
 
@@ -576,7 +576,7 @@
                 <posy>0</posy>
                 <width>-50</width>
                 <height>100</height>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(425)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(425)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeMusic) + !Skin.HasSetting(HideHomeSubmenuArrow)</visible>
                 <control type="image">
                     <posx>-25</posx>
@@ -584,7 +584,7 @@
                     <width>19</width>
                     <height>38</height>
                     <texture>windows/home/submenu-arrow.png</texture>
-                    <animation effect="fade"  start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(425) + Container(20).HasFocus(5)]">Conditional</animation>
+                    <animation effect="fade" start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(425) + Container(20).HasFocus(5)]">Conditional</animation>
                 </control>
             </control>
             <control type="label">
@@ -592,7 +592,7 @@
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[2]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(5)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(425)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="auto" condition="!Control.HasFocus(425)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeMusic)</visible>
             </control>
 
@@ -610,7 +610,7 @@
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[31504]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(6)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="150" tween="sine" easing="inout" center="auto" condition="!Control.HasFocus(625)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="150" tween="sine" easing="inout" center="auto" condition="!Control.HasFocus(625)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomePrograms)</visible>
             </control>
 
@@ -619,10 +619,26 @@
                 <include>HomeLabel</include>
                 <label>$LOCALIZE[8]</label>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(7)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="150" tween="sine" easing="inout" center="auto" condition="!Control.HasFocus(725)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="150" tween="sine" easing="inout" center="auto" condition="!Control.HasFocus(725)">Conditional</animation>
                 <visible>!Skin.HasSetting(HomeWeather)</visible>
             </control>
 
+            <control type="group">
+                <posx>-5</posx>
+                <posy>-2</posy>
+                <width>-50</width>
+                <height>100</height>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="65,50" condition="!Control.HasFocus(825)">Conditional</animation>
+                <visible>System.HasAddon(service.libreelec.settings) + !Skin.HasSetting(HideHomeSubmenuArrow)</visible>
+                <control type="image">
+                    <posx>-25</posx>
+                    <posy>13</posy>
+                    <width>19</width>
+                    <height>38</height>
+                    <texture>windows/home/submenu-arrow.png</texture>
+                    <animation effect="fade" start="100" end="0" time="300" tween="cubic" easing="inout" center="65,50" condition="![Control.HasFocus(825) + Container(20).HasFocus(8)]">Conditional</animation>
+                </control>
+            </control>
             <control type="image">
                 <description>Settings</description>
                 <posx>0</posx>
@@ -631,7 +647,7 @@
                 <height>38</height>
                 <texture>windows/home/settings.png</texture>
                 <animation effect="fade" start="100" end="40" time="300" tween="cubic" easing="inout" condition="!Container(20).HasFocus(8)">Conditional</animation>
-                <animation effect="zoom"  start="100" end="80" time="300" tween="cubic" easing="inout" center="19,50" condition="!Control.HasFocus(825)">Conditional</animation>
+                <animation effect="zoom" start="100" end="80" time="300" tween="cubic" easing="inout" center="19,50" condition="!Control.HasFocus(825)">Conditional</animation>
             </control>
         </control>
     </include>
