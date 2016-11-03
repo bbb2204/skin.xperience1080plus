@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<window id="5533">
-    <!-- <zorder>0</zorder> -->
-	<defaultcontrol always="true">1000</defaultcontrol>
-    <!-- <allowoverlay>no</allowoverlay>
-    <backgroundcolor>0</backgroundcolor> -->
+<window id="3033">
+    <defaultcontrol always="true">1000</defaultcontrol>
     <controls>
         <include>CommonSettingsItems</include>
         <include>SettingsHeader</include>
@@ -38,7 +35,7 @@
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" />
                     <effect type="zoom" start="88" end="100" center="576,560" tween="cubic" easing="out" time="400" />
                 </animation>
-                <animation effect="slide" start="0" end="-430" time="500" tween="cubic" easing="inout" condition="Control.HasFocus(71)">Conditional</animation>                            
+                <animation effect="slide" start="0" end="-430" time="500" tween="cubic" easing="inout" condition="Control.HasFocus(71)">Conditional</animation>
                 <control type="label">
                     <description>Category</description>
                     <posx>483</posx>
@@ -50,7 +47,7 @@
                     <label>[UPPERCASE]$LOCALIZE[42130][/UPPERCASE]</label>
                     <textcolor>aawhite</textcolor>
                 </control>
-                
+
                 <!-- Panel -->
                 <control type="image">
                     <posx>178</posx>
@@ -59,7 +56,7 @@
                     <width>342</width>
                     <texture border="4">views/list/panel/panel.png</texture>
                 </control>
-                
+
                 <control type="list" id="1000">
                     <posx>180</posx>
                     <posy>281</posy>
@@ -113,11 +110,11 @@
                 </control>
             </control>
             <control type="group">
-                <posx>175</posx> 
+                <posx>175</posx>
                 <animation type="WindowOpen">
                     <effect type="slide" start="200" end="0" tween="cubic" easing="out" time="545" delay="75" />
                     <effect type="fade" start="0" end="100" tween="sine" easing="inout" time="300" delay="75" />
-                    <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="75" /> 
+                    <effect type="zoom" start="76" end="100" center="1344,560" tween="cubic" easing="out" time="400" delay="75" />
                 </animation>
                 <animation effect="slide" start="0" end="-430" time="500" tween="cubic" easing="inout" condition="Control.HasFocus(71)">Conditional</animation>
                 <control type="label">
@@ -131,7 +128,7 @@
                     <label>[UPPERCASE]$LOCALIZE[5]:[/UPPERCASE]$INFO[Container(1000).ListItem.Label, ,]</label>
                     <textcolor>aawhite</textcolor>
                 </control>
-                          
+
                 <!-- Panel -->
                 <control type="image">
                     <posx>353</posx>
@@ -174,1024 +171,1024 @@
                         <textcolor>aawhite</textcolor>
                     </control>
                 </control>
-            <!-- <control type="image">
+                <!-- <control type="image">
                 <left>269</left>
                 <top>60</top>
                 <width>793</width>
                 <height>450</height>
                 <texture border="5">default/button-nofocus.png</texture>
             </control> -->
-	    <!-- Other Content (right)-->
-            <control type="group">
-                <left>355</left>
-                <top>281</top>
-                <width>1210</width>
-                <height>609</height>
-                <control type="group" id="1900">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>796</width>
-                    <height>446</height>
-                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1900)</visible>
-                    <!-- <control type="image">
+                <!-- Other Content (right)-->
+                <control type="group">
+                    <left>355</left>
+                    <top>281</top>
+                    <width>1210</width>
+                    <height>609</height>
+                    <control type="group" id="1900">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>796</width>
+                        <height>446</height>
+                        <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1900)</visible>
+                        <!-- <control type="image">
                         <left>580</left>
                         <top>10</top>
                         <width>200</width>
                         <height>200</height>
                         <texture border="1">special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/default/logo_big.png</texture>
                     </control> -->
-                    <control type="image">
-                        <left>0</left>
-                        <top>380</top>
-                        <width>1210</width>
-                        <height>77</height>
-                        <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                    </control>
-                    <control type="image">
-                        <left>740</left>
-                        <top>468</top>
-                        <width>440</width>
-                        <height>128</height>
-                        <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/default/Logo.png</texture>
-                    </control>
-                    <control type="group">
-                        <top>478</top>
-                        <control type="label">
-                            <top>0</top>
-                            <label>$ADDON[service.libreelec.settings 606]</label>
-                            <textcolor>CFFFFFFF</textcolor>
-                            <include>SettingsSystemInfoLabel</include>
+                        <control type="image">
+                            <left>0</left>
+                            <top>380</top>
+                            <width>1210</width>
+                            <height>77</height>
+                            <texture border="90,3,90,3">views/list/other/separator.png</texture>
                         </control>
-                        <control type="label">
-                            <left>200</left>
-                            <top>0</top>
-                            <label>$INFO[Container(5533).Property(Distri)] ($INFO[Container(5533).Property(build)])</label>
-                            <textcolor>CFFFFFFF</textcolor>
-                            <include>SettingsSystemInfoLabel</include>
+                        <control type="image">
+                            <left>740</left>
+                            <top>468</top>
+                            <width>440</width>
+                            <height>128</height>
+                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/default/Logo.png</texture>
                         </control>
-                        <control type="label">
-                            <top>35</top>
-                            <label>$ADDON[service.libreelec.settings 607]</label>
-                            <textcolor>CFFFFFFF</textcolor>
-                            <include>SettingsSystemInfoLabel</include>
-                        </control>
-                        <control type="label">
-                            <left>200</left>
-                            <top>35</top>
-                            <label>$INFO[Container(5533).Property(Version)]</label>
-                            <textcolor>CFFFFFFF</textcolor>
-                            <include>SettingsSystemInfoLabel</include>
-                        </control>
-                        <control type="label">
-                            <top>70</top>
-                            <label>$ADDON[service.libreelec.settings 608]</label>
-                            <textcolor>CFFFFFFF</textcolor>
-                            <include>SettingsSystemInfoLabel</include>
-                        </control>
-                        <control type="label">
-                            <left>200</left>
-                            <top>70</top>
-                            <label>$INFO[Container(5533).Property(Arch)]</label>
-                            <textcolor>CFFFFFFF</textcolor>
-                            <include>SettingsSystemInfoLabel</include>
-                        </control>
-                    </control>
-                    <control type="textbox">
-                        <left>35</left>
-                        <top>20</top>
-                        <width>1140</width>
-                        <height>200</height>
-                        <textcolor>96FFFFFF</textcolor>
-                        <font>Font-Condensed-S29-B</font>
-                        <label>$ADDON[service.libreelec.settings 609]</label>
-                    </control>
-                    <control type="textbox">
-                        <left>35</left>
-                        <top>220</top>
-                        <width>1140</width>
-                        <height>160</height>
-                        <textcolor>96FFFFFF</textcolor>
-                        <font>Font-Condensed-S29-B</font>
-                        <label>$ADDON[service.libreelec.settings 610]</label>
-                    </control>
-                    <control type="textbox">
-                        <left>435</left>
-                        <top>220</top>
-                        <width>740</width>
-                        <height>160</height>
-                        <textcolor>96FFFFFF</textcolor>
-                        <font>Font-Condensed-S28</font>
-                        <label>$ADDON[service.libreelec.settings 611]</label>
-                    </control>
-                </control>
-                <!-- simple list content -->
-                <control type="list" id="1100">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>1210</width>
-                    <height>609</height>
-                    <onleft>1000</onleft>
-                    <!-- <onright>1097</onright> -->
-                    <onright condition="IsEmpty(Control.GetLabel(1501))">71</onright>
-                    <onright condition="!IsEmpty(Control.GetLabel(1501))">1500</onright>
-                    <scrolltime tween="cubic" easing="out">500</scrolltime>
-                    <!-- <pagecontrol>1097</pagecontrol> -->
-                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1100)</visible>    
-                    <itemlayout height="76">
                         <control type="group">
-                            <visible>!StringCompare(ListItem.Property(Typ), separator)</visible>
-			                <control type="image">
+                            <top>478</top>
+                            <control type="label">
+                                <top>0</top>
+                                <label>$ADDON[service.libreelec.settings 606]</label>
+                                <textcolor>CFFFFFFF</textcolor>
+                                <include>SettingsSystemInfoLabel</include>
+                            </control>
+                            <control type="label">
+                                <left>200</left>
+                                <top>0</top>
+                                <label>$INFO[Window.Property(Distri)] ($INFO[Window.Property(build)])</label>
+                                <textcolor>CFFFFFFF</textcolor>
+                                <include>SettingsSystemInfoLabel</include>
+                            </control>
+                            <control type="label">
+                                <top>35</top>
+                                <label>$ADDON[service.libreelec.settings 607]</label>
+                                <textcolor>CFFFFFFF</textcolor>
+                                <include>SettingsSystemInfoLabel</include>
+                            </control>
+                            <control type="label">
+                                <left>200</left>
+                                <top>35</top>
+                                <label>$INFO[Window.Property(Version)]</label>
+                                <textcolor>CFFFFFFF</textcolor>
+                                <include>SettingsSystemInfoLabel</include>
+                            </control>
+                            <control type="label">
+                                <top>70</top>
+                                <label>$ADDON[service.libreelec.settings 608]</label>
+                                <textcolor>CFFFFFFF</textcolor>
+                                <include>SettingsSystemInfoLabel</include>
+                            </control>
+                            <control type="label">
+                                <left>200</left>
+                                <top>70</top>
+                                <label>$INFO[Window.Property(Arch)]</label>
+                                <textcolor>CFFFFFFF</textcolor>
+                                <include>SettingsSystemInfoLabel</include>
+                            </control>
+                        </control>
+                        <control type="textbox">
+                            <left>35</left>
+                            <top>20</top>
+                            <width>1140</width>
+                            <height>200</height>
+                            <textcolor>96FFFFFF</textcolor>
+                            <font>Font-Condensed-S29-B</font>
+                            <label>$ADDON[service.libreelec.settings 609]</label>
+                        </control>
+                        <control type="textbox">
+                            <left>35</left>
+                            <top>220</top>
+                            <width>1140</width>
+                            <height>160</height>
+                            <textcolor>96FFFFFF</textcolor>
+                            <font>Font-Condensed-S29-B</font>
+                            <label>$ADDON[service.libreelec.settings 610]</label>
+                        </control>
+                        <control type="textbox">
+                            <left>435</left>
+                            <top>220</top>
+                            <width>740</width>
+                            <height>160</height>
+                            <textcolor>96FFFFFF</textcolor>
+                            <font>Font-Condensed-S28</font>
+                            <label>$ADDON[service.libreelec.settings 611]</label>
+                        </control>
+                    </control>
+                    <!-- simple list content -->
+                    <control type="list" id="1100">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1210</width>
+                        <height>609</height>
+                        <onleft>1000</onleft>
+                        <!-- <onright>1097</onright> -->
+                        <onright condition="IsEmpty(Control.GetLabel(1501))">71</onright>
+                        <onright condition="!IsEmpty(Control.GetLabel(1501))">1500</onright>
+                        <scrolltime tween="cubic" easing="out">500</scrolltime>
+                        <!-- <pagecontrol>1097</pagecontrol> -->
+                        <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1100)</visible>
+                        <itemlayout height="76">
+                            <control type="group">
+                                <visible>!StringCompare(ListItem.Property(Typ), separator)</visible>
+                                <control type="image">
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <texture border="90,3,90,3">views/list/other/separator.png</texture>
+                                    <visible>!StringCompare(ListItem.Property(Typ), button)</visible>
+                                </control>
+                                <control type="label">
+                                    <left>35</left>
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>96FFFFFF</textcolor>
+                                    <selectedcolor>white</selectedcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Label</info>
+                                </control>
+                                <control type="label">
+                                    <left>35r</left>
+                                    <height>77</height>
+                                    <width>1210</width>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>SelectedBlue</textcolor>
+                                    <selectedcolor>eewhite</selectedcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Property(value)</info>
+                                    <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button)</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <visible>StringCompare(ListItem.Property(Typ), separator)</visible>
+                                <!-- <control type="image">
+                                <left>0</left>
+                                <top>36</top>
+                                <width>796</width>
+                                <height>3</height>
+                                <texture border="1">separator2.png</texture>
+                            </control> -->
+                                <control type="label">
+                                    <left>15</left>
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>96FFFFFF</textcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Label</info>
+                                    <visible>true</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <visible>StringCompare(ListItem.Property(Typ), bool)</visible>
+                                <control type="image">
+                                    <left>1087</left>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>buttons/radio/radio-light-nf.png</texture>
+                                    <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | IsEmpty(ListItem.Property(value))</visible>
+                                </control>
+                                <control type="image">
+                                    <left>1087</left>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>buttons/radio/radio-light-fo.png</texture>
+                                    <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value), true)</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <visible>StringCompare(ListItem.Property(Typ), button)</visible>
+                                <control type="image">
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <texture border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texture>
+                                </control>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="76">
+                            <control type="group">
+                                <visible>!StringCompare(ListItem.Property(Typ), separator)</visible>
+                                <control type="image">
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
+                                    <visible>Control.HasFocus(1100) + !StringCompare(ListItem.Property(Typ), button)</visible>
+                                </control>
+                                <control type="label">
+                                    <left>35</left>
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>eewhite</textcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Label</info>
+                                    <visible>Control.HasFocus(1100)</visible>
+                                </control>
+                                <control type="label">
+                                    <left>35r</left>
+                                    <height>77</height>
+                                    <width>1210</width>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>SelectedBlue</textcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Property(value)</info>
+                                    <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + Control.HasFocus(1100)</visible>
+                                </control>
+                                <control type="label">
+                                    <left>35</left>
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>96FFFFFF</textcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Label</info>
+                                    <visible>!Control.HasFocus(1100)</visible>
+                                </control>
+                                <control type="label">
+                                    <left>35r</left>
+                                    <height>77</height>
+                                    <width>1210</width>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>SelectedBlue</textcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Property(value)</info>
+                                    <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + !Control.HasFocus(1100)</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <visible>StringCompare(ListItem.Property(Typ), separator)</visible>
+                                <!-- <control type="image">
+                                <left>0</left>
+                                <top>36</top>
+                                <width>796</width>
+                                <height>3</height>
+                                <texture border="1">separator2.png</texture>
+                            </control> -->
+                                <control type="label">
+                                    <left>15</left>
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <textcolor>96FFFFFF</textcolor>
+                                    <font>Font-Condensed-S30-B</font>
+                                    <info>ListItem.Label</info>
+                                    <visible>true</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <visible>StringCompare(ListItem.Property(Typ), bool)</visible>
+                                <control type="image">
+                                    <left>1087</left>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>buttons/radio/radio-light-nf.png</texture>
+                                    <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value),false) | IsEmpty(ListItem.Property(value))</visible>
+                                </control>
+                                <control type="image">
+                                    <left>1087</left>
+                                    <height>77</height>
+                                    <align>left</align>
+                                    <aligny>center</aligny>
+                                    <aspectratio>keep</aspectratio>
+                                    <texture>buttons/radio/radio-light-fo.png</texture>
+                                    <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value),true)</visible>
+                                </control>
+                            </control>
+                            <control type="group">
+                                <visible>StringCompare(ListItem.Property(Typ), button)</visible>
+                                <control type="image">
+                                    <width>1210</width>
+                                    <height>77</height>
+                                    <texture border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texture>
+                                </control>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <!-- Network Menu Content -->
+                    <control type="list" id="1200">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1210</width>
+                        <height>609</height>
+                        <onleft>1000</onleft>
+                        <onright>71</onright>
+                        <!-- <onright>1098</onright>
+                    <pagecontrol>1098</pagecontrol> -->
+                        <scrolltime>300</scrolltime>
+                        <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1200)</visible>
+                        <itemlayout height="76">
+                            <left>0</left>
+                            <top>0</top>
+                            <control type="image">
                                 <width>1210</width>
                                 <height>77</height>
                                 <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                                <visible>!StringCompare(ListItem.Property(Typ), button)</visible>
                             </control>
-                            <control type="label">
-                                <left>35</left>
-                                <width>1210</width>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <textcolor>96FFFFFF</textcolor>
-                                <selectedcolor>white</selectedcolor>
-                                <font>Font-Condensed-S30-B</font>
-                                <info>ListItem.Label</info>
+                            <!-- Icon ethernet -->
+                            <control type="image">
+                                <left>10</left>
+                                <top>20</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(netType), ethernet)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/eth.png</texture>
                             </control>
-                            <control type="label">
-                                <left>35r</left>
-                                <height>77</height>
-                                <width>1210</width>
-                                <align>right</align>
-                                <aligny>center</aligny>
-                                <textcolor>SelectedBlue</textcolor>
-                                <selectedcolor>eewhite</selectedcolor>
-                                <font>Font-Condensed-S30-B</font>
-                                <info>ListItem.Property(value)</info>
-                                <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button)</visible>
+                            <!-- Icon wifi -->
+                            <control type="image">
+                                <left>10</left>
+                                <top>20</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/wlan.png</texture>
                             </control>
-                        </control>
-                        <control type="group">
-                            <visible>StringCompare(ListItem.Property(Typ), separator)</visible>
-                            <!-- <control type="image">
-                                <left>0</left>
-                                <top>36</top>
-                                <width>796</width>
-                                <height>3</height>
-                                <texture border="1">separator2.png</texture>
-                            </control> -->
+                            <!-- Icon vpn -->
+                            <control type="image">
+                                <left>10</left>
+                                <top>20</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(netType), vpn)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/vpn.png</texture>
+                            </control>
+                            <!-- Connection Name -->
                             <control type="label">
-                                <left>15</left>
-                                <width>1210</width>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <textcolor>96FFFFFF</textcolor>
-                                <font>Font-Condensed-S30-B</font>
+                                <left>70</left>
+                                <top>10</top>
+                                <width>390</width>
+                                <height>30</height>
+                                <font>font24_title</font>
+                                <textcolor>blue</textcolor>
                                 <info>ListItem.Label</info>
                                 <visible>true</visible>
                             </control>
-                        </control>
-                        <control type="group">
-                            <visible>StringCompare(ListItem.Property(Typ), bool)</visible>
-                            <control type="image">
-                                <left>1087</left>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <aspectratio>keep</aspectratio>
-                                <texture>buttons/radio/radio-light-nf.png</texture>
-                                <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value), false) | IsEmpty(ListItem.Property(value))</visible>
+                            <!-- Interface -->
+                            <control type="label">
+                                <left>70</left>
+                                <top>49</top>
+                                <width>200</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
+                                <visible>!IsEmpty(ListItem.Property(Interface))</visible>
                             </control>
-                            <control type="image">
-                                <left>1087</left>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <aspectratio>keep</aspectratio>
-                                <texture>buttons/radio/radio-light-fo.png</texture>
-                                <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value), true)</visible>
+                            <!-- Connection Address -->
+                            <control type="label">
+                                <left>240</left>
+                                <top>49</top>
+                                <width>250</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                                <visible>StringCompare(ListItem.Property(State), online) | StringCompare(ListItem.Property(State), ready)</visible>
                             </control>
-                        </control>
-                        <control type="group">
-                            <visible>StringCompare(ListItem.Property(Typ), button)</visible>
+                            <!-- Method -->
+                            <control type="label">
+                                <left>520</left>
+                                <top>49</top>
+                                <width>200</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
+                            </control>
+                            <!-- State -->
+                            <control type="label">
+                                <left>520</left>
+                                <top>20</top>
+                                <width>200</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
+                            </control>
+                            <!-- Signal strength -->
+                            <control type="progress">
+                                <left>10</left>
+                                <top>80</top>
+                                <width>768</width>
+                                <height>12</height>
+                                <info>ListItem.Property(Strength)</info>
+                                <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                            </control>
+                            <!-- Signal strength value -->
+                            <control type="label">
+                                <left>770</left>
+                                <top>66</top>
+                                <width>40</width>
+                                <height>40</height>
+                                <font>font10</font>
+                                <align>right</align>
+                                <textcolor>white</textcolor>
+                                <info>ListItem.Property(Strength)</info>
+                                <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                            </control>
+                            <!-- Online Symbol (top right) -->
+                            <control type="image">
+                                <left>738</left>
+                                <top>20</top>
+                                <width>36</width>
+                                <height>36</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(State), online)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/connected.png</texture>
+                            </control>
+                            <!-- Favorite Symbol (bottom right) -->
+                            <control type="image">
+                                <left>680</left>
+                                <top>50</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Favorite), 1)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
+                            </control>
+                            <!-- Secure Symbol (bottom right) -->
+                            <control type="image">
+                                <left>710</left>
+                                <top>50</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Key.png</texture>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="76">
+                            <left>0</left>
+                            <top>0</top>
                             <control type="image">
                                 <width>1210</width>
                                 <height>77</height>
-                                <texture border="150,3,150,3">windows/settings/images/right-focus-arrow-nf.png</texture>
+                                <texture border="90,3,90,3">views/list/other/separator.png</texture>
                             </control>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout height="76">  
-                        <control type="group">
-                            <visible>!StringCompare(ListItem.Property(Typ), separator)</visible>
                             <control type="image">
                                 <width>1210</width>
                                 <height>77</height>
+                                <visible>Control.HasFocus(1200)</visible>
                                 <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
-                                <visible>Control.HasFocus(1100) + !StringCompare(ListItem.Property(Typ), button)</visible>
+                                <animation type="Visible" reversible="false">
+                                    <effect type="fade" start="0" end="100" time="300" />
+                                </animation>
                             </control>
-                            <control type="label">
-                                <left>35</left>
-                                <width>1210</width>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <textcolor>eewhite</textcolor>
-                                <font>Font-Condensed-S30-B</font>
-                                <info>ListItem.Label</info>
-                                <visible>Control.HasFocus(1100)</visible>
+                            <!-- Icon ethernet -->
+                            <control type="image">
+                                <left>10</left>
+                                <top>20</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(netType), ethernet)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/eth.png</texture>
                             </control>
-                            <control type="label">
-                                <left>35r</left>
-                                <height>77</height>
-                                <width>1210</width>
-                                <align>right</align>
-                                <aligny>center</aligny>
-                                <textcolor>SelectedBlue</textcolor>
-                                <font>Font-Condensed-S30-B</font>
-                                <info>ListItem.Property(value)</info>
-                                <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + Control.HasFocus(1100)</visible>
+                            <!-- Icon wifi -->
+                            <control type="image">
+                                <left>10</left>
+                                <top>20</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/wlan.png</texture>
                             </control>
-                            <control type="label">
-                                <left>35</left>
-                                <width>1210</width>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <textcolor>96FFFFFF</textcolor>
-                                <font>Font-Condensed-S30-B</font>
-                                <info>ListItem.Label</info>
-                                <visible>!Control.HasFocus(1100)</visible>
+                            <!-- Icon vpn -->
+                            <control type="image">
+                                <left>10</left>
+                                <top>20</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(netType), vpn)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/vpn.png</texture>
                             </control>
+                            <!-- Connection Name -->
                             <control type="label">
-                                <left>35r</left>
-                                <height>77</height>
-                                <width>1210</width>
-                                <align>right</align>
-                                <aligny>center</aligny>
-                                <textcolor>SelectedBlue</textcolor>
-                                <font>Font-Condensed-S30-B</font>
-                                <info>ListItem.Property(value)</info>
-                                <visible>!StringCompare(ListItem.Property(Typ), bool) + !StringCompare(ListItem.Property(Typ), button) + !Control.HasFocus(1100)</visible>
-                            </control> 
-                        </control>
-                        <control type="group">
-                            <visible>StringCompare(ListItem.Property(Typ), separator)</visible>
-                            <!-- <control type="image">
-                                <left>0</left>
-                                <top>36</top>
-                                <width>796</width>
-                                <height>3</height>
-                                <texture border="1">separator2.png</texture>
-                            </control> -->
-                            <control type="label">
-                                <left>15</left>
-                                <width>1210</width>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <textcolor>96FFFFFF</textcolor>
-                                <font>Font-Condensed-S30-B</font>
+                                <left>70</left>
+                                <top>10</top>
+                                <width>390</width>
+                                <height>30</height>
+                                <font>font24_title</font>
+                                <textcolor>blue</textcolor>
                                 <info>ListItem.Label</info>
                                 <visible>true</visible>
                             </control>
-                        </control>
-                        <control type="group">
-                            <visible>StringCompare(ListItem.Property(Typ), bool)</visible>
-                            <control type="image">
-                                <left>1087</left>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <aspectratio>keep</aspectratio>
-                                <texture>buttons/radio/radio-light-nf.png</texture>
-                                <visible>StringCompare(ListItem.Property(value), 0) | StringCompare(ListItem.Property(value),false) | IsEmpty(ListItem.Property(value))</visible>
+                            <!-- Interface -->
+                            <control type="label">
+                                <left>70</left>
+                                <top>49</top>
+                                <width>200</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
+                                <visible>!IsEmpty(ListItem.Property(Interface))</visible>
                             </control>
-                            <control type="image">
-                                <left>1087</left>
-                                <height>77</height>
-                                <align>left</align>
-                                <aligny>center</aligny>
-                                <aspectratio>keep</aspectratio>
-                                <texture>buttons/radio/radio-light-fo.png</texture>
-                                <visible>StringCompare(ListItem.Property(value), 1) | StringCompare(ListItem.Property(value),true)</visible>
+                            <!-- Connection Address -->
+                            <control type="label">
+                                <left>240</left>
+                                <top>49</top>
+                                <width>250</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <visible>StringCompare(ListItem.Property(State), online) | StringCompare(ListItem.Property(State), ready)</visible>
+                                <label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
                             </control>
-                        </control>
-                        <control type="group">
-                            <visible>StringCompare(ListItem.Property(Typ), button)</visible>
+                            <!-- Method -->
+                            <control type="label">
+                                <left>520</left>
+                                <top>49</top>
+                                <width>200</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
+                            </control>
+                            <!-- State -->
+                            <control type="label">
+                                <left>520</left>
+                                <top>20</top>
+                                <width>200</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
+                            </control>
+                            <!-- Signal strength -->
+                            <control type="progress">
+                                <left>10</left>
+                                <top>80</top>
+                                <width>768</width>
+                                <height>12</height>
+                                <info>ListItem.Property(Strength)</info>
+                                <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                            </control>
+                            <!-- Signal strength value -->
+                            <control type="label">
+                                <left>770</left>
+                                <top>66</top>
+                                <width>40</width>
+                                <height>40</height>
+                                <font>font10</font>
+                                <align>right</align>
+                                <textcolor>white</textcolor>
+                                <info>ListItem.Property(Strength)</info>
+                                <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
+                            </control>
+                            <!-- Online Symbol (top right) -->
+                            <control type="image">
+                                <left>738</left>
+                                <top>20</top>
+                                <width>36</width>
+                                <height>36</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(State), online)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/connected.png</texture>
+                            </control>
+                            <!-- Favorite Symbol (bottom right) -->
+                            <control type="image">
+                                <left>680</left>
+                                <top>50</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Favorite), 1)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
+                            </control>
+                            <!-- Secure Symbol (bottom right) -->
+                            <control type="image">
+                                <left>710</left>
+                                <top>50</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible>
+                                <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Key.png</texture>
+                            </control>
+                        </focusedlayout>
+                    </control>
+                    <!-- Bluetooth Menu Content -->
+                    <control type="label" id="1301">
+                        <left>0</left>
+                        <top>200</top>
+                        <width>790</width>
+                        <height>220</height>
+                        <info>
+                        </info>
+                        <align>center</align>
+                        <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1300) + StringCompare(Container(1300).NumItems, 0)</visible>
+                    </control>
+                    <control type="list" id="1300">
+                        <left>0</left>
+                        <top>0</top>
+                        <width>1210</width>
+                        <height>609</height>
+                        <onleft>1000</onleft>
+                        <onright>71</onright>
+                        <!-- <onright>1099</onright>
+                    <pagecontrol>1099</pagecontrol> -->
+                        <scrolltime>300</scrolltime>
+                        <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1300)</visible>
+                        <itemlayout height="76">
+                            <left>0</left>
+                            <top>0</top>
                             <control type="image">
                                 <width>1210</width>
                                 <height>77</height>
-                                <texture border="150,3,150,3">windows/settings/images/right-focus-arrow-fo.png</texture>
+                                <texture border="90,3,90,3">views/list/other/separator.png</texture>
                             </control>
-                        </control>						
-                    </focusedlayout>                                           
-                </control>                                                 
-                <!-- Network Menu Content -->
-                <control type="list" id="1200">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>1210</width>
-                    <height>609</height>
-                    <onleft>1000</onleft>
-                    <onright>71</onright>
-                    <!-- <onright>1098</onright>
-                    <pagecontrol>1098</pagecontrol> -->
-                    <scrolltime>300</scrolltime>
-                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1200)</visible>    
-                    <itemlayout height="76">
-                        <left>0</left>
-                        <top>0</top>
-                        <control type="image">
-                            <width>1210</width>
-                            <height>77</height>
-                            <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                        </control>
-                        <!-- Icon ethernet -->
-                        <control type="image">
-                            <left>10</left>
-                            <top>20</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/eth.png</texture>
-                        </control>
-                        <!-- Icon wifi -->
-                        <control type="image">
-                            <left>10</left>
-                            <top>20</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/wlan.png</texture>
-                        </control>
-                        <!-- Icon vpn -->
-                        <control type="image">
-                            <left>10</left>
-                            <top>20</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(netType), vpn)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/vpn.png</texture>
-                        </control>
-                        <!-- Connection Name -->
-                        <control type="label">
-                            <left>70</left>
-                            <top>10</top>
-                            <width>390</width>
-                            <height>30</height>							
-                            <font>font24_title</font>
-                            <textcolor>blue</textcolor>
-                            <info>ListItem.Label</info>
-                            <visible>true</visible>
-                        </control>
-                        <!-- Interface -->
-                        <control type="label">
-                            <left>70</left>
-                            <top>49</top>
-                            <width>200</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
-                            <visible>!IsEmpty(ListItem.Property(Interface))</visible>
-                        </control>
-                        <!-- Connection Address -->
-                        <control type="label">
-                            <left>240</left>
-                            <top>49</top>
-                            <width>250</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
-                            <visible>StringCompare(ListItem.Property(State), online) | StringCompare(ListItem.Property(State), ready)</visible>
-                        </control>
-                        <!-- Method -->
-                        <control type="label">
-                            <left>520</left>
-                            <top>49</top>
-                            <width>200</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
-                        </control>
-                        <!-- State -->
-                        <control type="label">
-                            <left>520</left>
-                            <top>20</top>
-                            <width>200</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
-                        </control>
-                        <!-- Signal strength -->
-                        <control type="progress">
-                            <left>10</left>
-                            <top>80</top>
-                            <width>768</width>
-                            <height>12</height>
-                            <info>ListItem.Property(Strength)</info>
-                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
-                        </control>
-                        <!-- Signal strength value -->
-                        <control type="label">
-                            <left>770</left>
-                            <top>66</top>
-                            <width>40</width>
-                            <height>40</height>
-                            <font>font10</font>
-                            <align>right</align>
-                            <textcolor>white</textcolor>
-                            <info>ListItem.Property(Strength)</info>
-                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
-                        </control>
-                        <!-- Online Symbol (top right) -->
-                        <control type="image">
-                            <left>738</left>
-                            <top>20</top>
-                            <width>36</width>
-                            <height>36</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(State), online)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/connected.png</texture>
-                        </control>
-                        <!-- Favorite Symbol (bottom right) -->
-                        <control type="image">
-                            <left>680</left>
-                            <top>50</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Favorite), 1)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
-                        </control>
-                        <!-- Secure Symbol (bottom right) -->
-                        <control type="image">
-                            <left>710</left>
-                            <top>50</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Key.png</texture>
-                        </control>		
-                    </itemlayout>
-                    <focusedlayout height="76">
-                        <left>0</left>
-                        <top>0</top>
-                        <control type="image">
-                            <width>1210</width>
-                            <height>77</height>
-                            <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                        </control>
-                        <control type="image">
-                            <width>1210</width>
-                            <height>77</height>
-                            <visible>Control.HasFocus(1200)</visible>
-                            <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
-                            <animation type="Visible" reversible="false">
-                                <effect type="fade" start="0" end="100" time="300" />
-                            </animation>
-                        </control>
-                        <!-- Icon ethernet -->
-                        <control type="image">
-                            <left>10</left>
-                            <top>20</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(netType), ethernet)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/eth.png</texture>
-                        </control>
-                        <!-- Icon wifi -->
-                        <control type="image">
-                            <left>10</left>
-                            <top>20</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/wlan.png</texture>
-                        </control>
-                        <!-- Icon vpn -->
-                        <control type="image">
-                            <left>10</left>
-                            <top>20</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(netType), vpn)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/vpn.png</texture>
-                        </control>
-                        <!-- Connection Name -->
-                        <control type="label">
-                            <left>70</left>
-                            <top>10</top>
-                            <width>390</width>
-                            <height>30</height>
-                            <font>font24_title</font>
-                            <textcolor>blue</textcolor>
-                            <info>ListItem.Label</info>
-                            <visible>true</visible>
-                        </control>
-                        <!-- Interface -->
-                        <control type="label">
-                            <left>70</left>
-                            <top>49</top>
-                            <width>200</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 601]: [COLOR=white]$INFO[ListItem.Property(Interface)][/COLOR]</label>
-                            <visible>!IsEmpty(ListItem.Property(Interface))</visible>
-                        </control>
-                        <!-- Connection Address -->
-                        <control type="label">
-                            <left>240</left>
-                            <top>49</top>
-                            <width>250</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <visible>StringCompare(ListItem.Property(State), online) | StringCompare(ListItem.Property(State), ready)</visible>
-                            <label>$ADDON[service.libreelec.settings 602]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
-                        </control>
-                        <!-- Method -->
-                        <control type="label">
-                            <left>520</left>
-                            <top>49</top>
-                            <width>200</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 603]: [COLOR=white]$INFO[ListItem.Property(Method)][/COLOR]</label>
-                        </control>
-                        <!-- State -->
-                        <control type="label">
-                            <left>520</left>
-                            <top>20</top>
-                            <width>200</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 604]: [COLOR=white]$INFO[ListItem.Property(State)][/COLOR]</label>
-                        </control>
-                        <!-- Signal strength -->
-                        <control type="progress">
-                            <left>10</left>
-                            <top>80</top>
-                            <width>768</width>
-                            <height>12</height>
-                            <info>ListItem.Property(Strength)</info>
-                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
-                        </control>
-                        <!-- Signal strength value -->
-                        <control type="label">
-                            <left>770</left>
-                            <top>66</top>
-                            <width>40</width>
-                            <height>40</height>
-                            <font>font10</font>
-                            <align>right</align>
-                            <textcolor>white</textcolor>
-                            <info>ListItem.Property(Strength)</info>
-                            <visible>StringCompare(ListItem.Property(netType), wifi)</visible>
-                        </control>
-                        <!-- Online Symbol (top right) -->
-                        <control type="image">
-                            <left>738</left>
-                            <top>20</top>
-                            <width>36</width>
-                            <height>36</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(State), online)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/connected.png</texture>
-                        </control>
-                        <!-- Favorite Symbol (bottom right) -->
-                        <control type="image">
-                            <left>680</left>
-                            <top>50</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Favorite), 1)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Favorite.png</texture>
-                        </control>
-                        <!-- Secure Symbol (bottom right) -->
-                        <control type="image">
-                            <left>710</left>
-                            <top>50</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>IntegerGreaterThan(ListItem.Property(Security), 0)</visible> 
-                            <texture>special://xbmc/addons/service.libreelec.settings/resources/skins/Default/media/icons/Key.png</texture>
-                        </control>		
-                    </focusedlayout> 
-                </control>
-                <!-- Bluetooth Menu Content -->
-                <control type="label" id="1301">
-                    <left>0</left>
-                    <top>200</top>
-                    <width>790</width>
-                    <height>220</height>
-                    <info>
-                    </info>
-                    <align>center</align>
-                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1300) + StringCompare(Container(1300).NumItems, 0)</visible> 
-                </control>
-                <control type="list" id="1300">
-                    <left>0</left>
-                    <top>0</top>
-                    <width>1210</width>
-                    <height>609</height>
-                    <onleft>1000</onleft>
-                    <onright>71</onright>
-                    <!-- <onright>1099</onright>
-                    <pagecontrol>1099</pagecontrol> -->
-                    <scrolltime>300</scrolltime>
-                    <visible>StringCompare(Container(1000).ListItem.Property(listTyp), 1300)</visible>    
-                    <itemlayout height="76">
-                        <left>0</left>
-                        <top>0</top>
-                        <control type="image">
-                            <width>1210</width>
-                            <height>77</height>
-                            <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                        </control>
-                        <!-- default -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), default)</visible> 
-                            <texture>icons/bt.png</texture>	
-                        </control>
-                        <!-- modem -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), modem)</visible> 
-                            <texture>icons/bt-modem.png</texture>
-                        </control>
-                        <!-- audio -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible> 
-                            <texture>icons/bt-audio-card.png</texture>
-                        </control>
-                        <!-- Camera Photo -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible> 
-                            <texture>icons/bt-camera-photo.png</texture>
-                        </control>		
-                        <!-- Icon phone -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), phone)</visible> 
-                            <texture>icons/bt-phone.png</texture>
-                        </control>	
-                        <!-- camera-video -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible> 
-                            <texture>icons/bt-camera-video.png</texture>
-                        </control>
-                        <!-- input-mouse -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible> 
-                            <texture>icons/bt-input-mouse.png</texture>
-                        </control>								
-                        <!-- input-gaming -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible> 
-                            <texture>icons/bt-input-gaming.png</texture>
-                        </control>	
-                        <!-- input-keyboard -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible> 
-                            <texture>icons/bt-input-keyboard.png</texture>
-                        </control>	
-                        <!-- input-tablet -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible> 
-                            <texture>icons/bt-input-tablet.png</texture>
-                        </control>	
-                        <!-- Printer -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), printer)</visible> 
-                            <texture>icons/bt-printer.png</texture>
-                        </control>
-                        <!-- Computer -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), computer)</visible> 
-                            <texture>icons/bt-computer.png</texture>
-                        </control>                                                
-                        <!-- Connection Name -->
-                        <control type="label">
-                            <left>120</left>
-                            <top>10</top>
-                            <width>390</width>
-                            <height>30</height>
-                            <font>font24_title</font>
-                            <textcolor>blue</textcolor>
-                            <info>ListItem.Label</info>
-                            <visible>true</visible>
-                        </control>
-                        <!-- Connection Address -->
-                        <control type="label">
-                            <left>120</left>
-                            <top>42</top>
-                            <width>350</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
-                        </control>
-                        <!-- Connected State -->
-                        <control type="label">
-                            <left>520</left>
-                            <top>42</top>
-                            <width>350</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$INFO[ListItem.Property(ConnectedState)]</label>
-                        </control>
-                        <!-- Paired Symbol (bottom right) -->
-                        <control type="image">
-                            <left>720</left>
-                            <top>42</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Paired), 1)</visible> 
-                            <texture>icons/Favorite.png</texture>
-                        </control>
-                        <!-- Trusted Symbol (bottom right) -->
-                        <control type="image">
-                            <left>750</left>
-                            <top>42</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible> 
-                            <texture>icons/Key.png</texture>
-                        </control>
-                    </itemlayout>
-                    <focusedlayout height="76">
-                        <left>0</left>
-                        <top>0</top>
-                        <control type="image">
-                            <width>1210</width>
-                            <height>77</height>
-                            <texture border="90,3,90,3">views/list/other/separator.png</texture>
-                        </control>
-                        <control type="image">
-                            <width>1210</width>
-                            <height>77</height>
-                            <visible>Control.HasFocus(1300)</visible>
-                            <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
-                            <animation type="Visible" reversible="false">
-                                <effect type="fade" start="0" end="100" time="300" />
-                            </animation>
-                        </control>
-                        <!-- default -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), default)</visible> 
-                            <texture>icons/bt.png</texture>
-                        </control>
-                        <!-- modem -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), modem)</visible> 
-                            <texture>icons/bt-modem.png</texture>
-                        </control>
-                        <!-- audio -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible> 
-                            <texture>icons/bt-audio-card.png</texture>
-                        </control>
-                        <!-- Camera Photo -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible> 
-                            <texture>icons/bt-camera-photo.png</texture>
-                        </control>		
-                        <!-- Icon phone -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), phone)</visible> 
-                            <texture>icons/bt-phone.png</texture>
-                        </control>	
-                        <!-- camera-video -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible> 
-                            <texture>icons/bt-camera-video.png</texture>
-                        </control>	
-                        <!-- input-mouse -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible> 
-                            <texture>icons/bt-input-mouse.png</texture>
-                        </control>							
-                        <!-- input-gaming -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible> 
-                            <texture>icons/bt-input-gaming.png</texture>
-                        </control>	
-                        <!-- input-keyboard -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible> 
-                            <texture>icons/bt-input-keyboard.png</texture>
-                        </control>	
-                        <!-- input-tablet -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible> 
-                            <texture>icons/bt-input-tablet.png</texture>
-                        </control>	
-                        <!-- Printer -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), printer)</visible> 
-                            <texture>icons/bt-printer.png</texture>
-                        </control>
-                        <!-- Computer -->
-                        <control type="image">
-                            <left>15</left>
-                            <top>12</top>
-                            <width>48</width>
-                            <height>48</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Icon), computer)</visible> 
-                            <texture>icons/bt-computer.png</texture>
-                        </control>                                                
-                        <!-- Connection Name -->
-                        <control type="label">
-                            <left>120</left>
-                            <top>10</top>
-                            <width>390</width>
-                            <height>30</height>
-                            <font>font24_title</font>
-                            <textcolor>blue</textcolor>
-                            <info>ListItem.Label</info>
-                            <visible>true</visible>
-                        </control>
-                        <!-- Connection Address -->
-                        <control type="label">
-                            <left>120</left>
-                            <top>42</top>
-                            <width>350</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
-                        </control>
-                        <!-- Connected State -->
-                        <control type="label">
-                            <left>520</left>
-                            <top>42</top>
-                            <width>350</width>
-                            <height>20</height>
-                            <font>font12</font>
-                            <textcolor>blue</textcolor>
-                            <label>$INFO[ListItem.Property(ConnectedState)]</label>
-                        </control>
-                        <!-- Paired Symbol (bottom right) -->
-                        <control type="image">
-                            <left>720</left>
-                            <top>42</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>StringCompare(ListItem.Property(Paired), 1)</visible> 
-                            <texture>icons/Favorite.png</texture>
-                        </control>
-                        <!-- Trusted Symbol (bottom right) -->
-                        <control type="image">
-                            <left>750</left>
-                            <top>42</top>
-                            <width>20</width>
-                            <height>20</height>
-                            <aspectratio>keep</aspectratio>
-                            <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible> 
-                            <texture>icons/Key.png</texture>
-                        </control>
-                    </focusedlayout> 
+                            <!-- default -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), default)</visible>
+                                <texture>icons/bt.png</texture>
+                            </control>
+                            <!-- modem -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), modem)</visible>
+                                <texture>icons/bt-modem.png</texture>
+                            </control>
+                            <!-- audio -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible>
+                                <texture>icons/bt-audio-card.png</texture>
+                            </control>
+                            <!-- Camera Photo -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible>
+                                <texture>icons/bt-camera-photo.png</texture>
+                            </control>
+                            <!-- Icon phone -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), phone)</visible>
+                                <texture>icons/bt-phone.png</texture>
+                            </control>
+                            <!-- camera-video -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible>
+                                <texture>icons/bt-camera-video.png</texture>
+                            </control>
+                            <!-- input-mouse -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible>
+                                <texture>icons/bt-input-mouse.png</texture>
+                            </control>
+                            <!-- input-gaming -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible>
+                                <texture>icons/bt-input-gaming.png</texture>
+                            </control>
+                            <!-- input-keyboard -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible>
+                                <texture>icons/bt-input-keyboard.png</texture>
+                            </control>
+                            <!-- input-tablet -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible>
+                                <texture>icons/bt-input-tablet.png</texture>
+                            </control>
+                            <!-- Printer -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), printer)</visible>
+                                <texture>icons/bt-printer.png</texture>
+                            </control>
+                            <!-- Computer -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), computer)</visible>
+                                <texture>icons/bt-computer.png</texture>
+                            </control>
+                            <!-- Connection Name -->
+                            <control type="label">
+                                <left>120</left>
+                                <top>10</top>
+                                <width>390</width>
+                                <height>30</height>
+                                <font>font24_title</font>
+                                <textcolor>blue</textcolor>
+                                <info>ListItem.Label</info>
+                                <visible>true</visible>
+                            </control>
+                            <!-- Connection Address -->
+                            <control type="label">
+                                <left>120</left>
+                                <top>42</top>
+                                <width>350</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                            </control>
+                            <!-- Connected State -->
+                            <control type="label">
+                                <left>520</left>
+                                <top>42</top>
+                                <width>350</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$INFO[ListItem.Property(ConnectedState)]</label>
+                            </control>
+                            <!-- Paired Symbol (bottom right) -->
+                            <control type="image">
+                                <left>720</left>
+                                <top>42</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Paired), 1)</visible>
+                                <texture>icons/Favorite.png</texture>
+                            </control>
+                            <!-- Trusted Symbol (bottom right) -->
+                            <control type="image">
+                                <left>750</left>
+                                <top>42</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible>
+                                <texture>icons/Key.png</texture>
+                            </control>
+                        </itemlayout>
+                        <focusedlayout height="76">
+                            <left>0</left>
+                            <top>0</top>
+                            <control type="image">
+                                <width>1210</width>
+                                <height>77</height>
+                                <texture border="90,3,90,3">views/list/other/separator.png</texture>
+                            </control>
+                            <control type="image">
+                                <width>1210</width>
+                                <height>77</height>
+                                <visible>Control.HasFocus(1300)</visible>
+                                <texture border="150,3,150,3">windows/settings/images/right-focus.png</texture>
+                                <animation type="Visible" reversible="false">
+                                    <effect type="fade" start="0" end="100" time="300" />
+                                </animation>
+                            </control>
+                            <!-- default -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), default)</visible>
+                                <texture>icons/bt.png</texture>
+                            </control>
+                            <!-- modem -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), modem)</visible>
+                                <texture>icons/bt-modem.png</texture>
+                            </control>
+                            <!-- audio -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), audio-card)</visible>
+                                <texture>icons/bt-audio-card.png</texture>
+                            </control>
+                            <!-- Camera Photo -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), camera-photo)</visible>
+                                <texture>icons/bt-camera-photo.png</texture>
+                            </control>
+                            <!-- Icon phone -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), phone)</visible>
+                                <texture>icons/bt-phone.png</texture>
+                            </control>
+                            <!-- camera-video -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), camera-video)</visible>
+                                <texture>icons/bt-camera-video.png</texture>
+                            </control>
+                            <!-- input-mouse -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-mouse)</visible>
+                                <texture>icons/bt-input-mouse.png</texture>
+                            </control>
+                            <!-- input-gaming -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-gaming)</visible>
+                                <texture>icons/bt-input-gaming.png</texture>
+                            </control>
+                            <!-- input-keyboard -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-keyboard)</visible>
+                                <texture>icons/bt-input-keyboard.png</texture>
+                            </control>
+                            <!-- input-tablet -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), input-tablet)</visible>
+                                <texture>icons/bt-input-tablet.png</texture>
+                            </control>
+                            <!-- Printer -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), printer)</visible>
+                                <texture>icons/bt-printer.png</texture>
+                            </control>
+                            <!-- Computer -->
+                            <control type="image">
+                                <left>15</left>
+                                <top>12</top>
+                                <width>48</width>
+                                <height>48</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Icon), computer)</visible>
+                                <texture>icons/bt-computer.png</texture>
+                            </control>
+                            <!-- Connection Name -->
+                            <control type="label">
+                                <left>120</left>
+                                <top>10</top>
+                                <width>390</width>
+                                <height>30</height>
+                                <font>font24_title</font>
+                                <textcolor>blue</textcolor>
+                                <info>ListItem.Label</info>
+                                <visible>true</visible>
+                            </control>
+                            <!-- Connection Address -->
+                            <control type="label">
+                                <left>120</left>
+                                <top>42</top>
+                                <width>350</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$ADDON[service.libreelec.settings 605]: [COLOR=white]$INFO[ListItem.Property(Address)][/COLOR]</label>
+                            </control>
+                            <!-- Connected State -->
+                            <control type="label">
+                                <left>520</left>
+                                <top>42</top>
+                                <width>350</width>
+                                <height>20</height>
+                                <font>font12</font>
+                                <textcolor>blue</textcolor>
+                                <label>$INFO[ListItem.Property(ConnectedState)]</label>
+                            </control>
+                            <!-- Paired Symbol (bottom right) -->
+                            <control type="image">
+                                <left>720</left>
+                                <top>42</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>StringCompare(ListItem.Property(Paired), 1)</visible>
+                                <texture>icons/Favorite.png</texture>
+                            </control>
+                            <!-- Trusted Symbol (bottom right) -->
+                            <control type="image">
+                                <left>750</left>
+                                <top>42</top>
+                                <width>20</width>
+                                <height>20</height>
+                                <aspectratio>keep</aspectratio>
+                                <visible>IntegerGreaterThan(ListItem.Property(Trusted), 0)</visible>
+                                <texture>icons/Key.png</texture>
+                            </control>
+                        </focusedlayout>
+                    </control>
                 </control>
             </control>
-			</control>
 
 
-            <!-- ==================== -->    
+            <!-- ==================== -->
             <!-- Settings Description -->
             <!-- ==================== -->
             <control type="group">
@@ -1227,12 +1224,12 @@
                     <font>Font-Condensed-S32</font>
                 </control>
                 <control type="button" id="71">
-					<description>fake button - previously scrollbar</description>
+                    <description>fake button - previously scrollbar</description>
                     <onleft condition="StringCompare(Container(1000).ListItem.Property(listTyp), 1100)">1100</onleft>
                     <onleft condition="StringCompare(Container(1000).ListItem.Property(listTyp), 1200)">1200</onleft>
                     <onleft condition="StringCompare(Container(1000).ListItem.Property(listTyp), 1300)">1300</onleft>
                     <onright condition="!Window.IsVisible(3009)">SetProperty(BounceRight,1,Home)</onright>
-					<onclick>-</onclick>
+                    <onclick>-</onclick>
                 </control>
             </control>
             <!-- <control type="textbox" id="1400">
@@ -1351,6 +1348,6 @@
                 <onright>1501</onright>
                 <visible>!IsEmpty(Control.GetLabel(1500))</visible>
             </control>
-        </control>		
+        </control>
     </controls>
 </window>
