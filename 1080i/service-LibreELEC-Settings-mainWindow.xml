@@ -1211,7 +1211,7 @@
                 </control>
                 <control type="textbox" id="1400">
                     <description>Plot</description>
-                    <label>$INFO[Container(5533).Property(InfoText)]</label>
+                    <label>$INFO[Window.Property(InfoText)]</label>
                     <posx>37</posx>
                     <posy>295</posy>
                     <width>428</width>
