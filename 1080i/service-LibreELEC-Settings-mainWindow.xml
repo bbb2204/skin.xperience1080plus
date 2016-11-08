@@ -1321,10 +1321,10 @@
                 <textcolor>FFFFFFFF</textcolor>
                 <disabledcolor>80FFFFFF</disabledcolor>
                 <align>center</align>
-                <onup>1504</onup>
-                <ondown>1000</ondown>
+                <onup>1100</onup>
+                <ondown>1100</ondown>
                 <onleft>1500</onleft>
-                <onright>1502</onright>
+                <onright>1500</onright>
                 <visible>!IsEmpty(Control.GetLabel(1501))</visible>
             </control>
             <control type="button" id="1500">
@@ -1342,9 +1342,9 @@
                 <textcolor>FFFFFFFF</textcolor>
                 <disabledcolor>80FFFFFF</disabledcolor>
                 <align>center</align>
-                <onup>1000</onup>
-                <ondown>1000</ondown>
-                <onleft>1000</onleft>
+                <onup>1100</onup>
+                <ondown>1100</ondown>
+                <onleft>1501</onleft>
                 <onright>1501</onright>
                 <visible>!IsEmpty(Control.GetLabel(1500))</visible>
             </control>
