@@ -60,7 +60,7 @@
         <value condition="String.StartsWith(Container.FolderPath,library://video/recentlyaddedmovies.xml/) | String.IsEqual(Container.FolderPath,videodb://recentlyaddedmovies/)">$LOCALIZE[342]</value>
         <value condition="String.StartsWith(Container.FolderPath,library://video/recentlyaddedepisodes.xml/) | String.IsEqual(Container.FolderPath,videodb://recentlyaddedepisodes/)">$LOCALIZE[20387]</value>
         <value condition="String.StartsWith(Container.FolderPath,special://videoplaylists/) | String.StartsWith(Container.FolderPath,special://profile/playlists/video/)">$LOCALIZE[20012]</value>
-        <value condition="String.StartsWith(Container.FolderPath,addons://sources/video/) | String.StartsWith(Container.FolderPath,plugin://plugin.video)">$LOCALIZE[1037]</value>
+        <value condition="String.StartsWith(Container.FolderPath,addons://sources/video/) | String.StartsWith(Container.FolderPath,plugin://plugin.video)">$INFO[Container.FolderName]</value>
         <value condition="!String.IsEmpty(Container.FolderPath)">$LOCALIZE[1214]</value>
         <value>$LOCALIZE[3]</value>
     </variable>
@@ -319,7 +319,19 @@
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
                         <align>left</align>
-                        <visible>!String.StartsWith(Container.FolderPath,special) + !String.StartsWith(Container.FolderPath,addons) + !String.StartsWith(Container.FolderPath,sources) + !Container.Content(episodes) + !String.IsEqual(Container.FolderPath,videodb://movies/)</visible>
+                        <visible>!String.StartsWith(Container.FolderPath,special) + !String.StartsWith(Container.FolderPath,addons) + !String.StartsWith(Container.FolderPath,sources) + !Container.Content(episodes) + !String.IsEqual(Container.FolderPath,videodb://movies/) + !String.StartsWith(Container.FolderPath,plugin://plugin.video)</visible>
+                    </control>
+                    <control type="label">
+                        <description>Channel name</description>
+                        <width min="0" max="1500">auto</width>
+                        <height>120</height>
+                        <!-- <label>$INFO[ListItem.Artist,: ,]</label> -->
+                        <label>$INFO[Container.FolderPath]</label>c
+                        <font>Font-Condensed-S36-B</font>
+                        <textcolor>aawhite</textcolor>
+                        <scroll>false</scroll>
+                        <align>left</align>
+                        <visible>String.StartsWith(Container.FolderPath,plugin://plugin.video.youtube/channel/)</visible>
                     </control>
                     <control type="label">
                         <width min="0" max="500">auto</width>
