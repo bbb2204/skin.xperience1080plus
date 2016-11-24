@@ -325,8 +325,8 @@
                         <description>Channel name</description>
                         <width min="0" max="1500">auto</width>
                         <height>120</height>
-                        <!-- <label>$INFO[ListItem.Artist,: ,]</label> -->
-                        <label>$INFO[Container.FolderPath]</label>c
+                        <label>$INFO[ListItem.Artist,: ,]</label>
+                        <!-- <label>$INFO[Container.FolderPath]</label> -->
                         <font>Font-Condensed-S36-B</font>
                         <textcolor>aawhite</textcolor>
                         <scroll>false</scroll>
