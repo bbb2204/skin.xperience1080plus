@@ -4083,7 +4083,7 @@
                     <posx>94</posx>
                     <posy>174</posy>
                     <width>1744</width>
-                    <height>700</height>
+                    <height>716</height>
                     <pagecontrol>70</pagecontrol>
                     <scrolltime tween="cubic" easing="out">500</scrolltime>
                     <orientation>vertical</orientation>
@@ -4096,21 +4096,20 @@
                     <preloaditems>2</preloaditems>
                     <visible>String.StartsWith(Container.FolderPath,addons) | String.StartsWith(Container.FolderPath,plugin) | Container.HasFiles</visible>
                     <animation effect="slide" end="59" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(ThumbnailSmall)">Conditional</animation>
-                    <itemlayout width="344" height="344" condition="!Skin.HasSetting(ThumbnailSmall)">
+                    <itemlayout width="436" height="344" condition="!Skin.HasSetting(ThumbnailSmall)">
                         <control type="image">
-                            <description>Poster</description>
                             <posx>12</posx>
-                            <posy>85</posy>
-                            <width>332</width>
-                            <height>186</height>
+                            <posy>40</posy>
+                            <width>400</width>
+                            <height>225</height>
                             <texture background="true">$VAR[ThumbIcon]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
                         </control>
                         <control type="label">
                             <posx>20</posx>
-                            <posy>275</posy>
-                            <width>316</width>
+                            <posy>271</posy>
+                            <width>384</width>
                             <height>66</height>
                             <label>$INFO[ListItem.Label]</label>
                             <font>Font-Condensed-S32</font>
@@ -4180,7 +4179,7 @@
                             <visible>!String.IsEmpty(ListItem.Overlay)</visible>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="344" height="344" condition="!Skin.HasSetting(ThumbnailSmall)">
+                    <focusedlayout width="444" height="344" condition="!Skin.HasSetting(ThumbnailSmall)">
                         <control type="group">
                             <animation type="Focus">
                                 <effect type="fade" start="93.36" end="100" time="200" tween="sine" easing="in" />
@@ -4189,11 +4188,10 @@
                                 <effect type="fade" start="100" end="93.36" time="200" tween="sine" easing="out" />
                             </animation>
                             <control type="image">
-                                <description>Poster</description>
                                 <posx>12</posx>
-                                <posy>85</posy>
-                                <width>332</width>
-                                <height>186</height>
+                                <posy>40</posy>
+                                <width>400</width>
+                                <height>225</height>
                                 <texture background="true">$VAR[ThumbIcon]</texture>
                                 <colordiffuse>eewhite</colordiffuse>
                                 <aspectratio>scale</aspectratio>
@@ -4201,8 +4199,8 @@
                             <control type="group">
                                 <control type="label">
                                     <posx>20</posx>
-                                    <posy>275</posy>
-                                    <width>316</width>
+                                    <posy>271</posy>
+                                    <width>384</width>
                                     <height>66</height>
                                     <label>$INFO[ListItem.Label]</label>
                                     <font>Font-Condensed-S32</font>
@@ -4224,9 +4222,9 @@
                             </control>
                             <control type="image">
                                 <posx>0</posx>
-                                <posy>73</posy>
-                                <width>356</width>
-                                <height>210</height>
+                                <posy>28</posy>
+                                <width>424</width>
+                                <height>259</height>
                                 <texture border="31">views/panel/focus.png</texture>
                                 <animation type="Focus">
                                     <effect type="zoom" start="90" end="100" time="200" tween="sine" easing="inout" center="auto" />
