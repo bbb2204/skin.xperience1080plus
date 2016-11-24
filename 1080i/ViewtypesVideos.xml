@@ -4317,9 +4317,9 @@
                     </focusedlayout>
                 </control>
                 <control type="button">
-                    <posx>126</posx>
+                    <posx>114</posx>
                     <posy>874</posy>
-                    <width>1680</width>
+                    <width>1748</width>
                     <height>56</height>
                     <label>$INFO[ListItem.Label]</label>
                     <label2>$VAR[ThumbnailViewDetailInfo]</label2>
