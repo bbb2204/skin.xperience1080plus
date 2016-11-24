@@ -4321,9 +4321,9 @@
                     <posy>874</posy>
                     <width>1680</width>
                     <height>56</height>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
+                    <label>$INFO[ListItem.Label]</label>
                     <label2>$VAR[ThumbnailViewDetailInfo]</label2>
-                    <font>Font-Condensed-S45</font>
+                    <font>Font-Condensed-S45-B</font>
                     <textcolor>99FFFFFF</textcolor>
                     <shadowcolor>22000000</shadowcolor>
                     <align>left</align>
@@ -4334,9 +4334,9 @@
                     <posy>874</posy>
                     <width>1562</width>
                     <height>56</height>
-                    <label>[B]$INFO[ListItem.Label][/B]</label>
+                    <label>$INFO[ListItem.Label]</label>
                     <label2>$VAR[ThumbnailViewDetailInfo]</label2>
-                    <font>Font-Condensed-S45</font>
+                    <font>Font-Condensed-S45-B</font>
                     <textcolor>99FFFFFF</textcolor>
                     <shadowcolor>22000000</shadowcolor>
                     <align>left</align>
