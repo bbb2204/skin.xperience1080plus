@@ -4222,7 +4222,7 @@
                             </control>
                             <control type="image">
                                 <posx>0</posx>
-                                <posy>28</posy>
+                                <posy>24</posy>
                                 <width>424</width>
                                 <height>259</height>
                                 <texture border="31">views/panel/focus.png</texture>
