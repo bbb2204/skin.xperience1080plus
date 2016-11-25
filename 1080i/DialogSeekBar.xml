@@ -150,7 +150,7 @@
                         <textcolor>aawhite</textcolor>
                         <font>Font-Condensed-S34</font>
                         <align>right</align>
-                        <visible>Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding</visible>
+                        <visible>Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding</visible>
                         <animation easing="inout" effect="fade" end="100" start="0" time="400" tween="sine">Visible</animation>
                         <animation effect="fade" end="0" start="100" time="0">Hidden</animation>
                     </control>
