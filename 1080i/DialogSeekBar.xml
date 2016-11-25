@@ -288,25 +288,40 @@
                                 <width>1220</width>
                                 <height>56</height>
                                 <label>$INFO[MusicPlayer.PlaylistPosition,,. ]$INFO[MusicPlayer.Title]</label>
-                                <label2>$INFO[MusicPlayer.UserRating, ★ , ]</label2>
                                 <disabledcolor>bbwhite</disabledcolor>
                                 <font>Font-Condensed-S50-B</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <enable>false</enable>
                             </control>
-                            <control type="label">
-                                <posx>1620</posx>
-                                <posy>93</posy>
-                                <width>50</width>
-                                <height>44</height>
-                                <label>/10</label>
-                                <textcolor>88FFFFFF</textcolor>
-                                <font>Font-Condensed-S36</font>
-                                <align>right</align>
-                                <aligny>center</aligny>
-                                <scroll>false</scroll>
-                                <visible>!String.IsEmpty(MusicPlayer.UserRating)</visible>
+                            <control type="group">
+
+
+                                <posy>60</posy>
+                                <control type="label">
+                                    <posx>1780</posx>
+                                    <posy>83</posy>
+                                    <width>160</width>
+                                    <height>56</height>
+                                    <label>$INFO[MusicPlayer.UserRating, ★ , ]</label>
+                                    <textcolor>aawhite</textcolor>
+                                    <font>Font-Condensed-S42-B</font>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                </control>
+                                <control type="label">
+                                    <posx>1820</posx>
+                                    <posy>90</posy>
+                                    <width>50</width>
+                                    <height>44</height>
+                                    <label>/10</label>
+                                    <textcolor>88FFFFFF</textcolor>
+                                    <font>Font-Condensed-S36</font>
+                                    <align>right</align>
+                                    <aligny>center</aligny>
+                                    <scroll>false</scroll>
+                                    <visible>!String.IsEmpty(MusicPlayer.UserRating)</visible>
+                                </control>
                             </control>
                             <control type="label">
                                 <posx>360</posx>
