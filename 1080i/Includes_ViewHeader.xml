@@ -18,7 +18,7 @@
     </variable>
 
     <variable name="MusicHeaderLabel">
-        <value condition="Window.IsVisible(music)">$LOCALIZE[744]</value>
+        <!-- <value condition="Window.IsVisible(music)">$LOCALIZE[744]</value> -->
         <value condition="Window.IsVisible(musicplaylist)">$LOCALIZE[20011]</value>
         <value condition="String.StartsWith(Container.FolderPath,musicdb://top100/songs/)">$LOCALIZE[10504]</value>
         <value condition="String.StartsWith(Container.FolderPath,musicdb://top100/albums/)">$LOCALIZE[10505]</value>
@@ -32,7 +32,7 @@
         <value condition="String.StartsWith(Container.FolderPath,musicdb://compilations/)">$LOCALIZE[521]</value>
         <value condition="String.StartsWith(Container.FolderPath,musicdb://years/)">$LOCALIZE[652]</value>
         <value condition="String.IsEqual(Container.FolderPath,special://musicplaylists/) | String.StartsWith(Container.FolderPath,special://profile/playlists/music/)">$LOCALIZE[136]</value>
-        <value condition="String.IsEqual(Container.FolderPath,addons://sources/audio/) | String.StartsWith(Container.FolderPath,plugin://plugin)">$LOCALIZE[1038]</value>
+        <value condition="String.IsEqual(Container.FolderPath,addons://sources/audio/) | String.StartsWith(Container.FolderPath,plugin://plugin)">$INFO[Container.FolderName]</value>
         <value>$LOCALIZE[2]</value>
     </variable>
 
@@ -414,7 +414,7 @@
                     <textcolor>aawhite</textcolor>
                     <scroll>false</scroll>
                     <align>left</align>
-                    <visible>!String.IsEqual(Container.FolderPath,musicdb://genres/) + !String.IsEqual(Container.FolderPath,musicdb://artists/) + !String.IsEqual(Container.FolderPath,musicdb://albums/) + !String.IsEqual(Container.FolderPath,musicdb://songs/) + !String.IsEqual(Container.FolderPath,musicdb://top100/) + !String.IsEqual(Container.FolderPath,musicdb://recentlyaddedalbums/) + !String.IsEqual(Container.FolderPath,musicdb://recentlyplayedalbums/) + !String.IsEqual(Container.FolderPath,musicdb://compilations/) + !String.IsEqual(Container.FolderPath,musicdb://years/) + !String.IsEqual(Container.FolderPath,musicdb://top100/songs/) + !String.IsEqual(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums)</visible>
+                    <visible>!String.IsEqual(Container.FolderPath,musicdb://genres/) + !String.IsEqual(Container.FolderPath,musicdb://artists/) + !String.IsEqual(Container.FolderPath,musicdb://albums/) + !String.IsEqual(Container.FolderPath,musicdb://songs/) + !String.IsEqual(Container.FolderPath,musicdb://top100/) + !String.IsEqual(Container.FolderPath,musicdb://recentlyaddedalbums/) + !String.IsEqual(Container.FolderPath,musicdb://recentlyplayedalbums/) + !String.IsEqual(Container.FolderPath,musicdb://compilations/) + !String.IsEqual(Container.FolderPath,musicdb://years/) + !String.IsEqual(Container.FolderPath,musicdb://top100/songs/) + !String.IsEqual(Container.FolderPath,special://musicplaylists/) + !Container.Content(albums) + !String.StartsWith(Container.FolderPath,plugin://plugin.audio.spotify)</visible>
                 </control>
                 <control type="label">
                     <width min="0" max="500">auto</width>
