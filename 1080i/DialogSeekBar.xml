@@ -285,15 +285,28 @@
                             <control type="button">
                                 <posx>360</posx>
                                 <posy>83</posy>
-                                <width>1250</width>
+                                <width>1220</width>
                                 <height>56</height>
                                 <label>$INFO[MusicPlayer.PlaylistPosition,,. ]$INFO[MusicPlayer.Title]</label>
-                                <label2>$INFO[MusicPlayer.UserRating,★ ,.0]</label2>
+                                <label2>$INFO[MusicPlayer.UserRating, ★ , ]</label2>
                                 <disabledcolor>bbwhite</disabledcolor>
                                 <font>Font-Condensed-S50-B</font>
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <enable>false</enable>
+                            </control>
+                            <control type="label">
+                                <posx>1620</posx>
+                                <posy>93</posy>
+                                <width>50</width>
+                                <height>44</height>
+                                <label>/10</label>
+                                <textcolor>88FFFFFF</textcolor>
+                                <font>Font-Condensed-S36</font>
+                                <align>right</align>
+                                <aligny>center</aligny>
+                                <scroll>false</scroll>
+                                <visible>!String.IsEmpty(MusicPlayer.UserRating)</visible>
                             </control>
                             <control type="label">
                                 <posx>360</posx>
@@ -723,7 +736,7 @@
                                     <font>Font-Condensed-S36</font>
                                     <align>left</align>
                                     <aligny>center</aligny>
-                                    <autoscroll delay="11500" repeat="7500" time="5000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+                                    <!-- <autoscroll delay="11500" repeat="7500" time="5000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll> -->
                                     <visible>Skin.HasSetting(OSD.HideFileStreamPath)</visible>
                                 </control>
                                 <control type="textbox">
