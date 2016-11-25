@@ -193,7 +193,7 @@ msgstr ""
 
 #: \1080i\Custom_SettingsDialog.xml:130
 msgctxt "#31039"
-msgid "Pictures Tiles (Purple)"
+msgid "Pictures Tiles (Orange)"
 msgstr ""
 
 #: \1080i\SkinSettings.xml:391

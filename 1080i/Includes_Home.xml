@@ -3994,7 +3994,7 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile-purple.png</texture>
+                                    <texture border="7">windows/home/tile-orange.png</texture>
                                 </control>
                                 <control type="image">
                                     <posx>24</posx>
@@ -4071,7 +4071,7 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
-                                        <texture border="7">windows/home/tile-purple.png</texture>
+                                        <texture border="7">windows/home/tile-orange.png</texture>
                                     </control>
                                     <control type="image">
                                         <posx>24</posx>
@@ -4209,7 +4209,7 @@
                                     <posy>19</posy>
                                     <width>293</width>
                                     <height>293</height>
-                                    <texture border="7">windows/home/tile-purple.png</texture>
+                                    <texture border="7">windows/home/tile-orange.png</texture>
                                     <visible>Skin.HasSetting(HomePicturesTiles)</visible>
                                 </control>
                                 <control type="image">
@@ -4283,7 +4283,7 @@
                                         <posy>19</posy>
                                         <width>293</width>
                                         <height>293</height>
-                                        <texture border="7">windows/home/tile-purple.png</texture>
+                                        <texture border="7">windows/home/tile-orange.png</texture>
                                         <visible>Skin.HasSetting(HomePicturesTiles)</visible>
                                     </control>
                                     <control type="image">
