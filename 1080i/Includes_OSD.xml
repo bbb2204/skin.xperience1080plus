@@ -302,11 +302,11 @@
             <animation type="Conditional" condition="!Player.ShowInfo">
                 <effect type="fade" start="100" end="0" time="300" tween="sine" easing="inout" />
             </animation>
-            <!-- <control type="image">
+            <control type="image">
                 <include>FullscreenDimensions</include>
                 <texture>windows/common/black_content.png</texture>
                 <colordiffuse>bbffffff</colordiffuse>
-            </control> -->
+            </control>
             <control type="image">
                 <include>FullscreenDimensions</include>
                 <texture>windows/common/stage-musicvis.png</texture>
