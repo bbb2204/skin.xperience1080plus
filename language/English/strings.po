@@ -1246,7 +1246,7 @@ msgid "TV Show Tiles (Green)"
 msgstr ""
 
 msgctxt "#31981"
-msgid "Music Tiles (Orange)"
+msgid "Music Tiles (Red)"
 msgstr ""
 
 msgctxt "#31982"
