@@ -636,6 +636,13 @@
                     <onleft>30</onleft>
                     <include>SettingsCategoryGrouplistVars</include>
                     <visible>Container(30).HasFocus(34)</visible>
+                    <control type="radiobutton" id="8000">
+                        <width>1210</width>
+                        <include>SettingsCategoryRadioButtonVars</include>
+                        <selected>Skin.HasSetting(MusicVisClassic.Enabled)</selected>
+                        <onclick>Skin.ToggleSetting(MusicVisClassic.Enabled)</onclick>
+                        <label>Use Classic music visualisation screen</label>
+                    </control>
                     <control type="radiobutton" id="8001">
                         <width>1210</width>
                         <include>SettingsCategoryRadioButtonVars</include>
