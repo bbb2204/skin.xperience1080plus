@@ -135,7 +135,7 @@
                         <textcolor>aawhite</textcolor>
                         <font>Font-Condensed-S34</font>
                         <align>right</align>
-                        <visible>Player.Paused + ![Player.Seeking | Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding] + ![Player.ShowInfo | Window.IsVisible(fullscreeninfo)]</visible>
+                        <visible>Player.Paused + ![Player.DisplayAfterSeek | Player.Forwarding | Player.Rewinding] + ![Player.ShowInfo | Window.IsVisible(fullscreeninfo)]</visible>
                         <animation easing="inout" effect="fade" end="100" start="0" time="400" tween="sine">Visible</animation>
                         <animation easing="inout" effect="fade" end="0" start="100" time="400" tween="sine">Hidden</animation>
                     </control>
