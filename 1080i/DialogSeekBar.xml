@@ -552,6 +552,7 @@
                                     <font>Font-Condensed-S32</font>
                                     <align>justify</align>
                                     <autoscroll delay="11500" repeat="7500" time="5000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
+                                    <visible>!String.IsEmpty(Window.Property(ExtendPlot))</visible>
                                 </control>
                             </control>
                         </control>
@@ -708,6 +709,7 @@
                                 <align>left</align>
                                 <aligny>center</aligny>
                                 <scroll>false</scroll>
+                                <animation condition="!String.IsEmpty(Window.Property(ExtendPlot))" easing="inout" effect="slide" end="0,-90" time="300" tween="cubic">Conditional</animation>
                             </control>
                             <control type="grouplist">
                                 <posx>360</posx>
@@ -726,7 +728,7 @@
                                     <align>left</align>
                                     <aligny>center</aligny>
                                     <scroll>false</scroll>
-                                    <visible>!String.IsEmpty(VideoPlayer.Artist)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.Artist) + String.IsEmpty(Window.Property(ExtendPlot))</visible>
                                 </control>
                                 <control type="label">
                                     <posx>0</posx>
@@ -775,7 +777,7 @@
                                     <textcolor>aawhite</textcolor>
                                     <font>Font-Condensed-S32</font>
                                     <align>justify</align>
-                                    <visible>!String.IsEmpty(VideoPlayer.Plot) + !Skin.HasSetting(OSD.HideFileStreamPath)</visible>
+                                    <visible>!String.IsEmpty(VideoPlayer.Plot) + !Skin.HasSetting(OSD.HideFileStreamPath) + String.IsEmpty(Window.Property(ExtendPlot))</visible>
                                     <autoscroll delay="11500" repeat="7500" time="5000">!Skin.HasSetting(AutoScroll.Disable)</autoscroll>
                                 </control>
                             </control>
