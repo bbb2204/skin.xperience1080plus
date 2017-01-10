@@ -4098,10 +4098,12 @@
                     <animation effect="slide" end="59" time="400" tween="cubic" easing="inout" condition="Skin.HasSetting(ThumbnailSmall)">Conditional</animation>
                     <itemlayout width="436" height="344" condition="!Skin.HasSetting(ThumbnailSmall)">
                         <control type="image">
-                            <posx>12</posx>
-                            <posy>40</posy>
-                            <width>400</width>
-                            <height>225</height>
+                            <posx>-8</posx>
+                            <posy>20</posy>
+                            <width>440</width>
+                            <height>265</height>
+                            <bordersize>20</bordersize>
+                            <bordertexture border="30">osd/fullscreen/widescreen-shadow.png</bordertexture>
                             <texture background="true">$VAR[ThumbIcon]</texture>
                             <colordiffuse>eewhite</colordiffuse>
                             <aspectratio>scale</aspectratio>
